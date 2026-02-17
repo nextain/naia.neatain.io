@@ -67,7 +67,6 @@ export interface Dictionary {
         companion: { title: string; description: string };
         multiProvider: { title: string; description: string };
         voice: { title: string; description: string };
-        themes: { title: string; description: string };
         tools: { title: string; description: string };
         desktop: { title: string; description: string };
       };

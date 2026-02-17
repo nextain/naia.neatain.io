@@ -3,7 +3,6 @@ import {
   Bot,
   Layers3,
   Mic,
-  Palette,
   Wrench,
   Monitor,
 } from "lucide-react";
@@ -19,7 +18,6 @@ export function Features({ dict }: { dict: Dictionary }) {
       description: items.multiProvider.description,
     },
     { icon: Mic, title: items.voice.title, description: items.voice.description },
-    { icon: Palette, title: items.themes.title, description: items.themes.description },
     { icon: Wrench, title: items.tools.title, description: items.tools.description },
     { icon: Monitor, title: items.desktop.title, description: items.desktop.description },
   ];

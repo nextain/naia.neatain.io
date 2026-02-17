@@ -57,18 +57,18 @@ const ko: Dictionary = {
     hero: {
       title: "Where Technology\nmeets Emotion",
       subtitle:
-        "3D AI 아바타 Alpha가 당신의 데스크톱에서 함께합니다. 대화, 음성, 도구 실행까지 — 손쉬운 나만의 AI.",
+        "OpenClaw AI 에이전트와 VRM 아바타가 만났습니다. 원클릭 설치 또는 전용 Linux OS로, 누구나 쉽게 나만의 AI를 시작하세요.",
       cta: "무료로 시작하기",
       secondaryCta: "다운로드",
     },
     features: {
       title: "Cafelua가 특별한 이유",
-      subtitle: "기술과 감성이 만나는 새로운 AI 경험",
+      subtitle: "개발자가 아니어도 AI 에이전트를 경험할 수 있습니다",
       items: {
         companion: {
           title: "AI 아바타 Alpha",
           description:
-            "감정을 표현하는 3D VRM 아바타가 데스크톱에서 함께합니다. 대화에 따라 표정이 바뀌고, 눈을 맞추며 반응합니다.",
+            "감정을 표현하는 3D 아바타가 데스크톱에서 함께합니다. 대화에 따라 표정이 바뀌고, 눈을 맞추며 반응합니다.",
         },
         multiProvider: {
           title: "Gemini · Grok · Claude",
@@ -80,20 +80,15 @@ const ko: Dictionary = {
           description:
             "말로 요청하고, 음성으로 응답받으세요. Alpha가 립싱크와 함께 자연스럽게 대답합니다.",
         },
-        themes: {
-          title: "8가지 감성 테마",
-          description:
-            "Espresso, Midnight, Ocean, Forest, Rose, Latte, Sakura, Cloud — 분위기에 맞는 테마를 골라보세요.",
-        },
         tools: {
           title: "도구 실행",
           description:
             "파일 편집, 터미널 명령, 웹 검색까지. Alpha가 직접 도구를 호출해 작업을 수행합니다.",
         },
         desktop: {
-          title: "앱 & OS",
+          title: "원클릭 설치 & 전용 OS",
           description:
-            "데스크톱 앱으로 바로 설치하거나, 전용 OS 이미지로 AI 전용 환경을 구축할 수 있습니다.",
+            "데스크톱 앱을 원클릭으로 설치하거나, 전용 Linux OS 이미지로 AI 전용 환경을 만들 수 있습니다.",
         },
       },
     },
@@ -125,7 +120,7 @@ const ko: Dictionary = {
           "Gemini 모델 사용",
           "고품질 음성 대화",
           "우선 지원",
-          "프리미엄 테마",
+          "고급 음성 기능",
         ],
         cta: "업그레이드",
       },
@@ -254,7 +249,7 @@ const ko: Dictionary = {
     basic: "BASIC",
     currentBadge: "현재",
     freeFeatures: ["가입 시 20 크레딧", "월 최소 10 크레딧 자동 충전", "Gemini 모델 사용"],
-    basicFeatures: ["매월 100 크레딧", "우선 지원", "고급 음성/테마"],
+    basicFeatures: ["매월 100 크레딧", "우선 지원", "고품질 음성 대화"],
     lemonNotice: "결제는 LemonSqueezy를 통해 처리됩니다. 결제/환불 정책을 확인해 주세요.",
     pricingModelsSynced: "연동된 가격 모델 수",
   },

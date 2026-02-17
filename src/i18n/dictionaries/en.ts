@@ -57,18 +57,18 @@ const en: Dictionary = {
     hero: {
       title: "Where Technology\nmeets Emotion",
       subtitle:
-        "Meet Alpha, your 3D AI avatar on the desktop. Chat, talk, execute tools — your personal AI, made easy.",
+        "OpenClaw AI agent meets VRM avatar. One-click install or a dedicated Linux OS — your personal AI, made easy.",
       cta: "Get Started Free",
       secondaryCta: "Download",
     },
     features: {
       title: "What makes Cafelua special",
-      subtitle: "A new AI experience where technology meets emotion",
+      subtitle: "Experience the power of AI agents — no coding required",
       items: {
         companion: {
           title: "AI Avatar Alpha",
           description:
-            "A 3D VRM avatar with emotions, right on your desktop. Alpha reacts to conversations with facial expressions and eye contact.",
+            "A 3D avatar with emotions, right on your desktop. Alpha reacts to conversations with facial expressions and eye contact.",
         },
         multiProvider: {
           title: "Gemini · Grok · Claude",
@@ -80,20 +80,15 @@ const en: Dictionary = {
           description:
             "Ask by voice, get spoken responses. Alpha answers naturally with lip-synced animation.",
         },
-        themes: {
-          title: "8 Mood Themes",
-          description:
-            "Espresso, Midnight, Ocean, Forest, Rose, Latte, Sakura, Cloud — pick a theme that matches your vibe.",
-        },
         tools: {
           title: "Tool Execution",
           description:
             "File editing, terminal commands, web search. Alpha calls tools directly to get work done.",
         },
         desktop: {
-          title: "App & OS",
+          title: "One-click Install & OS",
           description:
-            "Install as a desktop app instantly, or build a dedicated AI environment with the OS image.",
+            "Install the desktop app with one click, or create a dedicated AI environment with the Linux OS image.",
         },
       },
     },
@@ -125,7 +120,7 @@ const en: Dictionary = {
           "Gemini models",
           "High-quality voice chat",
           "Priority support",
-          "Premium themes",
+          "Advanced voice features",
         ],
         cta: "Upgrade",
       },
@@ -256,7 +251,7 @@ const en: Dictionary = {
     basic: "BASIC",
     currentBadge: "Current",
     freeFeatures: ["20 signup credits", "Monthly refill minimum 10", "Gemini models access"],
-    basicFeatures: ["100 monthly credits", "Priority support", "Premium voice/themes"],
+    basicFeatures: ["100 monthly credits", "Priority support", "High-quality voice"],
     lemonNotice: "Payments are processed by LemonSqueezy. Please review billing and refund policies.",
     pricingModelsSynced: "Pricing models synced",
   },
