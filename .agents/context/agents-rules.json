@@ -17,14 +17,14 @@
 			"protocol": "OpenAI-compatible REST (any-llm gateway)"
 		},
 		"auth": {
-			"providers": ["Google OAuth", "Kakao OAuth"],
+			"providers": ["Google OAuth", "Discord OAuth"],
 			"library": "NextAuth.js v5",
 			"token_flow": "OAuth → NextAuth session → gateway virtual key → JWT for desktop app"
 		}
 	},
 	"pages": {
 		"/": "Landing — login CTA",
-		"/login": "OAuth provider selection (Google, Kakao)",
+		"/login": "OAuth provider selection (Google, Discord)",
 		"/dashboard": "Credit balance, usage history, account info",
 		"/settings": "Profile, API key management",
 		"/callback": "Desktop app deep link redirect (cafelua://auth?code=<token>)"

@@ -15,7 +15,7 @@
 - [x] work-logs 디렉토리 생성
 
 ### 예정
-- [ ] NextAuth.js v5 설정 (Google + Kakao OAuth)
+- [ ] NextAuth.js v5 설정 (Google + Discord OAuth)
 - [ ] Gateway 클라이언트 라이브러리 (`src/lib/gateway-client.ts`)
 - [ ] 페이지 구현: Landing, Login, Dashboard, Settings, Callback
 - [ ] Vercel 배포 설정

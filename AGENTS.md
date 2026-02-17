@@ -21,7 +21,7 @@ When updating one side, update the other.
 - **Framework**: Next.js 16 (App Router, TypeScript)
 - **Styling**: Tailwind CSS 4
 - **Package manager**: npm
-- **Auth**: NextAuth.js v5 (Google + Kakao OAuth)
+- **Auth**: NextAuth.js v5 (Google + Discord OAuth)
 - **Backend**: Next.js API Routes (BFF) → any-llm gateway
 - **Deployment**: Vercel
 - **Test**: Vitest + React Testing Library, integration-first TDD

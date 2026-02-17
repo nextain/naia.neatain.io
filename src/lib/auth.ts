@@ -1,10 +1,10 @@
 import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
-import Kakao from "next-auth/providers/kakao";
+import Discord from "next-auth/providers/discord";
 import { getOrCreateUser, createVirtualKey } from "./gateway-client";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
-  providers: [Google, Kakao],
+  providers: [Google, Discord],
   pages: {
     signIn: "/login",
   },

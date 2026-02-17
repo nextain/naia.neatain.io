@@ -26,14 +26,14 @@ export default function LoginPage() {
         <form
           action={async () => {
             "use server";
-            await signIn("kakao", { redirectTo: "/dashboard" });
+            await signIn("discord", { redirectTo: "/dashboard" });
           }}
         >
           <button
             type="submit"
             className="w-full rounded-lg border border-foreground/20 px-4 py-3 font-medium hover:bg-foreground/5 transition"
           >
-            Kakao로 로그인
+            Discord로 로그인
           </button>
         </form>
       </div>

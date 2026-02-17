@@ -23,7 +23,7 @@
 - 프로토콜: OpenAI-compatible REST (any-llm gateway)
 
 ### 인증 (Auth)
-- 프로바이더: Google OAuth, Kakao OAuth
+- 프로바이더: Google OAuth, Discord OAuth
 - 라이브러리: NextAuth.js v5
 - 토큰 플로우: OAuth → NextAuth 세션 → gateway virtual key → 데스크톱 앱용 JWT
 
@@ -32,7 +32,7 @@
 | 경로 | 설명 |
 |------|------|
 | `/` | 랜딩 — 로그인 CTA |
-| `/login` | OAuth 프로바이더 선택 (Google, Kakao) |
+| `/login` | OAuth 프로바이더 선택 (Google, Discord) |
 | `/dashboard` | 크레딧 잔액, 사용 내역, 계정 정보 |
 | `/settings` | 프로필, API 키 관리 |
 | `/callback` | 데스크톱 앱 딥링크 리다이렉트 (`cafelua://auth?code=<token>`) |
