@@ -4,7 +4,7 @@ const ko: Dictionary = {
   locale: "ko",
   meta: {
     title: "Cafelua Lab",
-    description: "Cafelua OS 서비스 포털 — Alpha와 함께하는 개인 AI 운영체제",
+    description: "Cafelua — 손쉬운 나만의 AI. 3D 아바타 Alpha와 대화하고, 음성으로 소통하세요.",
   },
   common: {
     loading: "로딩 중...",
@@ -57,43 +57,43 @@ const ko: Dictionary = {
     hero: {
       title: "Where Technology\nmeets Emotion",
       subtitle:
-        "USB로 부팅하면 Alpha가 맞이하는 개인 AI 운영체제. VRM 아바타, Gemini 기반 음성 대화, 도구 실행을 하나의 데스크톱에서 제공합니다.",
+        "3D AI 아바타 Alpha가 당신의 데스크톱에서 함께합니다. 대화, 음성, 도구 실행까지 — 손쉬운 나만의 AI.",
       cta: "무료로 시작하기",
       secondaryCta: "다운로드",
     },
     features: {
-      title: "Cafelua OS가 특별한 이유",
+      title: "Cafelua가 특별한 이유",
       subtitle: "기술과 감성이 만나는 새로운 AI 경험",
       items: {
         companion: {
-          title: "AI 컴패니언 Alpha",
+          title: "AI 아바타 Alpha",
           description:
-            "화면 속에서 살아 움직이는 VRM 아바타. 단순 챗봇이 아니라 항상 함께하는 동반자입니다.",
+            "감정을 표현하는 3D VRM 아바타가 데스크톱에서 함께합니다. 대화에 따라 표정이 바뀌고, 눈을 맞추며 반응합니다.",
         },
         multiProvider: {
-          title: "Gemini 최적화",
+          title: "Gemini · Grok · Claude",
           description:
-            "현재 Gemini 기반으로 안정적으로 서비스하며, 계정/크레딧/로그를 단일 흐름으로 제공합니다.",
+            "3종 LLM을 하나의 계정으로. 크레딧 하나로 모델을 자유롭게 전환하며 사용하세요.",
         },
         voice: {
           title: "음성 대화",
           description:
-            "TTS/STT 기반 자연스러운 음성 상호작용. 말로 요청하고, 음성으로 응답받습니다.",
+            "말로 요청하고, 음성으로 응답받으세요. Alpha가 립싱크와 함께 자연스럽게 대답합니다.",
         },
         themes: {
-          title: "8가지 테마",
+          title: "8가지 감성 테마",
           description:
-            "카페, 숲, 바다, 우주 등 감성 테마 전환. 작업 분위기를 상황에 맞게 바꿀 수 있습니다.",
+            "Espresso, Midnight, Ocean, Forest, Rose, Latte, Sakura, Cloud — 분위기에 맞는 테마를 골라보세요.",
         },
         tools: {
           title: "도구 실행",
           description:
-            "파일/터미널/검색 등 실제 작업 도구를 AI가 호출해 실행합니다.",
+            "파일 편집, 터미널 명령, 웹 검색까지. Alpha가 직접 도구를 호출해 작업을 수행합니다.",
         },
         desktop: {
-          title: "데스크톱 OS",
+          title: "앱 & OS",
           description:
-            "Bazzite 기반 배포형 AI OS. 설치보다 빠르게 USB 부팅으로 바로 시작할 수 있습니다.",
+            "데스크톱 앱으로 바로 설치하거나, 전용 OS 이미지로 AI 전용 환경을 구축할 수 있습니다.",
         },
       },
     },

@@ -4,7 +4,7 @@ const en: Dictionary = {
   locale: "en",
   meta: {
     title: "Cafelua Lab",
-    description: "Cafelua OS Service Portal — Personal AI operating system with Alpha",
+    description: "Cafelua — Your personal AI, made easy. Chat, talk, and work with 3D avatar Alpha.",
   },
   common: {
     loading: "Loading...",
@@ -57,43 +57,43 @@ const en: Dictionary = {
     hero: {
       title: "Where Technology\nmeets Emotion",
       subtitle:
-        "A personal AI operating system where Alpha welcomes you at boot. VRM avatar, Gemini-first voice interaction, and real tool execution in one desktop.",
+        "Meet Alpha, your 3D AI avatar on the desktop. Chat, talk, execute tools — your personal AI, made easy.",
       cta: "Get Started Free",
       secondaryCta: "Download",
     },
     features: {
-      title: "What makes Cafelua OS special",
+      title: "What makes Cafelua special",
       subtitle: "A new AI experience where technology meets emotion",
       items: {
         companion: {
-          title: "AI Companion Alpha",
+          title: "AI Avatar Alpha",
           description:
-            "A living VRM avatar in your workspace. More than chat, Alpha stays with your daily workflow.",
+            "A 3D VRM avatar with emotions, right on your desktop. Alpha reacts to conversations with facial expressions and eye contact.",
         },
         multiProvider: {
-          title: "Gemini-first Service",
+          title: "Gemini · Grok · Claude",
           description:
-            "We currently focus on Gemini for stable service, with unified account, credits, and logs.",
+            "Three LLM providers under one account. Switch models freely with a single credit pool.",
         },
         voice: {
           title: "Voice Conversations",
           description:
-            "Natural voice interaction with TTS/STT. Ask by voice, get spoken responses.",
+            "Ask by voice, get spoken responses. Alpha answers naturally with lip-synced animation.",
         },
         themes: {
-          title: "8 Themes",
+          title: "8 Mood Themes",
           description:
-            "Switch between cafe, forest, ocean, space, and more to match your mood.",
+            "Espresso, Midnight, Ocean, Forest, Rose, Latte, Sakura, Cloud — pick a theme that matches your vibe.",
         },
         tools: {
           title: "Tool Execution",
           description:
-            "Alpha can trigger file, terminal, and search tools to complete practical tasks.",
+            "File editing, terminal commands, web search. Alpha calls tools directly to get work done.",
         },
         desktop: {
-          title: "Desktop OS",
+          title: "App & OS",
           description:
-            "A deployable AI OS on top of Bazzite. Boot from USB and start quickly.",
+            "Install as a desktop app instantly, or build a dedicated AI environment with the OS image.",
         },
       },
     },
