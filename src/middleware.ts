@@ -68,9 +68,11 @@ export default auth((request) => {
 
   // Already logged in trying to access login
   if (pathAfterLocale[0] === "login" && request.auth) {
-    return NextResponse.redirect(
-      new URL(`/${urlLocale}/dashboard`, request.url)
-    );
+    const redirect = request.nextUrl.searchParams.get("redirect");
+    const target = redirect === "desktop"
+      ? `/${urlLocale}/callback?source=desktop`
+      : `/${urlLocale}/dashboard`;
+    return NextResponse.redirect(new URL(target, request.url));
   }
 
   return NextResponse.next();

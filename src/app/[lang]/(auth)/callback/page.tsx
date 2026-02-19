@@ -12,6 +12,7 @@ function CallbackContent() {
   const dict = useDictionary();
   const lang = dict.locale;
   const source = searchParams.get("source");
+  const state = searchParams.get("state");
   const [key, setKey] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
@@ -19,20 +20,26 @@ function CallbackContent() {
   useEffect(() => {
     async function issueKey() {
       try {
-        const res = await fetch("/api/gateway/desktop-key", { method: "POST" });
+        const res = await fetch("/api/gateway/desktop-key", {
+          method: "POST",
+        });
         if (!res.ok) throw new Error(dict.common.error);
         const data = await res.json();
         setKey(data.key);
 
         if (source !== "web") {
-          window.location.href = `cafelua://auth?key=${encodeURIComponent(data.key)}`;
+          // Include state param for deep link verification
+          const deepLink = state
+            ? `cafelua://auth?key=${encodeURIComponent(data.key)}&state=${encodeURIComponent(state)}`
+            : `cafelua://auth?key=${encodeURIComponent(data.key)}`;
+          window.location.href = deepLink;
         }
       } catch (e) {
         setError(e instanceof Error ? e.message : dict.common.error);
       }
     }
     issueKey();
-  }, [source, dict.common.error]);
+  }, [source, state, dict.common.error]);
 
   if (error) {
     return (
@@ -93,6 +100,10 @@ function CallbackContent() {
     );
   }
 
+  const deepLinkUrl = state
+    ? `cafelua://auth?key=${encodeURIComponent(key)}&state=${encodeURIComponent(state)}`
+    : `cafelua://auth?key=${encodeURIComponent(key)}`;
+
   return (
     <Card className="w-full max-w-sm">
       <CardContent className="pt-6 text-center space-y-4">
@@ -100,7 +111,7 @@ function CallbackContent() {
         <p className="text-sm text-muted-foreground">
           {dict.auth.callbackManualPrefix}
           <a
-            href={`cafelua://auth?key=${encodeURIComponent(key)}`}
+            href={deepLinkUrl}
             className="underline text-primary"
           >
             {dict.auth.callbackManualLink}

@@ -240,6 +240,48 @@ export async function getBudget(budgetId: string): Promise<GatewayBudget> {
   );
 }
 
+// --- Billing (subscription management via gateway) ---
+
+interface BillingResponse {
+  success: boolean;
+  detail: string | null;
+}
+
+export async function upgradeSubscription(
+  userId: string,
+  planName: string,
+): Promise<BillingResponse> {
+  return gwJson<BillingResponse>("/v1/billing/subscription", {
+    method: "POST",
+    body: JSON.stringify({ user_id: userId, plan_name: planName }),
+  });
+}
+
+export async function cancelSubscription(
+  userId: string,
+): Promise<BillingResponse> {
+  return gwJson<BillingResponse>(
+    `/v1/billing/subscription/${encodeURIComponent(userId)}`,
+    {
+      method: "PATCH",
+      body: JSON.stringify({ status: "CANCELLED" }),
+    },
+  );
+}
+
+export async function topupCredits(
+  userId: string,
+  amount: number,
+  source = "MANUAL",
+): Promise<BillingResponse> {
+  return gwJson<BillingResponse>("/v1/billing/topup", {
+    method: "POST",
+    body: JSON.stringify({ user_id: userId, amount, source }),
+  });
+}
+
+// --- Pricing ---
+
 export async function getModelPricing(): Promise<GatewayPricing[]> {
   const res = await gw("/v1/pricing");
   if (!res.ok) {

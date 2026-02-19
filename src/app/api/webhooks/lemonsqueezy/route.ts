@@ -1,11 +1,24 @@
 import { NextResponse } from "next/server";
 import { verifyLemonSignature } from "@/lib/lemonsqueezy";
+import {
+  upgradeSubscription,
+  cancelSubscription,
+} from "@/lib/gateway-client";
 
 const HANDLED_EVENTS = new Set([
   "subscription_created",
   "subscription_updated",
   "subscription_cancelled",
 ]);
+
+/** Map LemonSqueezy variant IDs to gateway plan names. */
+function resolvePlanName(variantId: string | undefined): string {
+  const mapping: Record<string, string> = {
+    [process.env.LEMON_VARIANT_FREE ?? ""]: "FREE",
+    [process.env.LEMON_VARIANT_BASIC ?? ""]: "BASIC",
+  };
+  return mapping[variantId ?? ""] ?? "FREE";
+}
 
 export async function POST(request: Request) {
   const secret = process.env.LEMONSQUEEZY_WEBHOOK_SECRET;
@@ -34,7 +47,31 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true, ignored: eventName });
   }
 
-  // TODO: sync subscription state into gateway user plan (FREE/BASIC)
-  // Expected source user id: payload.meta?.custom_data?.user_id
+  const userId = payload.meta?.custom_data?.user_id;
+  if (!userId) {
+    return NextResponse.json({ error: "Missing user_id in custom_data" }, { status: 400 });
+  }
+
+  const variantId = payload.data?.attributes?.variant_id?.toString();
+
+  try {
+    switch (eventName) {
+      case "subscription_created":
+      case "subscription_updated": {
+        const planName = resolvePlanName(variantId);
+        await upgradeSubscription(userId, planName);
+        break;
+      }
+      case "subscription_cancelled": {
+        await cancelSubscription(userId);
+        break;
+      }
+    }
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error(`[webhook] Failed to process ${eventName} for ${userId}: ${message}`);
+    return NextResponse.json({ error: "Gateway sync failed" }, { status: 502 });
+  }
+
   return NextResponse.json({ ok: true, event: eventName });
 }

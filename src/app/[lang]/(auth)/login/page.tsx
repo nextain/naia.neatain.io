@@ -8,12 +8,19 @@ import { Button } from "@/components/ui/button";
 
 export default async function LoginPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ lang: string }>;
+  searchParams: Promise<{ redirect?: string }>;
 }) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   const dict = await getDictionary(lang as Locale);
+  const { redirect } = await searchParams;
+
+  const redirectTo = redirect === "desktop"
+    ? `/${lang}/callback?source=desktop`
+    : `/${lang}/dashboard`;
 
   return (
     <Card className="w-full max-w-sm">
@@ -25,7 +32,7 @@ export default async function LoginPage({
         <form
           action={async () => {
             "use server";
-            await signIn("google", { redirectTo: `/${lang}/dashboard` });
+            await signIn("google", { redirectTo });
           }}
         >
           <Button type="submit" variant="outline" className="w-full">
@@ -35,7 +42,7 @@ export default async function LoginPage({
         <form
           action={async () => {
             "use server";
-            await signIn("discord", { redirectTo: `/${lang}/dashboard` });
+            await signIn("discord", { redirectTo });
           }}
         >
           <Button type="submit" variant="outline" className="w-full">
