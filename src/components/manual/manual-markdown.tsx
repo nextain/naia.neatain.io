@@ -1,6 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
+import { Children, isValidElement } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+
+/** If any child is a block element (figure), render as div instead of p. */
+function SmartParagraph({ children }: { children?: React.ReactNode }) {
+  const hasBlock = Children.toArray(children).some(
+    (child) => isValidElement(child) && child.type === "figure",
+  );
+  if (hasBlock) return <div className="my-4">{children}</div>;
+  return <p>{children}</p>;
+}
 
 interface ManualMarkdownProps {
   markdown: string;
@@ -91,6 +101,7 @@ export function ManualMarkdown({ markdown, lang }: ManualMarkdownProps) {
               {children}
             </blockquote>
           ),
+          p: SmartParagraph,
           strong: ({ children }) => (
             <strong className="font-semibold text-foreground">{children}</strong>
           ),
