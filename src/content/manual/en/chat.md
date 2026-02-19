@@ -52,8 +52,6 @@ When Alpha uses tools, the chat area shows:
 
 For high-security tool executions:
 
-![Approval modal](chat-approval.png)
-
 | Button | Description |
 |--------|-------------|
 | **Allow Once** | Permit this single execution |

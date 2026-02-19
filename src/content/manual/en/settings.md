@@ -51,8 +51,6 @@ Manage Lab integration.
 
 ### When Connected
 
-![Lab account connected](settings-lab.png)
-
 - User ID displayed
 - **Credit balance** shown (real-time query)
 - **Dashboard** button: Open Lab dashboard in browser
@@ -91,8 +89,6 @@ Click "User Manual" to open this page in the browser.
 
 ## Tools
 
-![Tools settings](settings-tools.png)
-
 - **Enable Tools**: Master ON/OFF for tool features
 - **Gateway URL / Gateway Token**: Automatically managed in normal user environments, so manual input is not required
   - Only advanced users running a self-hosted Gateway need to check/edit these values
@@ -106,8 +102,6 @@ Manage facts Alpha learned from conversations.
 - **Delete** button to remove unnecessary facts
 - Saved facts affect response personalization in later chats
 - Deleting many facts can reduce personalization quality
-
-![Memory settings](settings-memory.png)
 
 ## Save & Reset
 

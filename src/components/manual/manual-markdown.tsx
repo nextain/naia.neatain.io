@@ -66,8 +66,8 @@ export function ManualMarkdown({ markdown, lang }: ManualMarkdownProps) {
               : `/manual/${lang}/${srcStr}`;
             return (
               <figure
-                className="my-6 md:float-right md:my-2 md:ml-6"
-                style={{ width: "min(400px, 100%)" }}
+                className="my-6 mx-auto"
+                style={{ width: "min(320px, 100%)" }}
               >
                 <img
                   src={imgSrc}

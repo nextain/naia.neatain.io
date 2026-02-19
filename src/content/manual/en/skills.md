@@ -52,11 +52,93 @@ Recommended flow:
 4. Attach a cron schedule as the recurring trigger
 5. Add retry/notification policies for failures
 
-Messenger integration allows success/failure status and summary outputs to be delivered to your team channel immediately.
-- The messenger integration details below are part of the **future roadmap**.
-- Using Google/Discord sign-in data to suggest messenger targets is a valid design option
-- The default flow is still manual integration, and actual setup usually requires webhook or bot-token configuration
-- Telegram can be kept as an optional advanced channel because bot/token setup is more involved
+Messenger integration delivers success/failure status and summaries to your team channel immediately.
+
+> The messenger integration below is part of the **future roadmap**. The current flow is manual, requiring webhook or bot-token configuration.
+
+### Messenger Integration Examples
+
+**Slack (Recommended)**
+
+`skill.json` configuration:
+```json
+{
+  "name": "notify_slack",
+  "type": "command",
+  "command": "curl -X POST -H 'Content-Type: application/json' -d '{\"text\":\"${MESSAGE}\"}' $SLACK_WEBHOOK_URL"
+}
+```
+
+**Discord**
+
+Discord webhooks use a similar structure:
+```json
+{
+  "name": "notify_discord",
+  "type": "command",
+  "command": "curl -X POST -H 'Content-Type: application/json' -d '{\"content\":\"${MESSAGE}\"}' $DISCORD_WEBHOOK_URL"
+}
+```
+
+**E2E Test Example (Vitest)**
+
+Verify notifications are sent correctly with automated tests:
+
+```typescript
+import { describe, it, expect, vi } from "vitest";
+import { skillRegistry } from "../skills/registry";
+
+describe("Messenger notification skill E2E", () => {
+  it("sends a message via Slack webhook", async () => {
+    const fetchSpy = vi.spyOn(globalThis, "fetch")
+      .mockResolvedValueOnce(new Response("ok", { status: 200 }));
+
+    const result = await skillRegistry.execute(
+      "notify_slack",
+      { message: "Build success: v1.2.0 deployed" },
+    );
+
+    expect(result.success).toBe(true);
+    expect(fetchSpy).toHaveBeenCalledWith(
+      expect.stringContaining("hooks.slack.com"),
+      expect.objectContaining({
+        method: "POST",
+        body: expect.stringContaining("Build success"),
+      }),
+    );
+
+    fetchSpy.mockRestore();
+  });
+
+  it("returns error on webhook failure", async () => {
+    const fetchSpy = vi.spyOn(globalThis, "fetch")
+      .mockResolvedValueOnce(new Response("error", { status: 500 }));
+
+    const result = await skillRegistry.execute(
+      "notify_slack",
+      { message: "Test message" },
+    );
+
+    expect(result.success).toBe(false);
+    expect(result.error).toContain("500");
+
+    fetchSpy.mockRestore();
+  });
+});
+```
+
+**cron + Notification Integration Example**
+
+```bash
+# crontab -e
+# Daily 9 AM: summarize work logs → Slack notification
+0 9 * * * openclaw run daily-summary --notify slack
+
+# Hourly: health check → notify only on errors
+0 * * * * openclaw run health-check --notify discord --on-error-only
+```
+
+- Telegram is offered as an **advanced option** due to its longer bot/token setup process
 
 ## Skill Cards
 

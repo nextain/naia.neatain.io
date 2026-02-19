@@ -53,10 +53,93 @@ Gateway를 통해 추가된 스킬로, 켜고 끌 수 있습니다:
 5. 실패 시 재시도/알림 정책을 함께 설정
 
 메신저 연동을 해두면 작업 성공/실패, 요약 결과를 팀 채널로 즉시 받을 수 있습니다.
-- 아래 메신저 연동 내용은 **향후 계획(로드맵)** 기준입니다.
-- Google/Discord 로그인 정보를 기준으로 메신저 연결 대상을 **자동 제안**하는 설계는 가능합니다
-- 현재 기본 흐름은 수동 연동이며, 실제 연결에는 보통 웹훅/봇 토큰 설정이 필요합니다
-- Telegram은 봇 생성/토큰 발급 절차가 길어 선택 옵션으로 두는 것을 권장합니다
+
+> 아래 메신저 연동은 **향후 계획(로드맵)** 기준입니다. 현재는 수동 연동이며, 실제 연결에는 웹훅/봇 토큰 설정이 필요합니다.
+
+### 메신저별 연동 예시
+
+**Slack (권장)**
+
+`skill.json` 설정:
+```json
+{
+  "name": "notify_slack",
+  "type": "command",
+  "command": "curl -X POST -H 'Content-Type: application/json' -d '{\"text\":\"${MESSAGE}\"}' $SLACK_WEBHOOK_URL"
+}
+```
+
+**Discord**
+
+Discord 웹훅은 Slack과 유사한 구조입니다:
+```json
+{
+  "name": "notify_discord",
+  "type": "command",
+  "command": "curl -X POST -H 'Content-Type: application/json' -d '{\"content\":\"${MESSAGE}\"}' $DISCORD_WEBHOOK_URL"
+}
+```
+
+**E2E 테스트 예시 (Vitest)**
+
+실제 알림이 전송되는지 자동화 테스트로 검증할 수 있습니다:
+
+```typescript
+import { describe, it, expect, vi } from "vitest";
+import { skillRegistry } from "../skills/registry";
+
+describe("메신저 알림 스킬 E2E", () => {
+  it("Slack 웹훅으로 메시지를 전송한다", async () => {
+    // mock fetch로 Slack API 호출 검증
+    const fetchSpy = vi.spyOn(globalThis, "fetch")
+      .mockResolvedValueOnce(new Response("ok", { status: 200 }));
+
+    const result = await skillRegistry.execute(
+      "notify_slack",
+      { message: "빌드 성공: v1.2.0 배포 완료" },
+    );
+
+    expect(result.success).toBe(true);
+    expect(fetchSpy).toHaveBeenCalledWith(
+      expect.stringContaining("hooks.slack.com"),
+      expect.objectContaining({
+        method: "POST",
+        body: expect.stringContaining("빌드 성공"),
+      }),
+    );
+
+    fetchSpy.mockRestore();
+  });
+
+  it("웹훅 실패 시 에러를 반환한다", async () => {
+    const fetchSpy = vi.spyOn(globalThis, "fetch")
+      .mockResolvedValueOnce(new Response("error", { status: 500 }));
+
+    const result = await skillRegistry.execute(
+      "notify_slack",
+      { message: "테스트 메시지" },
+    );
+
+    expect(result.success).toBe(false);
+    expect(result.error).toContain("500");
+
+    fetchSpy.mockRestore();
+  });
+});
+```
+
+**cron + 알림 통합 흐름 예시**
+
+```bash
+# crontab -e
+# 매일 오전 9시: 작업 로그 요약 → Slack 알림
+0 9 * * * openclaw run daily-summary --notify slack
+
+# 매시간: 서버 상태 점검 → 이상 시만 알림
+0 * * * * openclaw run health-check --notify discord --on-error-only
+```
+
+- Telegram은 봇 생성/토큰 발급 절차가 길어 **고급 옵션**으로 제공됩니다
 
 ## 스킬 카드
 
