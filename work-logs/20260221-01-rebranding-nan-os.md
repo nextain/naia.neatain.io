@@ -1,7 +1,7 @@
 # nan.nextain.io (Nextain Lab) 리브랜딩
 
 - **날짜**: 2026-02-21
-- **목표**: 기존 Cafelua Lab 서비스를 Nextain의 NaN OS Lab으로 컨셉 일괄 개편.
+- **목표**: 기존 Cafelua Lab 서비스를 Nextain의 NaN OS으로 컨셉 일괄 개편.
 
 ## 주요 작업 내역
 - **텍스트 및 다국어 지원**: `src/i18n/dictionaries`의 모든 `Cafelua` 관련 텍스트를 `NaN OS` 및 `Nextain`으로 교체. `Alpha`를 `Nan`으로 교체.

@@ -41,7 +41,7 @@ AI 아바타의 성격, 말투, 이름을 자유 텍스트로 커스터마이즈
 
 ![페르소나 설정](settings-persona.png)
 
-## NaN OS Lab 계정
+## NaN OS 계정
 
 Lab과의 연동을 관리합니다.
 

@@ -41,7 +41,7 @@ Customize AI 아바타's personality, speech style, and name in free text. Emoti
 
 ![Persona settings](settings-persona.png)
 
-## NaN OS Lab Account
+## NaN OS Account
 
 Manage Lab integration.
 

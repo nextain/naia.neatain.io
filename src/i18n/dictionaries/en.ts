@@ -3,7 +3,7 @@ import type { Dictionary } from "./types";
 const en: Dictionary = {
   locale: "en",
   meta: {
-    title: "NaN OS Lab",
+    title: "NaN OS",
     description: "NaN OS — Your personal AI, made easy. Chat, talk, and work with 3D avatar AI 아바타.",
   },
   common: {
@@ -33,7 +33,7 @@ const en: Dictionary = {
     manual: "Manual",
   },
   footer: {
-    brand: "NaN OS Lab",
+    brand: "NaN OS",
     tagline: "Where Technology meets Emotion",
     links: {
       privacy: "Privacy Policy",
@@ -282,7 +282,7 @@ const en: Dictionary = {
       diagnostics: "Diagnostics",
       settings: "Settings",
       tools: "Tool Details",
-      lab: "NaN OS Lab",
+      lab: "NaN OS",
       troubleshooting: "Troubleshooting",
     },
   },
