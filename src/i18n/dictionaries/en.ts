@@ -4,7 +4,7 @@ const en: Dictionary = {
   locale: "en",
   meta: {
     title: "Cafelua Lab",
-    description: "Cafelua — Your personal AI, made easy. Chat, talk, and work with 3D avatar Alpha.",
+    description: "Cafelua — Your personal AI, made easy. Chat, talk, and work with 3D avatar AI 아바타.",
   },
   common: {
     loading: "Loading...",
@@ -67,9 +67,9 @@ const en: Dictionary = {
       subtitle: "Experience the power of AI agents — no coding required",
       items: {
         companion: {
-          title: "AI Avatar Alpha",
+          title: "AI Avatar AI 아바타",
           description:
-            "A 3D avatar with emotions, right on your desktop. Alpha reacts to conversations with facial expressions and eye contact.",
+            "A 3D avatar with emotions, right on your desktop. AI 아바타 reacts to conversations with facial expressions and eye contact.",
         },
         multiProvider: {
           title: "Gemini · Grok · Claude",
@@ -79,12 +79,12 @@ const en: Dictionary = {
         voice: {
           title: "Voice Conversations",
           description:
-            "Ask by voice, get spoken responses. Alpha answers naturally with lip-synced animation.",
+            "Ask by voice, get spoken responses. AI 아바타 answers naturally with lip-synced animation.",
         },
         tools: {
           title: "Tool Execution",
           description:
-            "File editing, terminal commands, web search. Alpha calls tools directly to get work done.",
+            "File editing, terminal commands, web search. AI 아바타 calls tools directly to get work done.",
         },
         desktop: {
           title: "One-click Install & OS",

@@ -22,7 +22,7 @@ The bottom panel has 8 tabs:
 
 | Tab | Description |
 |-----|-------------|
-| Chat | Conversation with Alpha |
+| Chat | Conversation with AI 아바타 |
 | History | Previous conversations |
 | Progress | Tool execution/error monitoring |
 | Skills | Available skills (tools) list |

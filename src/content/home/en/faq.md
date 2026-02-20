@@ -1,5 +1,5 @@
 ## What is Cafelua OS?
-Cafelua OS is a personal AI operating system where Alpha lives in your desktop. It goes beyond chat by combining execution, automation, and system-level interaction.
+Cafelua OS is a personal AI operating system where AI 아바타 lives in your desktop. It goes beyond chat by combining execution, automation, and system-level interaction.
 
 ## How do credits work?
 Credits are deducted based on token usage and model pricing per request. The FREE plan includes a signup bonus and monthly baseline refill.

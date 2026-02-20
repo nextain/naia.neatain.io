@@ -1,4 +1,4 @@
-The main conversation screen with Alpha.
+The main conversation screen with AI 아바타.
 
 ## Text Chat
 
@@ -6,7 +6,7 @@ The main conversation screen with Alpha.
 
 1. Type a message in the input field at the bottom
 2. Press **Enter** or click the **Send button**
-3. Alpha generates a response (streams in real-time)
+3. AI 아바타 generates a response (streams in real-time)
 4. Use Shift+Enter for line breaks
 
 ## Voice Chat
@@ -18,7 +18,7 @@ The main conversation screen with Alpha.
 
 ## Voice Response (TTS)
 
-- Alpha's responses are automatically played as audio
+- AI 아바타's responses are automatically played as audio
 - Can be toggled off in Settings
 - Avatar performs lip-sync during playback
 
@@ -40,7 +40,7 @@ The main conversation screen with Alpha.
 
 ## Tool Execution Display
 
-When Alpha uses tools, the chat area shows:
+When AI 아바타 uses tools, the chat area shows:
 
 ![Tool execution display](chat-tool.png)
 

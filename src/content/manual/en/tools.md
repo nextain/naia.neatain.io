@@ -1,4 +1,4 @@
-When tools are enabled, Alpha can perform various tasks directly.
+When tools are enabled, AI 아바타 can perform various tasks directly.
 
 ## Available Tools
 

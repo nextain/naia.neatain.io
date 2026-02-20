@@ -4,7 +4,7 @@ const ko: Dictionary = {
   locale: "ko",
   meta: {
     title: "Cafelua Lab",
-    description: "Cafelua — 손쉬운 나만의 AI. 3D 아바타 Alpha와 대화하고, 음성으로 소통하세요.",
+    description: "Cafelua — 손쉬운 나만의 AI. 3D 아바타 AI 아바타와 대화하고, 음성으로 소통하세요.",
   },
   common: {
     loading: "로딩 중...",
@@ -67,7 +67,7 @@ const ko: Dictionary = {
       subtitle: "개발자가 아니어도 AI 에이전트를 경험할 수 있습니다",
       items: {
         companion: {
-          title: "AI 아바타 Alpha",
+          title: "AI 아바타",
           description:
             "감정을 표현하는 3D 아바타가 데스크톱에서 함께합니다. 대화에 따라 표정이 바뀌고, 눈을 맞추며 반응합니다.",
         },
@@ -79,12 +79,12 @@ const ko: Dictionary = {
         voice: {
           title: "음성 대화",
           description:
-            "말로 요청하고, 음성으로 응답받으세요. Alpha가 립싱크와 함께 자연스럽게 대답합니다.",
+            "말로 요청하고, 음성으로 응답받으세요. AI 아바타가 립싱크와 함께 자연스럽게 대답합니다.",
         },
         tools: {
           title: "도구 실행",
           description:
-            "파일 편집, 터미널 명령, 웹 검색까지. Alpha가 직접 도구를 호출해 작업을 수행합니다.",
+            "파일 편집, 터미널 명령, 웹 검색까지. AI 아바타가 직접 도구를 호출해 작업을 수행합니다.",
         },
         desktop: {
           title: "원클릭 설치 & 전용 OS",

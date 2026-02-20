@@ -41,7 +41,7 @@ Click a color swatch for instant preview.
 
 ## Persona
 
-Customize Alpha's personality, speech style, and name in free text. Emotion tags are added automatically.
+Customize AI 아바타's personality, speech style, and name in free text. Emotion tags are added automatically.
 
 ![Persona settings](settings-persona.png)
 
@@ -111,7 +111,7 @@ Click "User Manual" to open this page in the browser.
 
 ## Memory (Facts)
 
-Manage facts Alpha learned from conversations.
+Manage facts AI 아바타 learned from conversations.
 - Each fact shows a **key** and **value**
 - **Delete** button to remove unnecessary facts
 - Saved facts affect response personalization in later chats

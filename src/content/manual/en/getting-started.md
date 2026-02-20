@@ -28,12 +28,12 @@ You can also enter an API key from providers like Google Gemini.
 After Lab login or API key entry, complete these steps:
 
 ### 1. Name Your AI
-Give Alpha any name you'd like (e.g., "Alpha", "Luna", "Cookie").
+Give AI 아바타 any name you'd like (e.g., "AI 아바타", "Luna", "Cookie").
 
 ![AI name input](onboarding-agent-name.png)
 
 ### 2. Your Name
-Enter what Alpha should call you.
+Enter what AI 아바타 should call you.
 
 ![Your name input](onboarding-user-name.png)
 

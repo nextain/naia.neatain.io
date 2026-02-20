@@ -28,12 +28,12 @@ Google Gemini 등 LLM 제공업체의 API 키를 직접 입력할 수도 있습�
 Lab 로그인 또는 API 키 입력 후, 다음 단계를 진행합니다:
 
 ### 1. AI 이름 짓기
-Alpha에게 원하는 이름을 지어주세요. (예: "알파", "루나", "쿠키")
+AI 아바타에게 원하는 이름을 지어주세요. (예: "AI 아바타", "루나", "쿠키")
 
 ![AI 이름 입력](onboarding-agent-name.png)
 
 ### 2. 내 이름 입력
-Alpha가 나를 부를 이름을 입력합니다.
+AI 아바타가 나를 부를 이름을 입력합니다.
 
 ![내 이름 입력](onboarding-user-name.png)
 

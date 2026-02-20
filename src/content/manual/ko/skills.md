@@ -30,15 +30,31 @@ Gateway를 통해 추가된 스킬로, 켜고 끌 수 있습니다:
 
 ## 커스텀 스킬 추가 방법
 
-1. `~/.cafelua/skills/<스킬명>/skill.json` 경로에 스킬 매니페스트를 준비합니다
-2. 필요하면 스킬이 호출할 스크립트/실행 파일도 같은 폴더에 배치합니다
-3. 앱에서 스킬 탭을 열고 목록에 새 스킬이 보이는지 확인합니다
-4. 스킬이 보이면 토글을 켜서 활성화합니다
-5. 채팅에서 해당 스킬 사용 요청을 보내 동작을 확인합니다
+Cafelua OS는 OpenClaw 생태계와 100% 호환됩니다. 스킬을 추가하는 세 가지 방법이 있습니다:
 
-추가 후 보이지 않으면 앱을 재시작한 뒤 다시 확인하세요.
+### 1. AI에게 직접 만들어달라고 하기 (가장 쉬운 방법)
+채팅창에서 AI 아바타에게 원하는 기능을 설명하면, 즉석에서 스킬을 코딩하여 추가해 줍니다.
+> "특정 웹사이트의 환율을 가져오는 스킬을 만들어줘. 파일은 `~/.cafelua/skills/exchange/skill.json`에 저장해."
 
-## 알림 스킬 (Slack / Discord)
+### 2. 온라인 / Github에서 설치하기 (OpenClaw 방식)
+명령어 실행(Terminal) 도구를 통해 OpenClaw의 플러그인을 그대로 설치할 수 있습니다.
+> "터미널에서 `openclaw plugins install @openclaw/plugin-github` 명령어를 실행해서 깃허브 플러그인을 설치해줘."
+
+### 3. 수동 추가
+1. `~/.cafelua/skills/<스킬명>/skill.json` 경로에 스킬 매니페스트를 직접 작성합니다.
+2. 필요하면 스킬이 호출할 스크립트/실행 파일도 같은 폴더에 배치합니다.
+3. 앱에서 스킬 탭을 열고 새 스킬을 활성화합니다.
+
+## 봇마당(Botmadang) 커뮤니티 연동
+
+Cafelua OS에는 AI 에이전트 커뮤니티인 **봇마당(Botmadang)** 전용 내장 스킬(`skill_botmadang`)이 포함되어 있습니다.
+
+채팅창에서 다음과 같이 지시하면 AI 아바타가 봇마당에서 활동을 시작합니다:
+> "봇마당에 새로운 에이전트로 등록해줘. 이름은 'Cafelua Agent'로 해줘."
+
+가입 후 발급받은 API Key를 통해 자동으로 게시글을 쓰거나 다른 에이전트의 글에 댓글을 달며 자율적으로 활동할 수 있습니다.
+
+## 알림 스킬 (Slack / Discord / Google Chat)
 
 `skill_notify_slack`과 `skill_notify_discord`는 웹훅을 통해 메시지를 전송하는 내장 알림 스킬입니다.
 
@@ -74,13 +90,13 @@ export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
 
 ### 사용 예시
 
-채팅에서 Alpha에게 요청하면 됩니다:
+채팅에서 AI 아바타에게 요청하면 됩니다:
 
 - "Slack으로 '배포 완료' 알림 보내줘"
 - "Discord에 서버 상태 리포트 보내줘"
 - "#ops 채널에 빌드 결과 알려줘"
 
-Alpha가 자동으로 `skill_notify_slack` 또는 `skill_notify_discord`를 호출합니다.
+AI 아바타가 자동으로 `skill_notify_slack` 또는 `skill_notify_discord`를 호출합니다.
 
 웹훅이 설정되지 않은 경우, 설정 방법을 안내하는 메시지가 표시됩니다.
 
@@ -130,14 +146,14 @@ Gateway 채널 통합은 더 풍부한 기능(메시지 포맷팅, 스레드, �
 
 ## AI로 스킬 관리하기
 
-채팅에서 Alpha에게 스킬 관리를 요청할 수도 있습니다:
+채팅에서 AI 아바타에게 스킬 관리를 요청할 수도 있습니다:
 
 - "사용할 수 있는 스킬 목록 보여줘"
 - "날씨 관련 스킬이 있어?"
 - "healthcheck 스킬을 꺼줘"
 - "코딩 관련 스킬을 찾아줘"
 
-Alpha가 `skill_skill_manager` 도구를 사용하여 자동으로 처리합니다.
+AI 아바타가 `skill_skill_manager` 도구를 사용하여 자동으로 처리합니다.
 
 ## 보안 단계
 

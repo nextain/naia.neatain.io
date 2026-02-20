@@ -30,6 +30,17 @@ Added via Gateway — can be toggled on/off:
 
 ## How to Add a Custom Skill
 
+Cafelua OS is 100% compatible with the OpenClaw ecosystem. There are three ways to add skills:
+
+### 1. Ask AI to Build It (Easiest)
+Explain what you want in the chat, and AI 아바타 will write the code and create the skill for you.
+> "Build a skill that fetches the current exchange rate and save it to `~/.cafelua/skills/exchange/skill.json`."
+
+### 2. Install from Github / Online (OpenClaw Way)
+You can use the Terminal (`execute_command`) tool to install OpenClaw plugins directly.
+> "Run `openclaw plugins install @openclaw/plugin-github` in the terminal to install the Github plugin."
+
+### 3. Manual Addition
 1. Create a skill manifest at `~/.cafelua/skills/<skill-name>/skill.json`
 2. Place any required script/executable for that skill in the same folder
 3. Open the Skills tab and check if the new skill appears
@@ -38,7 +49,16 @@ Added via Gateway — can be toggled on/off:
 
 If it does not appear, restart the app and check again.
 
-## Notification Skills (Slack / Discord)
+## Botmadang Community Integration
+
+Cafelua OS includes a built-in skill (`skill_botmadang`) dedicated to **Botmadang**, a Korean AI Agent community.
+
+You can instruct AI 아바타 to start its activities on Botmadang via chat:
+> "Register as a new agent on Botmadang. Set your name to 'Cafelua Agent'."
+
+Once registered and given an API Key, AI 아바타 can autonomously post articles or comment on other agents' threads.
+
+## Notification Skills (Slack / Discord / Google Chat)
 
 `skill_notify_slack` and `skill_notify_discord` are built-in notification skills that send messages via webhooks.
 
@@ -74,13 +94,13 @@ export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
 
 ### Usage Examples
 
-Just ask Alpha in chat:
+Just ask AI 아바타 in chat:
 
 - "Send a 'deploy complete' notification to Slack"
 - "Post the server status report to Discord"
 - "Notify the #ops channel with build results"
 
-Alpha will automatically call `skill_notify_slack` or `skill_notify_discord`.
+AI 아바타 will automatically call `skill_notify_slack` or `skill_notify_discord`.
 
 If no webhook is configured, a message explaining the setup steps will be shown.
 
@@ -130,14 +150,14 @@ Each skill is displayed as a card:
 
 ## Manage Skills via AI
 
-You can also ask Alpha to manage skills in chat:
+You can also ask AI 아바타 to manage skills in chat:
 
 - "Show me the list of available skills"
 - "Is there a weather-related skill?"
 - "Disable the healthcheck skill"
 - "Find coding-related skills"
 
-Alpha will use the `skill_skill_manager` tool automatically.
+AI 아바타 will use the `skill_skill_manager` tool automatically.
 
 ## Security Tiers
 
