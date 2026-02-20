@@ -9,7 +9,36 @@ export const metadata: Metadata = {
     default: "Cafelua Lab",
     template: "%s | Cafelua Lab",
   },
-  description: "Cafelua AI Service Portal — Your Personal AI Desktop OS",
+  description:
+    "Cafelua — Your Personal AI Desktop OS. Chat with 3D avatar AI, voice conversations, and multi-LLM support.",
+  keywords: [
+    "Cafelua",
+    "AI Desktop",
+    "AI Avatar",
+    "3D Avatar",
+    "Voice AI",
+    "LLM",
+    "Gemini",
+    "personal AI",
+    "desktop OS",
+  ],
+  metadataBase: new URL("https://lab.cafelua.com"),
+  openGraph: {
+    title: "Cafelua Lab — Where Technology meets Emotion",
+    description:
+      "Your personal AI desktop OS with 3D avatar, voice chat, and multi-LLM support. One-click install or dedicated Linux OS.",
+    url: "https://lab.cafelua.com",
+    siteName: "Cafelua Lab",
+    locale: "en_US",
+    alternateLocale: "ko_KR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cafelua Lab — Where Technology meets Emotion",
+    description:
+      "Your personal AI desktop OS with 3D avatar, voice chat, and multi-LLM support.",
+  },
 };
 
 export default function RootLayout({

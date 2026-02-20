@@ -1,0 +1,45 @@
+# Cafelua Lab
+
+> Your Personal AI Desktop OS — Where Technology meets Emotion
+
+Cafelua Lab (lab.cafelua.com) is the service portal for Cafelua OS, a personal AI desktop operating system.
+
+## What is Cafelua OS?
+
+Cafelua OS is a desktop application (and a standalone Linux OS) featuring:
+- **3D AI Avatar**: A fully animated 3D character named Alpha that lives on your desktop
+- **Voice Conversations**: Real-time voice chat with AI using text-to-speech and speech-to-text
+- **Multi-LLM Support**: Connect to Google Gemini, Anthropic Claude, xAI Grok, and more
+- **Agent System**: AI agents that can browse the web, manage files, and execute tasks
+- **Channel System**: Organized conversation channels for different topics
+
+## What does Cafelua Lab provide?
+
+The Lab portal (this site) provides:
+- **Account Management**: OAuth sign-in via Google and Discord
+- **API Credit System**: Purchase and manage credits for LLM API usage
+- **Usage Dashboard**: Monitor your AI usage with charts and detailed logs
+- **API Key Management**: Create and manage API keys for desktop app connection
+- **Desktop Integration**: Seamless connection between the web portal and desktop app
+
+## Public Pages
+
+- `/en` or `/ko` — Homepage (features, pricing, FAQ)
+- `/en/manual` or `/ko/manual` — User manual (14 sections)
+- `/en/terms` — Terms of Service
+- `/en/privacy` — Privacy Policy
+- `/en/refund` — Refund Policy
+- `/en/contact` — Contact
+
+## Technology
+
+- Built with Next.js (App Router), deployed on Vercel
+- Backend: any-llm gateway (FastAPI) for LLM proxy and credit management
+- Desktop app: Tauri 2 + React + Node.js agent
+- Languages: English and Korean (i18n)
+
+## Company
+
+Cafelua is developed by Caretive, a South Korean AI company.
+- Website: https://lab.cafelua.com
+- Parent: https://caretive.ai
