@@ -7,13 +7,15 @@ Browse and manage available skills (tools).
 ### Built-in Skills
 Embedded in the app — cannot be disabled:
 
-| Skill | Function |
-|-------|----------|
-| `skill_time` | Check current date/time |
-| `skill_memo` | Save/retrieve memos |
-| `skill_system_status` | Check system status |
-| `skill_weather` | Check weather |
-| `skill_skill_manager` | Manage skills: search, enable, disable |
+| Skill | Function | Security Tier |
+|-------|----------|---------------|
+| `skill_time` | Check current date/time | T0 |
+| `skill_memo` | Save/retrieve memos | T0 |
+| `skill_system_status` | Check system status | T0 |
+| `skill_weather` | Check weather | T0 |
+| `skill_notify_slack` | Send notifications via Slack webhook | T1 |
+| `skill_notify_discord` | Send notifications via Discord webhook | T1 |
+| `skill_skill_manager` | Manage skills: search, enable, disable | T0 |
 
 ### Custom Skills
 Added via Gateway — can be toggled on/off:
@@ -36,6 +38,58 @@ Added via Gateway — can be toggled on/off:
 
 If it does not appear, restart the app and check again.
 
+## Notification Skills (Slack / Discord)
+
+`skill_notify_slack` and `skill_notify_discord` are built-in notification skills that send messages via webhooks.
+
+### Webhook Setup
+
+To use notification skills, you need to configure a webhook URL. There are two methods:
+
+**Method 1: Environment Variables (Recommended)**
+
+```bash
+# Add to ~/.bashrc or ~/.zshrc
+export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/T.../B.../xxx"
+export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
+```
+
+**Method 2: config.json**
+
+```json
+// ~/.cafelua/config.json
+{
+  "notifications": {
+    "slack": {
+      "webhookUrl": "https://hooks.slack.com/services/T.../B.../xxx"
+    },
+    "discord": {
+      "webhookUrl": "https://discord.com/api/webhooks/123/abc"
+    }
+  }
+}
+```
+
+> Environment variables take priority over config.json.
+
+### Usage Examples
+
+Just ask Alpha in chat:
+
+- "Send a 'deploy complete' notification to Slack"
+- "Post the server status report to Discord"
+- "Notify the #ops channel with build results"
+
+Alpha will automatically call `skill_notify_slack` or `skill_notify_discord`.
+
+If no webhook is configured, a message explaining the setup steps will be shown.
+
+### OpenClaw Gateway Integration (Advanced)
+
+When an OpenClaw Gateway is connected, notification skills will first attempt to use the Gateway's `skills.invoke` RPC. If Gateway relay fails, the skill falls back to direct webhook delivery.
+
+Gateway channel integration provides richer features (message formatting, threads, mentions, etc.).
+
 ## Advanced Scenario: OpenClaw + cron Automation
 
 In team/personal automation setups, you can register skills in OpenClaw and trigger them on a schedule with cron.
@@ -47,98 +101,12 @@ Example scenarios:
 
 Recommended flow:
 1. Register the custom skill and validate it locally first
-2. Configure at least one messenger channel in OpenClaw (recommended: Slack/Discord)
+2. Configure notification skill webhooks to connect alert channels
 3. Add a skill invocation step in your OpenClaw task definition
 4. Attach a cron schedule as the recurring trigger
 5. Add retry/notification policies for failures
 
-Messenger integration delivers success/failure status and summaries to your team channel immediately.
-
-> The messenger integration below is part of the **future roadmap**. The current flow is manual, requiring webhook or bot-token configuration.
-
-### Messenger Integration Examples
-
-**Slack (Recommended)**
-
-`skill.json` configuration:
-```json
-{
-  "name": "notify_slack",
-  "type": "command",
-  "command": "curl -X POST -H 'Content-Type: application/json' -d '{\"text\":\"${MESSAGE}\"}' $SLACK_WEBHOOK_URL"
-}
-```
-
-**Discord**
-
-Discord webhooks use a similar structure:
-```json
-{
-  "name": "notify_discord",
-  "type": "command",
-  "command": "curl -X POST -H 'Content-Type: application/json' -d '{\"content\":\"${MESSAGE}\"}' $DISCORD_WEBHOOK_URL"
-}
-```
-
-**E2E Test Example (Vitest)**
-
-Verify notifications are sent correctly with automated tests:
-
-```typescript
-import { describe, it, expect, vi } from "vitest";
-import { skillRegistry } from "../skills/registry";
-
-describe("Messenger notification skill E2E", () => {
-  it("sends a message via Slack webhook", async () => {
-    const fetchSpy = vi.spyOn(globalThis, "fetch")
-      .mockResolvedValueOnce(new Response("ok", { status: 200 }));
-
-    const result = await skillRegistry.execute(
-      "notify_slack",
-      { message: "Build success: v1.2.0 deployed" },
-    );
-
-    expect(result.success).toBe(true);
-    expect(fetchSpy).toHaveBeenCalledWith(
-      expect.stringContaining("hooks.slack.com"),
-      expect.objectContaining({
-        method: "POST",
-        body: expect.stringContaining("Build success"),
-      }),
-    );
-
-    fetchSpy.mockRestore();
-  });
-
-  it("returns error on webhook failure", async () => {
-    const fetchSpy = vi.spyOn(globalThis, "fetch")
-      .mockResolvedValueOnce(new Response("error", { status: 500 }));
-
-    const result = await skillRegistry.execute(
-      "notify_slack",
-      { message: "Test message" },
-    );
-
-    expect(result.success).toBe(false);
-    expect(result.error).toContain("500");
-
-    fetchSpy.mockRestore();
-  });
-});
-```
-
-**cron + Notification Integration Example**
-
-```bash
-# crontab -e
-# Daily 9 AM: summarize work logs → Slack notification
-0 9 * * * openclaw run daily-summary --notify slack
-
-# Hourly: health check → notify only on errors
-0 * * * * openclaw run health-check --notify discord --on-error-only
-```
-
-- Telegram is offered as an **advanced option** due to its longer bot/token setup process
+> **Roadmap**: cron scheduling UI, Telegram support, and multi-channel routing (sending one message to multiple channels simultaneously) will be available in future updates.
 
 ## Skill Cards
 

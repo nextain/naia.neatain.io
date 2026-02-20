@@ -220,6 +220,9 @@ export interface Dictionary {
       history: string;
       progress: string;
       skills: string;
+      channels: string;
+      agents: string;
+      diagnostics: string;
       settings: string;
       tools: string;
       lab: string;

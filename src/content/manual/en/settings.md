@@ -95,6 +95,20 @@ Click "User Manual" to open this page in the browser.
 - **Allowed Tools**: Tools marked as "Always Allow"
   - **Clear Allowed Tools**: Reset all approvals
 
+## Channels
+
+- **Channel Management**: Check the status of connected messenger channels and control integration with external services.
+- (Detailed control is done in the Channels tab.)
+
+![Channels Settings](settings-channels.png)
+
+## Device
+
+![Device Settings](settings-device.png)
+
+- Manage external device integrations (e.g., paired OpenClaw nodes) and connections with smart home devices.
+- Includes features for device approval and token resets.
+
 ## Memory (Facts)
 
 Manage facts Alpha learned from conversations.

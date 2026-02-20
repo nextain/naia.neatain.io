@@ -18,7 +18,7 @@ The main screen has two areas.
 
 ## Panel Area (Bottom)
 
-The bottom panel has 5 tabs:
+The bottom panel has 8 tabs:
 
 | Tab | Description |
 |-----|-------------|
@@ -26,6 +26,9 @@ The bottom panel has 5 tabs:
 | History | Previous conversations |
 | Progress | Tool execution/error monitoring |
 | Skills | Available skills (tools) list |
+| Channels | Manage connected messenger channels |
+| Agents | Background agents and session management |
+| Diagnostics | Gateway system health and logs |
 | Settings | All app settings |
 
 See each tab's page for detailed features.

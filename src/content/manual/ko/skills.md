@@ -7,13 +7,15 @@
 ### 기본 스킬 (Built-in)
 앱에 내장된 스킬로, 비활성화할 수 없습니다:
 
-| 스킬 | 기능 |
-|------|------|
-| `skill_time` | 현재 날짜/시간 확인 |
-| `skill_memo` | 메모 저장/조회 |
-| `skill_system_status` | 시스템 상태 확인 |
-| `skill_weather` | 날씨 조회 |
-| `skill_skill_manager` | 스킬 검색/활성화/비활성화 |
+| 스킬 | 기능 | 보안 단계 |
+|------|------|-----------|
+| `skill_time` | 현재 날짜/시간 확인 | T0 |
+| `skill_memo` | 메모 저장/조회 | T0 |
+| `skill_system_status` | 시스템 상태 확인 | T0 |
+| `skill_weather` | 날씨 조회 | T0 |
+| `skill_notify_slack` | Slack 웹훅으로 알림 전송 | T1 |
+| `skill_notify_discord` | Discord 웹훅으로 알림 전송 | T1 |
+| `skill_skill_manager` | 스킬 검색/활성화/비활성화 | T0 |
 
 ### 커스텀 스킬 (Custom)
 Gateway를 통해 추가된 스킬로, 켜고 끌 수 있습니다:
@@ -36,6 +38,58 @@ Gateway를 통해 추가된 스킬로, 켜고 끌 수 있습니다:
 
 추가 후 보이지 않으면 앱을 재시작한 뒤 다시 확인하세요.
 
+## 알림 스킬 (Slack / Discord)
+
+`skill_notify_slack`과 `skill_notify_discord`는 웹훅을 통해 메시지를 전송하는 내장 알림 스킬입니다.
+
+### 웹훅 설정
+
+알림 스킬을 사용하려면 웹훅 URL을 설정해야 합니다. 두 가지 방법이 있습니다:
+
+**방법 1: 환경변수 (권장)**
+
+```bash
+# ~/.bashrc 또는 ~/.zshrc에 추가
+export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/T.../B.../xxx"
+export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
+```
+
+**방법 2: config.json**
+
+```json
+// ~/.cafelua/config.json
+{
+  "notifications": {
+    "slack": {
+      "webhookUrl": "https://hooks.slack.com/services/T.../B.../xxx"
+    },
+    "discord": {
+      "webhookUrl": "https://discord.com/api/webhooks/123/abc"
+    }
+  }
+}
+```
+
+> 환경변수가 config.json보다 우선합니다.
+
+### 사용 예시
+
+채팅에서 Alpha에게 요청하면 됩니다:
+
+- "Slack으로 '배포 완료' 알림 보내줘"
+- "Discord에 서버 상태 리포트 보내줘"
+- "#ops 채널에 빌드 결과 알려줘"
+
+Alpha가 자동으로 `skill_notify_slack` 또는 `skill_notify_discord`를 호출합니다.
+
+웹훅이 설정되지 않은 경우, 설정 방법을 안내하는 메시지가 표시됩니다.
+
+### OpenClaw Gateway 연동 (고급)
+
+OpenClaw Gateway가 연결되어 있으면, 알림 스킬은 Gateway의 `skills.invoke` RPC를 먼저 시도합니다. Gateway를 통한 전송이 실패하면 직접 웹훅으로 폴백합니다.
+
+Gateway 채널 통합은 더 풍부한 기능(메시지 포맷팅, 스레드, 멘션 등)을 제공합니다.
+
 ## 고급 시나리오: OpenClaw + cron 자동화
 
 팀/개인 자동화 환경에서는 OpenClaw 쪽에 스킬을 등록하고, cron으로 정기 실행을 구성할 수 있습니다.
@@ -47,99 +101,12 @@ Gateway를 통해 추가된 스킬로, 켜고 끌 수 있습니다:
 
 권장 흐름:
 1. 커스텀 스킬을 등록하고 로컬에서 수동 실행 검증
-2. OpenClaw에서 메신저 채널(권장: Slack/Discord) 알림 대상을 1개 이상 설정
+2. 알림 스킬 웹훅을 설정하여 알림 채널 연결
 3. OpenClaw 작업 정의에 해당 스킬 호출 단계 추가
 4. cron 스케줄로 정기 트리거 연결
 5. 실패 시 재시도/알림 정책을 함께 설정
 
-메신저 연동을 해두면 작업 성공/실패, 요약 결과를 팀 채널로 즉시 받을 수 있습니다.
-
-> 아래 메신저 연동은 **향후 계획(로드맵)** 기준입니다. 현재는 수동 연동이며, 실제 연결에는 웹훅/봇 토큰 설정이 필요합니다.
-
-### 메신저별 연동 예시
-
-**Slack (권장)**
-
-`skill.json` 설정:
-```json
-{
-  "name": "notify_slack",
-  "type": "command",
-  "command": "curl -X POST -H 'Content-Type: application/json' -d '{\"text\":\"${MESSAGE}\"}' $SLACK_WEBHOOK_URL"
-}
-```
-
-**Discord**
-
-Discord 웹훅은 Slack과 유사한 구조입니다:
-```json
-{
-  "name": "notify_discord",
-  "type": "command",
-  "command": "curl -X POST -H 'Content-Type: application/json' -d '{\"content\":\"${MESSAGE}\"}' $DISCORD_WEBHOOK_URL"
-}
-```
-
-**E2E 테스트 예시 (Vitest)**
-
-실제 알림이 전송되는지 자동화 테스트로 검증할 수 있습니다:
-
-```typescript
-import { describe, it, expect, vi } from "vitest";
-import { skillRegistry } from "../skills/registry";
-
-describe("메신저 알림 스킬 E2E", () => {
-  it("Slack 웹훅으로 메시지를 전송한다", async () => {
-    // mock fetch로 Slack API 호출 검증
-    const fetchSpy = vi.spyOn(globalThis, "fetch")
-      .mockResolvedValueOnce(new Response("ok", { status: 200 }));
-
-    const result = await skillRegistry.execute(
-      "notify_slack",
-      { message: "빌드 성공: v1.2.0 배포 완료" },
-    );
-
-    expect(result.success).toBe(true);
-    expect(fetchSpy).toHaveBeenCalledWith(
-      expect.stringContaining("hooks.slack.com"),
-      expect.objectContaining({
-        method: "POST",
-        body: expect.stringContaining("빌드 성공"),
-      }),
-    );
-
-    fetchSpy.mockRestore();
-  });
-
-  it("웹훅 실패 시 에러를 반환한다", async () => {
-    const fetchSpy = vi.spyOn(globalThis, "fetch")
-      .mockResolvedValueOnce(new Response("error", { status: 500 }));
-
-    const result = await skillRegistry.execute(
-      "notify_slack",
-      { message: "테스트 메시지" },
-    );
-
-    expect(result.success).toBe(false);
-    expect(result.error).toContain("500");
-
-    fetchSpy.mockRestore();
-  });
-});
-```
-
-**cron + 알림 통합 흐름 예시**
-
-```bash
-# crontab -e
-# 매일 오전 9시: 작업 로그 요약 → Slack 알림
-0 9 * * * openclaw run daily-summary --notify slack
-
-# 매시간: 서버 상태 점검 → 이상 시만 알림
-0 * * * * openclaw run health-check --notify discord --on-error-only
-```
-
-- Telegram은 봇 생성/토큰 발급 절차가 길어 **고급 옵션**으로 제공됩니다
+> **로드맵**: cron 스케줄링 UI, Telegram 지원, 다채널 라우팅(하나의 메시지를 여러 채널에 동시 전송)은 향후 업데이트에서 제공될 예정입니다.
 
 ## 스킬 카드
 
