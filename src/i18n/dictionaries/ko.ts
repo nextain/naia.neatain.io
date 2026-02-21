@@ -41,7 +41,7 @@ const ko: Dictionary = {
       refund: "환불 정책",
       contact: "문의",
     },
-    copyright: "© 2026 Next AI Networks. All rights reserved.",
+    copyright: "© 2026 Nextain (Next AI Networks). All rights reserved.",
   },
   auth: {
     loginTitle: "로그인 / 회원가입",

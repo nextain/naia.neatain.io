@@ -19,7 +19,7 @@ When updating one side, update the other.
 ## Quick Reference
 
 - **Brand Identity**: 
-  - Company: Next AI Networks
+  - Company: Nextain (Next AI Networks)
   - Product: Naia OS
   - Tagline: The Next Generation AI OS
 - **Framework**: Next.js 16 (App Router, TypeScript)

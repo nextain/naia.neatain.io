@@ -41,7 +41,7 @@ const en: Dictionary = {
       refund: "Refund Policy",
       contact: "Contact",
     },
-    copyright: "© 2026 Next AI Networks. All rights reserved.",
+    copyright: "© 2026 Nextain (Next AI Networks). All rights reserved.",
   },
   auth: {
     loginTitle: "Login / Sign Up",

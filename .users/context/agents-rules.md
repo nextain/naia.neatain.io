@@ -5,7 +5,7 @@
 ## 프로젝트 정체성
 
 - **이름**: naia.nextain.io
-- **회사 (Company)**: Next AI Networks
+- **회사 (Company)**: Nextain (Next AI Networks)
 - **제품 (Product)**: Naia OS
 - **슬로건 (Tagline)**: The Next Generation AI OS
 - **성격**: naia 서비스 포털 — OAuth 로그인, 크레딧 대시보드, 게이트웨이 클라이언트
