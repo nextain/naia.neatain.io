@@ -56,9 +56,9 @@ const ko: Dictionary = {
   },
   home: {
     hero: {
-      title: "Where Technology\nmeets Emotion",
+      title: "가장 진보한 AI 에이전트,\n가장 완벽한 OS로.",
       subtitle:
-        "OpenClaw AI 에이전트와 VRM 아바타가 만났습니다. 원클릭 설치 또는 전용 Linux OS로, 누구나 쉽게 나만의 AI를 시작하세요.",
+        "3대 LLM 통합부터 터미널 제어, 그리고 감정을 표현하는 VRM 아바타까지. 개발자가 아니어도 경험할 수 있는 완전한 AI 생태계, NaN OS.",
       cta: "무료로 시작하기",
       secondaryCta: "다운로드",
     },

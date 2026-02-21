@@ -39,8 +39,10 @@ export function Features({ dict }: { dict: Dictionary }) {
         {cards.map((card, idx) => (
           <SectionReveal key={card.title} delay={idx * 40}>
             <article className="h-full rounded-xl border border-border/60 bg-card/70 p-5 shadow-sm backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md">
-              <card.icon className="h-5 w-5 text-primary" />
-              <h3 className="mt-4 text-lg font-medium">{card.title}</h3>
+              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 via-cyan-500 to-emerald-500 shadow-sm">
+                <card.icon className="h-5 w-5 text-white" />
+              </div>
+              <h3 className="text-lg font-medium">{card.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {card.description}
               </p>

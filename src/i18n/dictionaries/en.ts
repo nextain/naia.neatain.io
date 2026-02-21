@@ -56,9 +56,9 @@ const en: Dictionary = {
   },
   home: {
     hero: {
-      title: "Where Technology\nmeets Emotion",
+      title: "The most advanced AI agent,\nas the perfect OS.",
       subtitle:
-        "OpenClaw AI agent meets VRM avatar. One-click install or a dedicated Linux OS — your personal AI, made easy.",
+        "From 3 major LLMs integration to terminal control, and a VRM avatar that expresses emotion. A complete AI ecosystem you can experience without being a developer, NaN OS.",
       cta: "Get Started Free",
       secondaryCta: "Download",
     },
