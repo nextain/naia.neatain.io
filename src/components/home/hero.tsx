@@ -79,7 +79,7 @@ export function Hero({ dict, lang, hasSession = false }: { dict: Dictionary; lan
                   </Link>
                 )}
                 <Link
-                  href={`/${lang}#pricing`}
+                  href={`/${lang}/download`}
                   className="rounded-md border border-border bg-background px-6 py-3 text-sm font-medium transition hover:bg-muted"
                 >
                   {dict.home.hero.secondaryCta}
