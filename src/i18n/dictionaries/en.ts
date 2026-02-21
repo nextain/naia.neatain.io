@@ -41,7 +41,7 @@ const en: Dictionary = {
       refund: "Refund Policy",
       contact: "Contact",
     },
-    copyright: "© 2025 Caretive Inc. All rights reserved.",
+    copyright: "© 2026 Nextain. All rights reserved.",
   },
   auth: {
     loginTitle: "Login / Sign Up",

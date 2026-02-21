@@ -40,6 +40,6 @@ The Lab portal (this site) provides:
 
 ## Company
 
-Cafelua is developed by Caretive, a South Korean AI company.
-- Website: https://lab.cafelua.com
-- Parent: https://caretive.ai
+Cafelua is developed by Nextain, a South Korean AI company.
+- Website: https://nan.nextain.io
+- Parent: https://nextain.io
