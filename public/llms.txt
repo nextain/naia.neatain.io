@@ -25,12 +25,14 @@ The homepage and portal (this site) provides:
 
 ## Public Pages
 
-- `/en` or `/ko` — Homepage (features, pricing, FAQ)
-- `/en/manual` or `/ko/manual` — User manual
-- `/en/terms` — Terms of Service
-- `/en/privacy` — Privacy Policy
-- `/en/refund` — Refund Policy
-- `/en/contact` — Contact
+- `/{locale}` — Homepage (features, pricing, FAQ)
+- `/{locale}/manual` — User manual
+- `/{locale}/manual/{slug}` — Manual details (`install`, `tools`, `settings`, ...)
+- `/{locale}/terms` — Terms of Service
+- `/{locale}/privacy` — Privacy Policy
+- `/{locale}/refund` — Refund Policy
+- `/{locale}/contact` — Contact
+- Supported locales: `en`, `ko`, `ja`, `zh`, `fr`, `de`, `ru`, `es`, `ar`, `hi`, `bn`, `pt`, `id`, `vi`
 
 ## Technology
 
@@ -38,7 +40,7 @@ The homepage and portal (this site) provides:
 - Frontend: Tailwind CSS 4, shadcn/ui, lucide-react
 - Backend: Next.js API Routes proxying to a FastAPI any-llm gateway
 - Desktop app: Tauri 2 + React + Node.js agent (OpenClaw compatible)
-- Languages: English and Korean (i18n)
+- Languages: 14 locales (English, Korean, Japanese, Chinese, French, German, Russian, Spanish, Arabic, Hindi, Bengali, Portuguese, Indonesian, Vietnamese)
 
 ## Company
 

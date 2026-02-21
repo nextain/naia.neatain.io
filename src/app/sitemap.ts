@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       SUPPORTED_LOCALES.forEach((l) => {
         pageLanguages[l] = `${BASE_URL}/${l}${page ? `/${page}` : ""}`;
       });
+      pageLanguages["x-default"] = `${BASE_URL}/en${page ? `/${page}` : ""}`;
 
       entries.push({
         url: `${BASE_URL}/${locale}${page ? `/${page}` : ""}`,
@@ -39,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       SUPPORTED_LOCALES.forEach((l) => {
         manualLanguages[l] = `${BASE_URL}/${l}/manual/${slug}`;
       });
+      manualLanguages["x-default"] = `${BASE_URL}/en/manual/${slug}`;
 
       entries.push({
         url: `${BASE_URL}/${locale}/manual/${slug}`,
