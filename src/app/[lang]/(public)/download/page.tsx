@@ -10,6 +10,7 @@ import {
   ExternalLink,
   Github,
   CheckCircle,
+  Clock,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,7 +19,6 @@ import Link from "next/link";
 
 const GITHUB_REPO = "nextain/naia-os";
 const RELEASE_BASE = `https://github.com/${GITHUB_REPO}/releases`;
-const LATEST_RELEASE = `${RELEASE_BASE}/latest`;
 
 const FORMAT_ICONS = {
   flatpak: Shield,
@@ -27,12 +27,6 @@ const FORMAT_ICONS = {
   rpm: Download,
 } as const;
 
-const FORMAT_FILES = {
-  flatpak: "Naia-Shell-x86_64.flatpak",
-  appimage: "Naia-Shell-x86_64.AppImage",
-  deb: "naia-shell_0.1.0_amd64.deb",
-  rpm: "naia-shell-0.1.0-1.x86_64.rpm",
-} as const;
 
 export default async function DownloadPage({
   params,
@@ -59,9 +53,7 @@ export default async function DownloadPage({
         {formats.map((key) => {
           const fmt = d.formats[key];
           const Icon = FORMAT_ICONS[key];
-          const file = FORMAT_FILES[key];
           const isFlatpak = key === "flatpak";
-          const downloadUrl = `${LATEST_RELEASE}/download/${file}`;
 
           return (
             <Card
@@ -97,14 +89,12 @@ export default async function DownloadPage({
                   <code className="text-xs break-all">{fmt.command}</code>
                 </div>
                 <Button
-                  asChild
-                  className={isFlatpak ? "w-full" : "w-full"}
+                  className="w-full"
                   variant={isFlatpak ? "default" : "outline"}
+                  disabled
                 >
-                  <Link href={downloadUrl}>
-                    <Download className="mr-2 h-4 w-4" />
-                    {fmt.name} {d.title}
-                  </Link>
+                  <Clock className="mr-2 h-4 w-4" />
+                  {dict.common.comingSoon}
                 </Button>
               </CardContent>
             </Card>
