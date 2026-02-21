@@ -5,6 +5,7 @@ import { Suspense, useEffect, useState } from "react";
 import { useDictionary } from "@/components/providers/locale-provider";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { buildNaiaAuthDeepLink } from "@/lib/deep-link";
 import Link from "next/link";
 
 function CallbackContent() {
@@ -13,6 +14,7 @@ function CallbackContent() {
   const lang = dict.locale;
   const source = searchParams.get("source");
   const state = searchParams.get("state");
+  const channel = searchParams.get("channel");
   const [key, setKey] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
@@ -20,6 +22,20 @@ function CallbackContent() {
   useEffect(() => {
     async function issueKey() {
       try {
+        let discordUserId: string | null = null;
+        if (channel === "discord") {
+          const sessionRes = await fetch("/api/auth/session", { method: "GET" });
+          if (sessionRes.ok) {
+            const sessionData = (await sessionRes.json()) as {
+              provider?: string;
+              providerAccountId?: string;
+            };
+            if (sessionData.provider === "discord" && sessionData.providerAccountId) {
+              discordUserId = sessionData.providerAccountId;
+            }
+          }
+        }
+
         const res = await fetch("/api/gateway/desktop-key", {
           method: "POST",
         });
@@ -28,10 +44,12 @@ function CallbackContent() {
         setKey(data.key);
 
         if (source !== "web") {
-          // Include state param for deep link verification
-          const deepLink = state
-            ? `naia://auth?key=${encodeURIComponent(data.key)}&state=${encodeURIComponent(state)}`
-            : `naia://auth?key=${encodeURIComponent(data.key)}`;
+          const deepLink = buildNaiaAuthDeepLink({
+            key: data.key,
+            state,
+            channel,
+            discordUserId,
+          });
           window.location.href = deepLink;
         }
       } catch (e) {
@@ -39,7 +57,7 @@ function CallbackContent() {
       }
     }
     issueKey();
-  }, [source, state, dict.common.error]);
+  }, [source, state, channel, dict.common.error]);
 
   if (error) {
     return (
@@ -100,9 +118,11 @@ function CallbackContent() {
     );
   }
 
-  const deepLinkUrl = state
-    ? `naia://auth?key=${encodeURIComponent(key)}&state=${encodeURIComponent(state)}`
-    : `naia://auth?key=${encodeURIComponent(key)}`;
+  const deepLinkUrl = buildNaiaAuthDeepLink({
+    key,
+    state,
+    channel,
+  });
 
   return (
     <Card className="w-full max-w-sm">

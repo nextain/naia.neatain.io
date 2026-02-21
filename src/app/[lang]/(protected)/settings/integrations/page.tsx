@@ -48,6 +48,10 @@ export default async function IntegrationsPage({
   const isGoogleLinked = false;
 
   const t = dict.settings.integrations;
+  const redirectTo =
+    channel === "discord" && source === "naia-shell"
+      ? `/${lang}/callback?source=naia-shell&channel=discord`
+      : `/${lang}/settings/integrations?channel=discord&linked=oauth`;
 
   return (
     <div className="mx-auto max-w-4xl space-y-6">
@@ -79,7 +83,7 @@ export default async function IntegrationsPage({
             action={async () => {
               "use server";
               await signIn("discord", {
-                redirectTo: `/${lang}/settings/integrations?channel=discord&linked=oauth`,
+                redirectTo,
               });
             }}
           >

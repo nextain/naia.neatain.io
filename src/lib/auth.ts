@@ -42,6 +42,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     async session({ session, token }) {
       session.gwUserId = token.gwUserId as string;
       session.provider = token.provider as string;
+      session.providerAccountId = token.providerAccountId as string | undefined;
       return session;
     },
   },
