@@ -31,20 +31,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     alternateLocale: ["ko_KR"],
-    images: [
-      {
-        url: "/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Naia OS Cover Image",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Naia OS",
     description: "Your Personal AI Desktop OS. Experience a complete AI ecosystem with a 3D avatar.",
-    images: ["/logo.jpg"],
   },
 };
 
