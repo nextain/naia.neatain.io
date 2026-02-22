@@ -217,7 +217,7 @@ const ja: Dictionary = {
     "connectedAccounts": {
       "title": "接続されたアカウント",
       "google": "Google",
-      "discord": "不和"
+      "discord": "Discord"
     },
     "desktopApp": {
       "title": "デスクトップアプリ接続",
@@ -293,27 +293,27 @@ const ja: Dictionary = {
     "formats": {
       "flatpak": {
         "name": "Flatpak",
-        "description": "The safest installation method. Runs in a sandboxed environment.",
+        "description": "最も安全なインストール方法です。サンドボックス環境で実行されます。",
         "command": "flatpak install --user ./Naia-Shell-x86_64.flatpak",
       },
       "appimage": {
         "name": "AppImage",
-        "description": "Single executable file. Run directly without installation.",
+        "description": "単一の実行ファイルです。インストール不要でそのまま実行できます。",
         "command": "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
       },
       "deb": {
         "name": "DEB",
-        "description": "For Debian, Ubuntu, and other apt-based distributions.",
+        "description": "Debian、Ubuntu、その他のapt系ディストリビューション向けです。",
         "command": "sudo dpkg -i naia-shell_*.deb",
       },
       "rpm": {
         "name": "RPM",
-        "description": "For Fedora, RHEL, and other rpm-based distributions.",
+        "description": "Fedora、RHEL、その他のrpm系ディストリビューション向けです。",
         "command": "sudo rpm -i naia-shell-*.rpm",
       },
     },
     "checksum": "チェックサム検証",
-    "checksumDescription": "ダウンロードファイルの整合性を確認するには：",
+    "checksumDescription": "ダウンロードしたファイルの整合性を検証するには：",
     "allReleases": "全リリースを表示",
     "sourceCode": "ソースコード",
   },

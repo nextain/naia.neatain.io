@@ -217,7 +217,7 @@ const bn: Dictionary = {
     "connectedAccounts": {
       "title": "সংযুক্ত অ্যাকাউন্ট",
       "google": "গুগল",
-      "discord": "বিরোধ"
+      "discord": "Discord"
     },
     "desktopApp": {
       "title": "ডেস্কটপ অ্যাপ সংযোগ",
@@ -279,43 +279,43 @@ const bn: Dictionary = {
     }
   },
   "download": {
-    "title": "Download",
-    "subtitle": "Download Naia OS and start chatting with your AI avatar.",
-    "recommended": "Recommended",
-    "version": "Version",
-    "releaseNotes": "Release Notes",
-    "requirements": "System Requirements",
+    "title": "ডাউনলোড",
+    "subtitle": "Naia OS ডাউনলোড করুন এবং আপনার AI অবতারের সাথে চ্যাট শুরু করুন।",
+    "recommended": "প্রস্তাবিত",
+    "version": "সংস্করণ",
+    "releaseNotes": "রিলিজ নোট",
+    "requirements": "সিস্টেম প্রয়োজনীয়তা",
     "requirementsList": [
       "Linux x86_64",
-      "Wayland or X11",
-      "Node.js 22+ (for AppImage/deb/rpm)",
+      "Wayland অথবা X11",
+      "Node.js 22+ (AppImage/deb/rpm এর জন্য)",
     ],
     "formats": {
       "flatpak": {
         "name": "Flatpak",
-        "description": "The safest installation method. Runs in a sandboxed environment.",
+        "description": "সবচেয়ে নিরাপদ ইনস্টলেশন পদ্ধতি। স্যান্ডবক্স পরিবেশে চলে।",
         "command": "flatpak install --user ./Naia-Shell-x86_64.flatpak",
       },
       "appimage": {
         "name": "AppImage",
-        "description": "Single executable file. Run directly without installation.",
+        "description": "একক এক্সিকিউটেবল ফাইল। ইনস্টলেশন ছাড়াই সরাসরি চালান।",
         "command": "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
       },
       "deb": {
         "name": "DEB",
-        "description": "For Debian, Ubuntu, and other apt-based distributions.",
+        "description": "Debian, Ubuntu এবং অন্যান্য apt-ভিত্তিক ডিস্ট্রিবিউশনের জন্য।",
         "command": "sudo dpkg -i naia-shell_*.deb",
       },
       "rpm": {
         "name": "RPM",
-        "description": "For Fedora, RHEL, and other rpm-based distributions.",
+        "description": "Fedora, RHEL এবং অন্যান্য rpm-ভিত্তিক ডিস্ট্রিবিউশনের জন্য।",
         "command": "sudo rpm -i naia-shell-*.rpm",
       },
     },
-    "checksum": "Verify Checksums",
-    "checksumDescription": "To verify the integrity of downloaded files:",
-    "allReleases": "View All Releases",
-    "sourceCode": "Source Code",
+    "checksum": "চেকসাম যাচাই",
+    "checksumDescription": "ডাউনলোড করা ফাইলের অখণ্ডতা যাচাই করতে:",
+    "allReleases": "সমস্ত রিলিজ দেখুন",
+    "sourceCode": "সোর্স কোড",
   },
   "billing": {
     "title": "বিলিং",

@@ -47,7 +47,7 @@ const es: Dictionary = {
     "loginTitle": "Iniciar sesión / Registrarse",
     "loginDescription": "Comience con su cuenta social",
     "googleLogin": "Continuar con Google",
-    "discordLogin": "Continuar con discordia",
+    "discordLogin": "Continuar con Discord",
     "logout": "Cerrar sesión",
     "callbackRedirecting": "Redirigiendo a la aplicación de escritorio...",
     "callbackManualPrefix": "Si no se abre automáticamente,",
@@ -217,7 +217,7 @@ const es: Dictionary = {
     "connectedAccounts": {
       "title": "Cuentas conectadas",
       "google": "google",
-      "discord": "discordia"
+      "discord": "Discord"
     },
     "desktopApp": {
       "title": "Conexión de la aplicación de escritorio",
@@ -279,43 +279,43 @@ const es: Dictionary = {
     }
   },
   "download": {
-    "title": "Download",
-    "subtitle": "Download Naia OS and start chatting with your AI avatar.",
-    "recommended": "Recommended",
-    "version": "Version",
-    "releaseNotes": "Release Notes",
-    "requirements": "System Requirements",
+    "title": "Descargar",
+    "subtitle": "Descarga Naia OS y comienza a chatear con tu avatar de IA.",
+    "recommended": "Recomendado",
+    "version": "Versión",
+    "releaseNotes": "Notas de la versión",
+    "requirements": "Requisitos del sistema",
     "requirementsList": [
       "Linux x86_64",
-      "Wayland or X11",
-      "Node.js 22+ (for AppImage/deb/rpm)",
+      "Wayland o X11",
+      "Node.js 22+ (para AppImage/deb/rpm)",
     ],
     "formats": {
       "flatpak": {
         "name": "Flatpak",
-        "description": "The safest installation method. Runs in a sandboxed environment.",
+        "description": "El método de instalación más seguro. Se ejecuta en un entorno aislado.",
         "command": "flatpak install --user ./Naia-Shell-x86_64.flatpak",
       },
       "appimage": {
         "name": "AppImage",
-        "description": "Single executable file. Run directly without installation.",
+        "description": "Archivo ejecutable único. Ejecútelo directamente sin instalación.",
         "command": "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
       },
       "deb": {
         "name": "DEB",
-        "description": "For Debian, Ubuntu, and other apt-based distributions.",
+        "description": "Para Debian, Ubuntu y otras distribuciones basadas en apt.",
         "command": "sudo dpkg -i naia-shell_*.deb",
       },
       "rpm": {
         "name": "RPM",
-        "description": "For Fedora, RHEL, and other rpm-based distributions.",
+        "description": "Para Fedora, RHEL y otras distribuciones basadas en rpm.",
         "command": "sudo rpm -i naia-shell-*.rpm",
       },
     },
-    "checksum": "Verify Checksums",
-    "checksumDescription": "To verify the integrity of downloaded files:",
-    "allReleases": "View All Releases",
-    "sourceCode": "Source Code",
+    "checksum": "Verificar sumas de comprobación",
+    "checksumDescription": "Para verificar la integridad de los archivos descargados:",
+    "allReleases": "Ver todas las versiones",
+    "sourceCode": "Código fuente",
   },
   "billing": {
     "title": "Facturación",

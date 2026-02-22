@@ -47,7 +47,7 @@ const hi: Dictionary = {
     "loginTitle": "लॉगइन/साइन अप करें",
     "loginDescription": "अपने सामाजिक खाते से शुरुआत करें",
     "googleLogin": "Google के साथ जारी रखें",
-    "discordLogin": "कलह जारी रखें",
+    "discordLogin": "Discord के साथ जारी रखें",
     "logout": "लॉगआउट करें",
     "callbackRedirecting": "डेस्कटॉप ऐप पर रीडायरेक्ट किया जा रहा है...",
     "callbackManualPrefix": "यदि यह स्वचालित रूप से नहीं खुलता है,",
@@ -217,7 +217,7 @@ const hi: Dictionary = {
     "connectedAccounts": {
       "title": "जुड़े हुए खाते",
       "google": "गूगल",
-      "discord": "कलह"
+      "discord": "Discord"
     },
     "desktopApp": {
       "title": "डेस्कटॉप ऐप कनेक्शन",
@@ -279,43 +279,43 @@ const hi: Dictionary = {
     }
   },
   "download": {
-    "title": "Download",
-    "subtitle": "Download Naia OS and start chatting with your AI avatar.",
-    "recommended": "Recommended",
-    "version": "Version",
-    "releaseNotes": "Release Notes",
-    "requirements": "System Requirements",
+    "title": "डाउनलोड",
+    "subtitle": "Naia OS डाउनलोड करें और अपने AI अवतार से बात करना शुरू करें।",
+    "recommended": "अनुशंसित",
+    "version": "संस्करण",
+    "releaseNotes": "रिलीज़ नोट्स",
+    "requirements": "सिस्टम आवश्यकताएँ",
     "requirementsList": [
       "Linux x86_64",
-      "Wayland or X11",
-      "Node.js 22+ (for AppImage/deb/rpm)",
+      "Wayland या X11",
+      "Node.js 22+ (AppImage/deb/rpm के लिए)",
     ],
     "formats": {
       "flatpak": {
         "name": "Flatpak",
-        "description": "The safest installation method. Runs in a sandboxed environment.",
+        "description": "सबसे सुरक्षित इंस्टॉलेशन विधि। सैंडबॉक्स वातावरण में चलता है।",
         "command": "flatpak install --user ./Naia-Shell-x86_64.flatpak",
       },
       "appimage": {
         "name": "AppImage",
-        "description": "Single executable file. Run directly without installation.",
+        "description": "एकल निष्पादन योग्य फ़ाइल। बिना इंस्टॉल किए सीधे चलाएँ।",
         "command": "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
       },
       "deb": {
         "name": "DEB",
-        "description": "For Debian, Ubuntu, and other apt-based distributions.",
+        "description": "Debian, Ubuntu और अन्य apt-आधारित वितरणों के लिए।",
         "command": "sudo dpkg -i naia-shell_*.deb",
       },
       "rpm": {
         "name": "RPM",
-        "description": "For Fedora, RHEL, and other rpm-based distributions.",
+        "description": "Fedora, RHEL और अन्य rpm-आधारित वितरणों के लिए।",
         "command": "sudo rpm -i naia-shell-*.rpm",
       },
     },
-    "checksum": "Verify Checksums",
-    "checksumDescription": "To verify the integrity of downloaded files:",
-    "allReleases": "View All Releases",
-    "sourceCode": "Source Code",
+    "checksum": "चेकसम सत्यापित करें",
+    "checksumDescription": "डाउनलोड की गई फ़ाइलों की अखंडता सत्यापित करने के लिए:",
+    "allReleases": "सभी रिलीज़ देखें",
+    "sourceCode": "सोर्स कोड",
   },
   "billing": {
     "title": "बिलिंग",

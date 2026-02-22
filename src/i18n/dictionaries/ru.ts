@@ -217,7 +217,7 @@ const ru: Dictionary = {
     "connectedAccounts": {
       "title": "Подключенные аккаунты",
       "google": "Гугл",
-      "discord": "Раздор"
+      "discord": "Discord"
     },
     "desktopApp": {
       "title": "Подключение к настольному приложению",
@@ -279,43 +279,43 @@ const ru: Dictionary = {
     }
   },
   "download": {
-    "title": "Download",
-    "subtitle": "Download Naia OS and start chatting with your AI avatar.",
-    "recommended": "Recommended",
-    "version": "Version",
-    "releaseNotes": "Release Notes",
-    "requirements": "System Requirements",
+    "title": "Скачать",
+    "subtitle": "Скачайте Naia OS и начните общаться с вашим ИИ-аватаром.",
+    "recommended": "Рекомендуется",
+    "version": "Версия",
+    "releaseNotes": "Примечания к выпуску",
+    "requirements": "Системные требования",
     "requirementsList": [
       "Linux x86_64",
-      "Wayland or X11",
-      "Node.js 22+ (for AppImage/deb/rpm)",
+      "Wayland или X11",
+      "Node.js 22+ (для AppImage/deb/rpm)",
     ],
     "formats": {
       "flatpak": {
         "name": "Flatpak",
-        "description": "The safest installation method. Runs in a sandboxed environment.",
+        "description": "Самый безопасный способ установки. Запускается в изолированной среде.",
         "command": "flatpak install --user ./Naia-Shell-x86_64.flatpak",
       },
       "appimage": {
         "name": "AppImage",
-        "description": "Single executable file. Run directly without installation.",
+        "description": "Один исполняемый файл. Запускается напрямую без установки.",
         "command": "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
       },
       "deb": {
         "name": "DEB",
-        "description": "For Debian, Ubuntu, and other apt-based distributions.",
+        "description": "Для Debian, Ubuntu и других дистрибутивов на базе apt.",
         "command": "sudo dpkg -i naia-shell_*.deb",
       },
       "rpm": {
         "name": "RPM",
-        "description": "For Fedora, RHEL, and other rpm-based distributions.",
+        "description": "Для Fedora, RHEL и других дистрибутивов на базе rpm.",
         "command": "sudo rpm -i naia-shell-*.rpm",
       },
     },
-    "checksum": "Verify Checksums",
-    "checksumDescription": "To verify the integrity of downloaded files:",
-    "allReleases": "View All Releases",
-    "sourceCode": "Source Code",
+    "checksum": "Проверка контрольных сумм",
+    "checksumDescription": "Для проверки целостности загруженных файлов:",
+    "allReleases": "Просмотреть все выпуски",
+    "sourceCode": "Исходный код",
   },
   "billing": {
     "title": "Биллинг",

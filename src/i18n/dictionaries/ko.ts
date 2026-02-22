@@ -286,11 +286,11 @@ const ko: Dictionary = {
   },
   download: {
     title: "다운로드",
-    subtitle: "Naia OS를 다운로드하고 AI 아바타와 대화하세요.",
+    subtitle: "Naia OS를 다운로드하고 AI 아바타와 대화를 시작하세요.",
     recommended: "권장",
     version: "버전",
-    releaseNotes: "릴리스 노트",
-    requirements: "시스템 요구사항",
+    releaseNotes: "릴리즈 노트",
+    requirements: "시스템 요구 사항",
     requirementsList: [
       "Linux x86_64",
       "Wayland 또는 X11",
@@ -299,28 +299,28 @@ const ko: Dictionary = {
     formats: {
       flatpak: {
         name: "Flatpak",
-        description: "가장 안전한 설치 방법. 샌드박스에서 격리 실행됩니다.",
+        description: "가장 안전한 설치 방법입니다. 샌드박스 환경에서 실행됩니다.",
         command: "flatpak install --user ./Naia-Shell-x86_64.flatpak",
       },
       appimage: {
         name: "AppImage",
-        description: "단일 실행 파일. 설치 없이 바로 실행합니다.",
+        description: "단일 실행 파일입니다. 설치 없이 바로 실행할 수 있습니다.",
         command: "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
       },
       deb: {
         name: "DEB",
-        description: "Debian, Ubuntu 등 apt 기반 배포판용.",
+        description: "Debian, Ubuntu 등 apt 기반 배포판용입니다.",
         command: "sudo dpkg -i naia-shell_*.deb",
       },
       rpm: {
         name: "RPM",
-        description: "Fedora, RHEL 등 rpm 기반 배포판용.",
+        description: "Fedora, RHEL 등 rpm 기반 배포판용입니다.",
         command: "sudo rpm -i naia-shell-*.rpm",
       },
     },
     checksum: "체크섬 검증",
-    checksumDescription: "다운로드 파일의 무결성을 확인하려면:",
-    allReleases: "전체 릴리스 보기",
+    checksumDescription: "다운로드한 파일의 무결성을 검증하려면:",
+    allReleases: "전체 릴리즈 보기",
     sourceCode: "소스 코드",
   },
   billing: {

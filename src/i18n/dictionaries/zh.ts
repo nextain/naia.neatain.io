@@ -47,7 +47,7 @@ const zh: Dictionary = {
     "loginTitle": "登录/注册",
     "loginDescription": "开始使用您的社交帐户",
     "googleLogin": "继续使用谷歌",
-    "discordLogin": "继续不和谐",
+    "discordLogin": "继续使用 Discord",
     "logout": "退出",
     "callbackRedirecting": "正在重定向到桌面应用程序...",
     "callbackManualPrefix": "如果没有自动打开，",
@@ -217,7 +217,7 @@ const zh: Dictionary = {
     "connectedAccounts": {
       "title": "关联账户",
       "google": "谷歌",
-      "discord": "不和谐"
+      "discord": "Discord"
     },
     "desktopApp": {
       "title": "桌面应用程序连接",
@@ -293,22 +293,22 @@ const zh: Dictionary = {
     "formats": {
       "flatpak": {
         "name": "Flatpak",
-        "description": "The safest installation method. Runs in a sandboxed environment.",
+        "description": "最安全的安装方式。在沙盒环境中运行。",
         "command": "flatpak install --user ./Naia-Shell-x86_64.flatpak",
       },
       "appimage": {
         "name": "AppImage",
-        "description": "Single executable file. Run directly without installation.",
+        "description": "单个可执行文件。无需安装，直接运行。",
         "command": "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
       },
       "deb": {
         "name": "DEB",
-        "description": "For Debian, Ubuntu, and other apt-based distributions.",
+        "description": "适用于 Debian、Ubuntu 及其他基于 apt 的发行版。",
         "command": "sudo dpkg -i naia-shell_*.deb",
       },
       "rpm": {
         "name": "RPM",
-        "description": "For Fedora, RHEL, and other rpm-based distributions.",
+        "description": "适用于 Fedora、RHEL 及其他基于 rpm 的发行版。",
         "command": "sudo rpm -i naia-shell-*.rpm",
       },
     },
