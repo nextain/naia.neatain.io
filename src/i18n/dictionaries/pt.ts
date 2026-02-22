@@ -4,7 +4,7 @@ const pt: Dictionary = {
   "locale": "pt",
   "meta": {
     "title": "Naia OS",
-    "description": "Naia OS — Sua IA pessoal, facilitada. Converse, converse e trabalhe com avatar 3D AI 아바타."
+    "description": "Naia OS — Sua IA pessoal, facilitada. Converse, converse e trabalhe com avatar de IA 3D."
   },
   "common": {
     "loading": "Carregando...",
@@ -47,7 +47,7 @@ const pt: Dictionary = {
     "loginTitle": "Login / Inscreva-se",
     "loginDescription": "Comece com sua conta social",
     "googleLogin": "Continuar com o Google",
-    "discordLogin": "Continuar com discórdia",
+    "discordLogin": "Continuar com Discord",
     "logout": "Sair",
     "callbackRedirecting": "Redirecionando para aplicativo de desktop...",
     "callbackManualPrefix": "Se não abrir automaticamente,",
@@ -57,7 +57,7 @@ const pt: Dictionary = {
   "home": {
     "hero": {
       "title": "O agente de IA mais avançado, como o sistema operacional perfeito.",
-      "subtitle": "Da integração de 3 LLMs principais ao controle do terminal e um avatar VRM que expressa emoções. Um ecossistema de IA completo que você pode experimentar sem ser desenvolvedor, Naia OS.",
+      "subtitle": "De 7 provedores de IA ao controle do terminal e um avatar VRM que expressa emoções. Um ecossistema de IA completo que você pode experimentar sem ser desenvolvedor, Naia OS.",
       "cta": "Comece gratuitamente",
       "secondaryCta": "Baixar"
     },
@@ -66,20 +66,20 @@ const pt: Dictionary = {
       "subtitle": "Experimente o poder dos agentes de IA — sem necessidade de codificação",
       "items": {
         "companion": {
-          "title": "AI Avatar AI",
-          "description": "Um avatar 3D com emoções, direto na sua área de trabalho. AI 아바타 reage às conversas com expressões faciais e contato visual."
+          "title": "Avatar de IA",
+          "description": "Um avatar 3D com emoções, direto na sua área de trabalho. O avatar de IA reage às conversas com expressões faciais e contato visual."
         },
         "multiProvider": {
-          "title": "Gêmeos grátis · Mais modelos em breve",
-          "description": "Atualmente apoiando Gemini com créditos grátis. O suporte da API Key para Grok, Anthropic(Claude), OpenAI e Zhipu(GLM) está planejado e em breve."
+          "title": "7 provedores de IA suportados",
+          "description": "Gemini, Claude, GPT, Grok, zAI, Ollama, Claude Code CLI — alterne livremente com créditos ou suas próprias chaves API."
         },
         "voice": {
           "title": "Conversas de voz",
-          "description": "Pergunte por voz e obtenha respostas faladas. AI 아바타 responde naturalmente com animação sincronizada com os lábios."
+          "description": "Pergunte por voz e obtenha respostas faladas. O avatar de IA responde naturalmente com animação sincronizada com os lábios."
         },
         "tools": {
           "title": "Execução de Ferramenta",
-          "description": "Edição de arquivos, comandos de terminal, pesquisa na web. AI 아바타 chama ferramentas diretamente para realizar o trabalho."
+          "description": "Edição de arquivos, comandos de terminal, pesquisa na web. O avatar de IA chama ferramentas diretamente para realizar o trabalho."
         },
         "desktop": {
           "title": "Instalação e sistema operacional com um clique",
@@ -217,7 +217,7 @@ const pt: Dictionary = {
     "connectedAccounts": {
       "title": "Contas conectadas",
       "google": "Google",
-      "discord": "Discórdia"
+      "discord": "Discord"
     },
     "desktopApp": {
       "title": "Conexão de aplicativo de desktop",
@@ -234,22 +234,22 @@ const pt: Dictionary = {
     },
     "integrations": {
       "title": "Integrações",
-      "description": "Converse com Naia no Discord, Google Chat e muito mais.",
+      "description": "Converse com Naia pelo Discord e muito mais.",
       "discord": {
-        "title": "Discórdia",
+        "title": "Discord",
         "connected": "Conectado",
         "notConnected": "Não conectado",
-        "connectedHint": "Se você fez login no Discord, você já está conectado.",
-        "inviteBot": "Adicionar bot ao servidor",
-        "inviteBotDescription": "Adicione este bot ao seu servidor para conversar via menção @Naia ou DM.",
-        "howToUse": "Mencione @botname em seu servidor ou envie um DM. Os créditos são cobrados nesta conta automaticamente."
+        "connectedHint": "Se você fez login com Discord, já está conectado para enviar DMs.",
+        "inviteBot": "Conversar por DM",
+        "inviteBotDescription": "Após fazer login com Discord, envie um DM para o bot Naia para conversar a qualquer hora, em qualquer lugar.",
+        "howToUse": "Envie um DM para o bot Naia. Os créditos são cobrados nesta conta automaticamente."
       },
       "googleChat": {
-        "title": "Bate-papo do Google",
+        "title": "Google Chat",
         "connected": "Conectado",
         "notConnected": "Não conectado",
-        "connectedHint": "Se você fez login no Google, você já está conectado.",
-        "howToUse": "Adicione o aplicativo naia ao Google Chat e comece a enviar mensagens."
+        "connectedHint": "A integração com o Google Chat está em breve.",
+        "howToUse": "A integração com o Google Chat estará disponível em breve."
       },
       "viewGuide": "Ver guia de configuração"
     }
@@ -274,7 +274,7 @@ const pt: Dictionary = {
       "diagnostics": "Diagnóstico",
       "settings": "Configurações",
       "tools": "Detalhes da ferramenta",
-      "lab": "Naia OS",
+      "lab": "Nextain",
       "troubleshooting": "Solução de problemas"
     }
   },

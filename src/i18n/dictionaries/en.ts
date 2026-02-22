@@ -3,8 +3,8 @@ import type { Dictionary } from "./types";
 const en: Dictionary = {
   locale: "en",
   meta: {
-    title: "Naia OS",
-    description: "Naia OS — Your personal AI, made easy. Chat, talk, and work with 3D avatar AI 아바타.",
+    title: "Naia OS | The Next Generation AI OS",
+    description: "Naia OS — Your personal AI, made easy. Chat, talk, and work with 3D avatar AI.",
   },
   common: {
     loading: "Loading...",
@@ -58,7 +58,7 @@ const en: Dictionary = {
     hero: {
       title: "The most advanced AI agent, as the perfect OS.",
       subtitle:
-        "From 3 major LLMs integration to terminal control, and a VRM avatar that expresses emotion. A complete AI ecosystem you can experience without being a developer, Naia OS.",
+        "From 7 AI providers to terminal control, and a VRM avatar that expresses emotion. A complete AI ecosystem you can experience without being a developer, Naia OS.",
       cta: "Get Started Free",
       secondaryCta: "Download",
     },
@@ -67,24 +67,24 @@ const en: Dictionary = {
       subtitle: "Experience the power of AI agents — no coding required",
       items: {
         companion: {
-          title: "AI Avatar AI 아바타",
+          title: "AI Avatar",
           description:
-            "A 3D avatar with emotions, right on your desktop. AI 아바타 reacts to conversations with facial expressions and eye contact.",
+            "A 3D avatar with emotions, right on your desktop. The AI avatar reacts to conversations with facial expressions and eye contact.",
         },
         multiProvider: {
-          title: "Gemini Free · More Models Coming Soon",
+          title: "7 AI Providers Supported",
           description:
-            "Currently supporting Gemini with free credits. API Key support for Grok, Anthropic(Claude), OpenAI, and Zhipu(GLM) is planned and coming soon.",
+            "Gemini, Claude, GPT, Grok, zAI, Ollama, Claude Code CLI — switch freely with credits or your own API keys.",
         },
         voice: {
           title: "Voice Conversations",
           description:
-            "Ask by voice, get spoken responses. AI 아바타 answers naturally with lip-synced animation.",
+            "Ask by voice, get spoken responses. The AI avatar answers naturally with lip-synced animation.",
         },
         tools: {
           title: "Tool Execution",
           description:
-            "File editing, terminal commands, web search. AI 아바타 calls tools directly to get work done.",
+            "File editing, terminal commands, web search. The AI avatar calls tools directly to get work done.",
         },
         desktop: {
           title: "One-click Install & OS",
@@ -242,22 +242,22 @@ const en: Dictionary = {
     },
     integrations: {
       title: "Integrations",
-      description: "Chat with Naia from Discord, Google Chat, and more.",
+      description: "Chat with Naia from Discord and other channels.",
       discord: {
         title: "Discord",
         connected: "Connected",
         notConnected: "Not Connected",
-        connectedHint: "If you logged in with Discord, you are already connected.",
-        inviteBot: "Add Bot to Server",
-        inviteBotDescription: "Add this bot to your server to chat via @Naia mention or DM.",
-        howToUse: "Mention @botname in your server or send a DM. Credits are charged to this account automatically.",
+        connectedHint: "If you logged in with Discord, you can chat via DM.",
+        inviteBot: "Chat via DM",
+        inviteBotDescription: "After Discord login, send a DM to the Naia bot to chat anytime, anywhere.",
+        howToUse: "Send a DM to the Naia bot. Credits are charged to this account automatically.",
       },
       googleChat: {
         title: "Google Chat",
         connected: "Connected",
         notConnected: "Not Connected",
-        connectedHint: "If you logged in with Google, you are already connected.",
-        howToUse: "Add the naia app in Google Chat and start messaging.",
+        connectedHint: "Google Chat integration is coming soon.",
+        howToUse: "Google Chat integration will be available soon.",
       },
       viewGuide: "View Setup Guide",
     },
@@ -282,7 +282,7 @@ const en: Dictionary = {
       diagnostics: "Diagnostics",
       settings: "Settings",
       tools: "Tool Details",
-      lab: "Naia OS",
+      lab: "Nextain Account",
       troubleshooting: "Troubleshooting",
     },
   },

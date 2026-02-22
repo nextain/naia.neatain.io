@@ -4,7 +4,7 @@ const vi: Dictionary = {
   "locale": "vi",
   "meta": {
     "title": "Hệ điều hành Naia",
-    "description": "Naia OS — AI cá nhân của bạn, được thực hiện dễ dàng. Trò chuyện, trò chuyện và làm việc với hình đại diện 3D AI 아바타."
+    "description": "Naia OS — AI cá nhân của bạn, được thực hiện dễ dàng. Trò chuyện, trò chuyện và làm việc với avatar AI 3D."
   },
   "common": {
     "loading": "Đang tải...",
@@ -57,7 +57,7 @@ const vi: Dictionary = {
   "home": {
     "hero": {
       "title": "Tác nhân AI tiên tiến nhất, là hệ điều hành hoàn hảo.",
-      "subtitle": "Từ tích hợp 3 LLM chính đến điều khiển thiết bị đầu cuối và hình đại diện VRM thể hiện cảm xúc. Một hệ sinh thái AI hoàn chỉnh mà bạn có thể trải nghiệm mà không cần phải là nhà phát triển, Naia OS.",
+      "subtitle": "Từ 7 nhà cung cấp AI đến điều khiển thiết bị đầu cuối và hình đại diện VRM thể hiện cảm xúc. Một hệ sinh thái AI hoàn chỉnh mà bạn có thể trải nghiệm mà không cần phải là nhà phát triển, Naia OS.",
       "cta": "Bắt đầu miễn phí",
       "secondaryCta": "Tải xuống"
     },
@@ -66,20 +66,20 @@ const vi: Dictionary = {
       "subtitle": "Trải nghiệm sức mạnh của tác nhân AI - không cần mã hóa",
       "items": {
         "companion": {
-          "title": "AI Avatar AI 아바타",
-          "description": "Hình đại diện 3D đầy cảm xúc, ngay trên màn hình của bạn. AI 아바타 phản ứng với các cuộc trò chuyện bằng nét mặt và giao tiếp bằng mắt."
+          "title": "Avatar AI",
+          "description": "Hình đại diện 3D đầy cảm xúc, ngay trên màn hình của bạn. Avatar AI phản ứng với các cuộc trò chuyện bằng nét mặt và giao tiếp bằng mắt."
         },
         "multiProvider": {
-          "title": "Gemini Free · Sắp có nhiều mẫu khác",
-          "description": "Hiện đang hỗ trợ Gemini bằng các khoản tín dụng miễn phí. Hỗ trợ API Key cho Grok, Anthropic(Claude), OpenAI và Zhipu(GLM) đã được lên kế hoạch và sắp ra mắt."
+          "title": "Hỗ trợ 7 nhà cung cấp AI",
+          "description": "Gemini, Claude, GPT, Grok, zAI, Ollama, Claude Code CLI — chuyển đổi tự do bằng tín dụng hoặc khóa API của riêng bạn."
         },
         "voice": {
           "title": "Cuộc trò chuyện bằng giọng nói",
-          "description": "Hỏi bằng giọng nói, nhận câu trả lời bằng giọng nói. AI 아바타 trả lời một cách tự nhiên bằng hoạt ảnh nhép."
+          "description": "Hỏi bằng giọng nói, nhận câu trả lời bằng giọng nói. Avatar AI trả lời một cách tự nhiên bằng hoạt ảnh nhép."
         },
         "tools": {
           "title": "Thực thi công cụ",
-          "description": "Chỉnh sửa tập tin, lệnh đầu cuối, tìm kiếm trên web. AI 아바타 gọi trực tiếp các công cụ để hoàn thành công việc."
+          "description": "Chỉnh sửa tập tin, lệnh đầu cuối, tìm kiếm trên web. Avatar AI gọi trực tiếp các công cụ để hoàn thành công việc."
         },
         "desktop": {
           "title": "Cài đặt và hệ điều hành chỉ bằng một cú nhấp chuột",
@@ -217,7 +217,7 @@ const vi: Dictionary = {
     "connectedAccounts": {
       "title": "Tài khoản được kết nối",
       "google": "Google",
-      "discord": "Bất hòa"
+      "discord": "Discord"
     },
     "desktopApp": {
       "title": "Kết nối ứng dụng máy tính để bàn",
@@ -234,22 +234,22 @@ const vi: Dictionary = {
     },
     "integrations": {
       "title": "Tích hợp",
-      "description": "Trò chuyện với Naia từ Discord, Google Chat, v.v.",
+      "description": "Trò chuyện với Naia từ Discord và nhiều nơi khác.",
       "discord": {
-        "title": "Bất hòa",
+        "title": "Discord",
         "connected": "Đã kết nối",
         "notConnected": "Chưa kết nối",
-        "connectedHint": "Nếu bạn đăng nhập bằng Discord thì bạn đã được kết nối.",
-        "inviteBot": "Thêm Bot vào máy chủ",
-        "inviteBotDescription": "Thêm bot này vào máy chủ của bạn để trò chuyện qua @Naia đề cập hoặc DM.",
-        "howToUse": "Đề cập đến @botname trong máy chủ của bạn hoặc gửi tin nhắn trực tiếp. Tín dụng được tự động tính vào tài khoản này."
+        "connectedHint": "Nếu bạn đăng nhập bằng Discord thì bạn đã có thể gửi DM.",
+        "inviteBot": "Trò chuyện qua DM",
+        "inviteBotDescription": "Sau khi đăng nhập bằng Discord, hãy gửi DM cho bot Naia để trò chuyện mọi lúc mọi nơi.",
+        "howToUse": "Gửi DM cho bot Naia. Tín dụng được tự động tính vào tài khoản này."
       },
       "googleChat": {
-        "title": "Google Trò chuyện",
+        "title": "Google Chat",
         "connected": "Đã kết nối",
         "notConnected": "Chưa kết nối",
-        "connectedHint": "Nếu bạn đăng nhập bằng Google, bạn đã được kết nối.",
-        "howToUse": "Thêm ứng dụng naia vào Google Chat và bắt đầu nhắn tin."
+        "connectedHint": "Tích hợp Google Chat sắp có.",
+        "howToUse": "Tích hợp Google Chat sẽ sớm được hỗ trợ."
       },
       "viewGuide": "Xem hướng dẫn thiết lập"
     }
@@ -274,7 +274,7 @@ const vi: Dictionary = {
       "diagnostics": "Chẩn đoán",
       "settings": "Cài đặt",
       "tools": "Chi tiết công cụ",
-      "lab": "Hệ điều hành Naia",
+      "lab": "Nextain",
       "troubleshooting": "Khắc phục sự cố"
     }
   },

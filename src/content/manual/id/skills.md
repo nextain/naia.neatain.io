@@ -10,12 +10,12 @@ Tertanam dalam aplikasi — tidak dapat dinonaktifkan:
 | Skill | Fungsi | Tingkat Keamanan |
 |-------|----------|---------------|
 | `skill_time` | Periksa tanggal/waktu saat ini | T0 |
-| `skill_memo` | Simpan/ambil memo | T0 |
 | `skill_system_status` | Periksa status sistem | T0 |
+| `skill_memo` | Simpan/ambil memo | T0 |
 | `skill_weather` | Periksa cuaca | T0 |
-| `skill_notify_slack` | Kirim notifikasi melalui Slack webhook | T1 |
-| `skill_notify_discord` | Kirim notifikasi melalui Discord webhook | T1 |
-| `skill_skill_manager` | Kelola skill: cari, aktifkan, nonaktifkan | T0 |
+| `skill_naia_discord` | Kirim/terima DM Discord | T1 |
+| `skill_soul` | Kelola kepribadian dan memori AI | T0 |
+| `skill_exit` | Keluar dari aplikasi dengan aman | T2 |
 
 ### Skill Kustom
 Ditambahkan melalui Gateway — dapat diaktifkan/dinonaktifkan:
@@ -33,7 +33,7 @@ Ditambahkan melalui Gateway — dapat diaktifkan/dinonaktifkan:
 Naia OS 100% kompatibel dengan ekosistem OpenClaw. Ada tiga cara untuk menambahkan skill:
 
 ### 1. Minta AI untuk Membangunnya (Termudah)
-Jelaskan apa yang Anda inginkan di obrolan, dan AI 아바타 akan menulis kode dan membuat skill untuk Anda.
+Jelaskan apa yang Anda inginkan di obrolan, dan Naia akan menulis kode dan membuat skill untuk Anda.
 > "Buat skill yang mengambil nilai tukar saat ini dan menyimpannya ke `~/.naia/skills/exchange/skill.json`."
 
 ### 2. Instal dari Clawhub (Cara OpenClaw)
@@ -56,10 +56,10 @@ Jika tidak muncul, mulai ulang aplikasi dan periksa lagi.
 
 Naia OS menyertakan skill bawaan (`skill_botmadang`) yang didedikasikan untuk **Botmadang**, komunitas Agen AI Korea.
 
-Anda dapat menginstruksikan AI 아바타 untuk memulai aktivitasnya di Botmadang melalui obrolan:
+Anda dapat menginstruksikan Naia untuk memulai aktivitasnya di Botmadang melalui obrolan:
 > "Daftar sebagai agen baru di Botmadang. Tetapkan nama Anda menjadi 'naia Agent'."
 
-Setelah terdaftar dan diberi API Key, AI 아바타 dapat secara mandiri memposting artikel atau mengomentari utas agen lain.
+Setelah terdaftar dan diberi API Key, Naia dapat secara mandiri memposting artikel atau mengomentari utas agen lain.
 
 ## Skill Notifikasi (Slack / Discord / Google Chat)
 
@@ -97,13 +97,13 @@ export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
 
 ### Contoh Penggunaan
 
-Cukup tanyakan AI 아바타 di obrolan:
+Cukup tanyakan Naia di obrolan:
 
 - "Kirim notifikasi 'deploy complete' ke Slack"
 - "Posting laporan status server ke Discord"
 - "Beritahu saluran #ops tentang hasil build"
 
-AI 아바ata akan secara otomatis memanggil `skill_notify_slack` atau `skill_notify_discord`.
+Naia akan secara otomatis memanggil `skill_notify_slack` atau `skill_notify_discord`.
 
 Jika tidak ada webhook yang dikonfigurasi, pesan yang menjelaskan langkah-langkah pengaturan akan ditampilkan.
 
@@ -153,14 +153,14 @@ Setiap skill ditampilkan sebagai kartu:
 
 ## Kelola Skill melalui AI
 
-Anda juga dapat meminta AI 아바타 untuk mengelola skill dalam obrolan:
+Anda juga dapat meminta Naia untuk mengelola skill dalam obrolan:
 
 - "Tunjukkan daftar skill yang tersedia"
 - "Apakah ada skill terkait cuaca?"
 - "Nonaktifkan skill healthcheck"
 - "Temukan skill terkait coding"
 
-AI 아바타 akan menggunakan alat `skill_skill_manager` secara otomatis.
+Naia akan menggunakan alat `skill_skill_manager` secara otomatis.
 
 ## Tingkat Keamanan
 

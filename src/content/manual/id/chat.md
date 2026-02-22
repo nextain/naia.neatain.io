@@ -1,4 +1,4 @@
-Layar percakapan utama dengan AI 아바타.
+Layar percakapan utama dengan Naia.
 
 ## Obrolan Teks
 
@@ -6,7 +6,7 @@ Layar percakapan utama dengan AI 아바타.
 
 1. Ketik pesan di kolom input di bagian bawah
 2. Tekan **Enter** atau klik **tombol Kirim**
-3. AI 아바타 menghasilkan respons (mengalir secara real-time)
+3. Naia menghasilkan respons (mengalir secara real-time)
 4. Gunakan Shift+Enter untuk jeda baris
 
 ## Obrolan Suara
@@ -18,7 +18,7 @@ Layar percakapan utama dengan AI 아바타.
 
 ## Respons Suara (TTS)
 
-- Respons AI 아바타 secara otomatis diputar sebagai audio
+- Respons Naia secara otomatis diputar sebagai audio
 - Dapat dimatikan di Pengaturan
 - Avatar melakukan sinkronisasi bibir selama pemutaran
 
@@ -30,7 +30,7 @@ Layar percakapan utama dengan AI 아바타.
 - Klik untuk membuka dasbor biaya terperinci:
   - Pesan per penyedia
   - Jumlah token input/output
-  - Saldo Lab (saat terhubung)
+  - Saldo Nextain (saat terhubung)
   - Tautan pengisian kredit
 
 ## Percakapan Baru
@@ -40,7 +40,7 @@ Layar percakapan utama dengan AI 아바타.
 
 ## Tampilan Eksekusi Alat
 
-Ketika AI 아바타 menggunakan alat, area obrolan menampilkan:
+Ketika Naia menggunakan alat, area obrolan menampilkan:
 
 ![Tampilan eksekusi alat](chat-tool.png)
 

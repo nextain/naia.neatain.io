@@ -25,7 +25,7 @@ Vì Naia OS có một AI "điều khiển trực tiếp hệ điều hành", ph�
   ```
 
 ### 2. Ảnh tích hợp Bazzite / BlueBuild (Nâng cao)
-Đối với người dùng nâng cao, Naia OS cung cấp công thức BlueBuild để đưa ứng dụng trực tiếp vào một ảnh Bazzite. Điều này tích hợp sâu AI vào hệ điều hành, cho phép hình đại diện AI chào bạn ngay khi khởi động.
+Đối với người dùng nâng cao, Naia OS cung cấp công thức BlueBuild để đưa ứng dụng trực tiếp vào một ảnh Bazzite. Điều này tích hợp sâu AI vào hệ điều hành, cho phép Naia chào bạn ngay khi khởi động.
 
 ---
 

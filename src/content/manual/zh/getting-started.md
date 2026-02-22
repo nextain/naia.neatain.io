@@ -25,15 +25,15 @@
 
 ## 引导步骤
 
-完成 Lab 登录或 API Key 输入后，请完成以下步骤：
+完成 Nextain 登录或 API Key 输入后，请完成以下步骤：
 
 ### 1. 为您的 AI 命名
-为 AI 아바타 命名，任何您喜欢的名字都可以（例如，“AI 아바타”、“Luna”、“Cookie”）。
+为AI助手命名，任何您喜欢的名字都可以（例如，”Naia”、”Luna”、”Cookie”）。
 
 ![AI name input](onboarding-agent-name.png)
 
 ### 2. 您的名字
-输入 AI 아바타 应该如何称呼您。
+输入 Naia 应该如何称呼您。
 
 ![Your name input](onboarding-user-name.png)
 

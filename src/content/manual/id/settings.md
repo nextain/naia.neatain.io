@@ -37,25 +37,25 @@ Klik contoh warna untuk pratinjau instan.
 
 ## Persona
 
-Sesuaikan kepribadian, gaya bicara, dan nama AI 아바타 dalam teks bebas. Tag emosi ditambahkan secara otomatis.
+Sesuaikan kepribadian, gaya bicara, dan nama Naia dalam teks bebas. Tag emosi ditambahkan secara otomatis.
 
 ![Persona settings](settings-persona.png)
 
-## Akun Naia OS
+## Akun Nextain
 
-Kelola integrasi Lab.
+Kelola integrasi Nextain.
 
 ### Saat Terhubung
 
 - ID Pengguna ditampilkan
 - **Saldo kredit** ditampilkan (kueri waktu nyata)
-- Tombol **Dashboard**: Buka dashboard Lab di browser
-- Tombol **Isi Kredit**: Buka halaman penagihan Lab
-- Tombol **Putuskan Sambungan**: Hapus tautan akun Lab
-- Pengaturan otomatis sinkron ke Lab saat disimpan
+- Tombol **Dashboard**: Buka dashboard Nextain di browser
+- Tombol **Isi Kredit**: Buka halaman penagihan Nextain
+- Tombol **Putuskan Sambungan**: Hapus tautan akun Nextain
+- Pengaturan otomatis sinkron ke Nextain saat disimpan
 
 ### Saat Tidak Terhubung
-- Tombol **Masuk Lab**: Masuk melalui browser, otomatis terhubung
+- Tombol **Masuk Nextain**: Masuk melalui browser, otomatis terhubung
 
 ## Manual Pengguna
 
@@ -63,10 +63,9 @@ Klik "Manual Pengguna" untuk membuka halaman ini di browser.
 
 ## Pengaturan AI
 
-- **Penyedia**: Gemini (default), OpenAI, Claude, Grok, zAI, Ollama
-  - Saat ini hanya Gemini yang tersedia; yang lain akan segera hadir
+- **Penyedia**: Gemini (default), OpenAI, Claude, Grok, xAI, Ollama, Claude Code CLI
 - **Model**: Nama model (misalnya, gemini-2.5-flash)
-- **API Key**: Kunci API penyedia (tidak diperlukan jika menggunakan Lab)
+- **API Key**: Kunci API penyedia (tidak diperlukan jika menggunakan Nextain)
 
 ## Suara (TTS/STT)
 
@@ -81,7 +80,7 @@ Klik "Manual Pengguna" untuk membuka halaman ini di browser.
 
 ## Alat
 
-Kelola izin kontrol sistem yang tersedia untuk avatar AI.
+Kelola izin kontrol sistem yang tersedia untuk Naia.
 
 - **Aktifkan Alat**: Master ON/OFF untuk fitur alat
 - **URL Gateway / Token Gateway**: Dikelola secara otomatis di lingkungan pengguna normal, sehingga input manual tidak diperlukan
@@ -105,8 +104,8 @@ Kelola izin kontrol sistem yang tersedia untuk avatar AI.
 
 Kelola integrasi messenger eksternal di halaman **Pengaturan > Integrasi**.
 
-- **Integrasi Discord**: Otomatis tertaut saat Anda masuk dengan Discord. Tambahkan bot ke server Anda melalui tautan undangan untuk mengobrol dengan AI melalui sebutan atau DM.
-- **Integrasi Google Chat**: Mengobrol dengan AI melalui Google Chat saat masuk dengan Google.
+- **Integrasi Discord**: Otomatis tertaut saat Anda masuk dengan Discord. Kirim DM ke bot untuk mengobrol dengan Naia.
+- **Integrasi Google Chat**: Direncanakan untuk pembaruan mendatang.
 - Status koneksi (terhubung/tidak terhubung) ditampilkan sebagai lencana.
 
 ## Perangkat & Kata Pembangun
@@ -119,7 +118,7 @@ Kelola integrasi messenger eksternal di halaman **Pengaturan > Integrasi**.
 
 ## Memori (Fakta)
 
-Kelola fakta yang dipelajari AI 아바타 dari percakapan.
+Kelola fakta yang dipelajari Naia dari percakapan.
 - Setiap fakta menampilkan **kunci** dan **nilai**
 - Tombol **Hapus** untuk menghapus fakta yang tidak perlu
 - Fakta yang disimpan memengaruhi personalisasi respons dalam obrolan berikutnya

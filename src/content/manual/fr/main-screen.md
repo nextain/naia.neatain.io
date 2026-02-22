@@ -22,7 +22,7 @@ Le panneau inférieur comporte 8 onglets :
 
 | Onglet | Description |
 |---|---|
-| Chat | Conversation avec l'IA 아바타 |
+| Chat | Conversation avec l'avatar IA |
 | Historique | Conversations précédentes |
 | Progression | Suivi de l'exécution des outils/des erreurs |
 | Compétences | Liste des compétences (outils) disponibles |

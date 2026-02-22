@@ -22,7 +22,7 @@ Bảng điều khiển phía dưới có 8 tab:
 
 | Tab | Mô tả |
 |-----|-------------|
-| Trò chuyện | Trò chuyện với AI 아바타 |
+| Trò chuyện | Trò chuyện với Naia |
 | Lịch sử | Các cuộc trò chuyện trước đây |
 | Tiến độ | Giám sát thực thi công cụ/lỗi |
 | Kỹ năng | Danh sách kỹ năng (công cụ) có sẵn |

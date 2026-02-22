@@ -58,14 +58,11 @@
 
 ### Discord
 - 使用Discord登录时自动关联
-- 在**Settings > Integrations**中查找机器人邀请链接
-- 在您的服务器中通过@mention或DM聊天
-- 积分将从您的Lab账户中扣除
+- 通过向 Naia 机器人发送私信聊天
+- 积分将从您的Nextain账户中扣除
 
-### Google Chat
-- 使用Google登录时可用
-- 在Workspace应用注册后通过Google Chat聊天
-- 积分将从您的Lab账户中扣除
+### Google Chat（即将推出）
+- Google Chat集成计划在未来更新中推出
 
 ## 设置
 

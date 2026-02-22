@@ -2,9 +2,9 @@ Common issues and solutions.
 
 ## AI agent is not responding
 
-1. Check API key or Lab connection in Settings > AI Settings
+1. Check API key or Nextain connection in Settings > AI Settings
 2. Verify internet connection
-3. Check credit balance in Settings > Lab Account
+3. Check credit balance in Settings > Nextain Account
 4. Ensure the model is correctly configured
 
 ## Voice is not working
@@ -16,8 +16,8 @@ Common issues and solutions.
 
 ## Low on credits
 
-1. Check balance in Settings > Lab Account
-2. Review usage in Lab Dashboard
+1. Check balance in Settings > Nextain Account
+2. Review usage in Nextain Dashboard
 3. Free credits recharge monthly
 4. Upgrade to BASIC ($10/mo) for 100 credits
 
@@ -41,7 +41,7 @@ Common issues and solutions.
 - Be specific: "Tell me the weather in Seoul"
 - Try with English city names (e.g., "Seoul weather")
 
-## Lab login is not working
+## Nextain login is not working
 
 1. Check internet connection
 2. Try accessing naia.nextain.io directly in your browser

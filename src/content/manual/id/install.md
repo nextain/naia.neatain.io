@@ -25,7 +25,7 @@ Ini adalah cara yang paling umum dan aman untuk mendistribusikan aplikasi deskto
   ```
 
 ### 2. Citra Terintegrasi Bazzite / BlueBuild (Tingkat Lanjut)
-Untuk pengguna tingkat lanjut, Naia OS menyediakan resep BlueBuild untuk mengintegrasikan aplikasi langsung ke dalam citra Bazzite. Ini mengintegrasikan AI secara mendalam ke dalam OS, memungkinkan avatar AI menyambut Anda segera setelah boot.
+Untuk pengguna tingkat lanjut, Naia OS menyediakan resep BlueBuild untuk mengintegrasikan aplikasi langsung ke dalam citra Bazzite. Ini mengintegrasikan AI secara mendalam ke dalam OS, memungkinkan Naia menyambut Anda segera setelah boot.
 
 ---
 

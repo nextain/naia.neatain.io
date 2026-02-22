@@ -37,25 +37,25 @@ Nhấp vào ô màu để xem trước ngay lập lập tức.
 
 ## Tính cách (Persona)
 
-Tùy chỉnh tính cách, phong cách nói chuyện và tên của AI 아바타 bằng văn bản tự do. Các thẻ cảm xúc được thêm tự động.
+Tùy chỉnh tính cách, phong cách nói chuyện và tên của Naia bằng văn bản tự do. Các thẻ cảm xúc được thêm tự động.
 
 ![Persona settings](settings-persona.png)
 
-## Tài khoản Naia OS
+## Tài khoản Nextain
 
-Quản lý tích hợp Lab.
+Quản lý tích hợp Nextain.
 
 ### Khi đã kết nối
 
 - ID người dùng được hiển thị
 - **Số dư tín dụng** được hiển thị (truy vấn thời gian thực)
-- Nút **Bảng điều khiển**: Mở bảng điều khiển Lab trong trình duyệt
-- Nút **Nạp Tín dụng**: Chuyển đến trang thanh toán của Lab
-- Nút **Ngắt kết nối**: Hủy liên kết tài khoản Lab
-- Cài đặt tự động đồng bộ hóa với Lab khi lưu
+- Nút **Bảng điều khiển**: Mở bảng điều khiển Nextain trong trình duyệt
+- Nút **Nạp Tín dụng**: Chuyển đến trang thanh toán của Nextain
+- Nút **Ngắt kết nối**: Hủy liên kết tài khoản Nextain
+- Cài đặt tự động đồng bộ hóa với Nextain khi lưu
 
 ### Khi chưa kết nối
-- Nút **Đăng nhập Lab**: Đăng nhập qua trình duyệt, tự động kết nối
+- Nút **Đăng nhập Nextain**: Đăng nhập qua trình duyệt, tự động kết nối
 
 ## Hướng dẫn sử dụng
 
@@ -63,10 +63,9 @@ Nhấp vào "Hướng dẫn sử dụng" để mở trang này trong trình duy�
 
 ## Cài đặt AI
 
-- **Nhà cung cấp**: Gemini (mặc định), OpenAI, Claude, Grok, zAI, Ollama
-  - Hiện tại chỉ có Gemini khả dụng; các nhà cung cấp khác sẽ sớm ra mắt
+- **Nhà cung cấp**: Gemini (mặc định), OpenAI, Claude, Grok, xAI, Ollama, Claude Code CLI
 - **Mô hình**: Tên mô hình (ví dụ: gemini-2.5-flash)
-- **API Key**: Khóa API của nhà cung cấp (không cần nếu sử dụng Lab)
+- **API Key**: Khóa API của nhà cung cấp (không cần nếu sử dụng Nextain)
 
 ## Giọng nói (TTS/STT)
 
@@ -81,7 +80,7 @@ Nhấp vào "Hướng dẫn sử dụng" để mở trang này trong trình duy�
 
 ## Công cụ
 
-Quản lý quyền kiểm soát hệ thống có sẵn cho avatar AI.
+Quản lý quyền kiểm soát hệ thống có sẵn cho Naia.
 
 - **Bật Công cụ**: BẬT/TẮT chính cho các tính năng công cụ
 - **URL Gateway / Mã thông báo Gateway**: Được quản lý tự động trong môi trường người dùng thông thường, vì vậy không yêu cầu nhập thủ công
@@ -105,8 +104,8 @@ Quản lý quyền kiểm soát hệ thống có sẵn cho avatar AI.
 
 Quản lý tích hợp trình nhắn tin bên ngoài trên trang **Cài đặt > Tích hợp**.
 
-- **Tích hợp Discord**: Tự động liên kết khi bạn đăng nhập bằng Discord. Thêm bot vào máy chủ của bạn qua liên kết mời để trò chuyện với AI thông qua nhắc tên hoặc tin nhắn trực tiếp.
-- **Tích hợp Google Chat**: Trò chuyện với AI qua Google Chat khi đăng nhập bằng Google.
+- **Tích hợp Discord**: Tự động liên kết khi bạn đăng nhập bằng Discord. Gửi tin nhắn trực tiếp cho bot để trò chuyện với Naia.
+- **Tích hợp Google Chat**: Dự kiến cho bản cập nhật tương lai.
 - Trạng thái kết nối (đã kết nối/chưa kết nối) được hiển thị dưới dạng huy hiệu.
 
 ## Thiết bị & Từ đánh thức
@@ -119,7 +118,7 @@ Quản lý tích hợp trình nhắn tin bên ngoài trên trang **Cài đặt >
 
 ## Bộ nhớ (Sự kiện)
 
-Quản lý các sự kiện AI 아바타 đã học được từ các cuộc hội thoại.
+Quản lý các sự kiện Naia đã học được từ các cuộc hội thoại.
 - Mỗi sự kiện hiển thị một **khóa** và **giá trị**
 - Nút **Xóa** để loại bỏ các sự kiện không cần thiết
 - Các sự kiện đã lưu ảnh hưởng đến việc cá nhân hóa phản hồi trong các cuộc trò chuyện sau này

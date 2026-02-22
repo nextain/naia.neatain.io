@@ -10,7 +10,7 @@
 | search_files | 파일 시스템 검색 | T0 |
 | web_search | 인터넷 검색 | T1 |
 | apply_diff | 파일 편집 (diff 적용) | T2 |
-| browser | 웹 페이지 열기 | T1 |
+| browser | 웹 페이지 내용 읽기 (HTML → 텍스트 변환) | T1 |
 | sessions_spawn | 서브 에이전트 생성 | T2 |
 
 ## 사용 예시

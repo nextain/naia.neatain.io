@@ -37,25 +37,25 @@ Click a color swatch for instant preview.
 
 ## Persona
 
-Customize AI 아바타's personality, speech style, and name in free text. Emotion tags are added automatically.
+Customize Naia's personality, speech style, and name in free text. Emotion tags are added automatically.
 
 ![Persona settings](settings-persona.png)
 
-## Naia OS Account
+## Nextain Account
 
-Manage Lab integration.
+Manage Nextain integration.
 
 ### When Connected
 
 - User ID displayed
 - **Credit balance** shown (real-time query)
-- **Dashboard** button: Open Lab dashboard in browser
-- **Charge Credits** button: Go to Lab billing page
-- **Disconnect** button: Unlink Lab account
-- Settings auto-sync to Lab on save
+- **Dashboard** button: Open Nextain dashboard in browser
+- **Charge Credits** button: Go to Nextain billing page
+- **Disconnect** button: Unlink Nextain account
+- Settings auto-sync to Nextain on save
 
 ### When Not Connected
-- **Lab Login** button: Sign in via browser, auto-connects
+- **Nextain Login** button: Sign in via browser, auto-connects
 
 ## User Manual
 
@@ -63,10 +63,9 @@ Click "User Manual" to open this page in the browser.
 
 ## AI Settings
 
-- **Provider**: Gemini (default), OpenAI, Claude, Grok, zAI, Ollama
-  - Currently only Gemini available; others coming soon
+- **Provider**: Gemini (default), OpenAI, Claude, Grok, xAI, Ollama, Claude Code CLI
 - **Model**: Model name (e.g., gemini-2.5-flash)
-- **API Key**: Provider API key (not needed if using Lab)
+- **API Key**: Provider API key (not needed if using Nextain)
 
 ## Voice (TTS/STT)
 
@@ -105,8 +104,8 @@ Manage the system control permissions available to the AI avatar.
 
 Manage external messenger integrations on the **Settings > Integrations** page.
 
-- **Discord Integration**: Automatically linked when you sign in with Discord. Add the bot to your server via the invite link to chat with the AI through mentions or DMs.
-- **Google Chat Integration**: Chat with the AI through Google Chat when signed in with Google.
+- **Discord Integration**: Automatically linked when you sign in with Discord. Send a DM to the bot to chat with Naia.
+- **Google Chat Integration**: Planned for a future update.
 - Connection status (connected/not connected) is shown as badges.
 
 ## Device & Wake Word
@@ -119,7 +118,7 @@ Manage external messenger integrations on the **Settings > Integrations** page.
 
 ## Memory (Facts)
 
-Manage facts AI 아바타 learned from conversations.
+Manage facts Naia learned from conversations.
 - Each fact shows a **key** and **value**
 - **Delete** button to remove unnecessary facts
 - Saved facts affect response personalization in later chats

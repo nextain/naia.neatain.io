@@ -1,4 +1,4 @@
-Der Haupt-Konversationsbildschirm mit AI 아바타.
+Der Haupt-Konversationsbildschirm mit dem KI-Avatar.
 
 ## Text-Chat
 
@@ -6,7 +6,7 @@ Der Haupt-Konversationsbildschirm mit AI 아바타.
 
 1. Geben Sie eine Nachricht in das Eingabefeld unten ein
 2. Drücken Sie die **Enter**-Taste oder klicken Sie auf die **Senden-Schaltfläche**
-3. AI 아바타 generiert eine Antwort (wird in Echtzeit gestreamt)
+3. Der KI-Avatar generiert eine Antwort (wird in Echtzeit gestreamt)
 4. Verwenden Sie Umschalt+Enter für Zeilenumbrüche
 
 ## Sprach-Chat
@@ -18,7 +18,7 @@ Der Haupt-Konversationsbildschirm mit AI 아바타.
 
 ## Sprachausgabe (TTS)
 
-- Die Antworten von AI 아바타 werden automatisch als Audio abgespielt
+- Die Antworten des KI-Avatars werden automatisch als Audio abgespielt
 - Kann in den Einstellungen deaktiviert werden
 - Der Avatar führt während der Wiedergabe Lippensynchronisation durch
 
@@ -30,7 +30,7 @@ Der Haupt-Konversationsbildschirm mit AI 아바타.
 - Klicken Sie, um das detaillierte Kosten-Dashboard zu öffnen:
   - Nachrichten pro Anbieter
   - Anzahl der Input-/Output-Tokens
-  - Laborguthaben (bei Verbindung)
+  - Nextain-Guthaben (bei Verbindung)
   - Link zur Gutschriftenaufladung
 
 ## Neue Konversation
@@ -40,7 +40,7 @@ Der Haupt-Konversationsbildschirm mit AI 아바타.
 
 ## Anzeige der Tool-Ausführung
 
-Wenn AI 아바타 Tools verwendet, zeigt der Chatbereich an:
+Wenn der KI-Avatar Tools verwendet, zeigt der Chatbereich an:
 
 ![Anzeige der Tool-Ausführung](chat-tool.png)
 

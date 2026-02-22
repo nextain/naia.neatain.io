@@ -1,10 +1,10 @@
-Tab ini mengelola semua agen (termasuk AI 아바타 utama) dan sub-agen yang berjalan dalam Naia OS.
+Tab ini mengelola semua agen (termasuk Naia utama) dan sub-agen yang berjalan dalam Naia OS.
 
 ![Agents Tab](agents-tab.png)
 
 ## Daftar Agen
 - Anda dapat melihat daftar semua kartu agen yang sedang aktif.
-- Ketika tugas yang kompleks dimulai, AI 아바타 dapat memunculkan sub-agen latar belakang untuk memproses tugas secara paralel.
+- Ketika tugas yang kompleks dimulai, Naia dapat memunculkan sub-agen latar belakang untuk memproses tugas secara paralel.
 
 ## Manajemen Berkas
 Mengeklik tombol **Berkas** di bagian bawah kartu agen menampilkan daftar berkas yang dihasilkan dalam ruang kerja lokal agen tersebut.

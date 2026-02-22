@@ -1,10 +1,10 @@
-Dieser Tab verwaltet alle Agenten (einschließlich des Haupt-AI 아바타) und Sub-Agenten, die innerhalb von Naia OS ausgeführt werden.
+Dieser Tab verwaltet alle Agenten (einschließlich des Haupt-KI-Avatars) und Sub-Agenten, die innerhalb von Naia OS ausgeführt werden.
 
 ![Agents Tab](agents-tab.png)
 
 ## Agentenliste
 - Sie können eine Liste aller aktuell aktiven Agentenkarten einsehen.
-- Wenn eine komplexe Aufgabe initiiert wird, kann AI 아바타 Hintergrund-Sub-Agenten erzeugen, um Aufgaben parallel zu verarbeiten.
+- Wenn eine komplexe Aufgabe initiiert wird, kann der KI-Avatar Hintergrund-Sub-Agenten erzeugen, um Aufgaben parallel zu verarbeiten.
 
 ## Dateiverwaltung
 Durch Klicken auf die Schaltfläche **Files** unten auf einer Agentenkarte wird die Liste der Dateien angezeigt, die im lokalen Arbeitsbereich dieses Agenten generiert wurden.

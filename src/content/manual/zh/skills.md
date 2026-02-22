@@ -10,12 +10,12 @@
 | 技能 | 功能 | 安全等级 |
 |-------|----------|---------------|
 | `skill_time` | 检查当前日期/时间 | T0 |
-| `skill_memo` | 保存/检索备忘录 | T0 |
 | `skill_system_status` | 检查系统状态 | T0 |
+| `skill_memo` | 保存/检索备忘录 | T0 |
 | `skill_weather` | 检查天气 | T0 |
-| `skill_notify_slack` | 通过Slack webhook发送通知 | T1 |
-| `skill_notify_discord` | 通过Discord webhook发送通知 | T1 |
-| `skill_skill_manager` | 管理技能：搜索、启用、禁用 | T0 |
+| `skill_naia_discord` | 发送/接收Discord私信 | T1 |
+| `skill_soul` | 管理AI个性和记忆 | T0 |
+| `skill_exit` | 安全退出应用 | T2 |
 
 ### 自定义技能
 通过Gateway添加 — 可以开启/关闭：
@@ -33,7 +33,7 @@
 Naia OS 与 OpenClaw 生态系统100%兼容。有三种添加技能的方式：
 
 ### 1. 让AI构建它（最简单）
-在聊天中解释你的需求，AI 아바타将为你编写代码并创建技能。
+在聊天中解释你的需求，Naia将为你编写代码并创建技能。
 > "Build a skill that fetches the current exchange rate and save it to `~/.naia/skills/exchange/skill.json`."
 
 ### 2. 从Clawhub安装（OpenClaw方式）
@@ -56,10 +56,10 @@ Naia OS 与 OpenClaw 生态系统100%兼容。有三种添加技能的方式：
 
 Naia OS 包含一个内置技能（`skill_botmadang`），专门用于韩国AI Agent社区**Botmadang**。
 
-你可以通过聊天指示AI 아바타在Botmadang上开始活动：
+你可以通过聊天指示Naia在Botmadang上开始活动：
 > "Register as a new agent on Botmadang. Set your name to 'naia Agent'."
 
-注册并获得API Key后，AI 아바타可以自主发布文章或评论其他agent的帖子。
+注册并获得API Key后，Naia可以自主发布文章或评论其他agent的帖子。
 
 ## 通知技能（Slack / Discord / Google Chat）
 
@@ -97,13 +97,13 @@ export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
 
 ### 使用示例
 
-只需在聊天中询问AI 아바타：
+只需在聊天中询问Naia：
 
 - "Send a 'deploy complete' notification to Slack"
 - "Post the server status report to Discord"
 - "Notify the #ops channel with build results"
 
-AI 아바타将自动调用`skill_notify_slack`或`skill_notify_discord`。
+Naia将自动调用`skill_notify_slack`或`skill_notify_discord`。
 
 如果未配置webhook，将显示一条解释设置步骤的消息。
 
@@ -153,14 +153,14 @@ Gateway通道集成提供更丰富的功能（消息格式、线程、提及等�
 
 ## 通过AI管理技能
 
-你也可以在聊天中请AI 아바타管理技能：
+你也可以在聊天中请Naia管理技能：
 
 - "Show me the list of available skills"
 - "Is there a weather-related skill?"
 - "Disable the healthcheck skill"
 - "Find coding-related skills"
 
-AI 아바타将自动使用`skill_skill_manager`工具。
+Naia将自动使用`skill_skill_manager`工具。
 
 ## 安全等级
 

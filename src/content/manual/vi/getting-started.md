@@ -25,15 +25,15 @@ Bạn cũng có thể nhập API key từ các nhà cung cấp như Google Gemin
 
 ## Các bước chào mừng
 
-Sau khi đăng nhập Lab hoặc nhập API key, hoàn thành các bước sau:
+Sau khi đăng nhập Nextain hoặc nhập API key, hoàn thành các bước sau:
 
 ### 1. Đặt tên cho AI của bạn
-Đặt tên cho AI 아바타 bất kỳ tên nào bạn muốn (ví dụ: "AI 아바타", "Luna", "Cookie").
+Đặt tên cho Naia bất kỳ tên nào bạn muốn (ví dụ: "Naia", "Luna", "Cookie").
 
 ![AI name input](onboarding-agent-name.png)
 
 ### 2. Tên của bạn
-Nhập tên mà AI 아바타 nên gọi bạn.
+Nhập tên mà Naia nên gọi bạn.
 
 ![Your name input](onboarding-user-name.png)
 

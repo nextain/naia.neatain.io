@@ -25,7 +25,7 @@ Esta es la forma más común y segura de distribuir aplicaciones de escritorio L
   ```
 
 ### 2. Imagen Integrada Bazzite / BlueBuild (Avanzado)
-Para usuarios avanzados, Naia OS proporciona una receta BlueBuild para integrar la aplicación directamente en una imagen de Bazzite. Esto integra profundamente la IA en el SO, permitiendo que el avatar de la IA le salude inmediatamente al iniciar.
+Para usuarios avanzados, Naia OS proporciona una receta BlueBuild para integrar la aplicación directamente en una imagen de Bazzite. Esto integra profundamente la IA en el SO, permitiendo que Naia le salude inmediatamente al iniciar.
 
 ---
 

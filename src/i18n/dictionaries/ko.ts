@@ -3,8 +3,8 @@ import type { Dictionary } from "./types";
 const ko: Dictionary = {
   locale: "ko",
   meta: {
-    title: "Naia OS",
-    description: "Naia OS — 손쉬운 나만의 AI. 3D 아바타 AI 아바타와 대화하고, 음성으로 소통하세요.",
+    title: "Naia OS | The Next Generation AI OS",
+    description: "Naia OS — 손쉬운 나만의 AI. 3D 아바타 AI와 대화하고, 음성으로 소통하세요.",
   },
   common: {
     loading: "로딩 중...",
@@ -58,7 +58,7 @@ const ko: Dictionary = {
     hero: {
       title: "가장 진보한 AI 에이전트, 가장 완벽한 OS로.",
       subtitle:
-        "3대 LLM 통합부터 터미널 제어, 그리고 감정을 표현하는 VRM 아바타까지. 개발자가 아니어도 경험할 수 있는 완전한 AI 생태계, Naia OS.",
+        "7개 AI 제공업체, 터미널 제어, 그리고 감정을 표현하는 VRM 아바타까지. 개발자가 아니어도 경험할 수 있는 완전한 AI 생태계, Naia OS.",
       cta: "무료로 시작하기",
       secondaryCta: "다운로드",
     },
@@ -72,9 +72,9 @@ const ko: Dictionary = {
             "감정을 표현하는 3D 아바타가 데스크톱에서 함께합니다. 대화에 따라 표정이 바뀌고, 눈을 맞추며 반응합니다.",
         },
         multiProvider: {
-          title: "Gemini 무료 지원 · 기타 모델 준비중",
+          title: "7개 AI 제공업체 지원",
           description:
-            "현재 Gemini를 무료 크레딧으로 지원합니다. Grok, Anthropic(Claude), OpenAI, Zhipu(GLM) 등의 API Key 지원이 곧 추가될 예정입니다.",
+            "Gemini, Claude, GPT, Grok, zAI, Ollama, Claude Code CLI — 크레딧 또는 자체 API Key로 자유롭게 전환하며 사용하세요.",
         },
         voice: {
           title: "음성 대화",
@@ -240,22 +240,22 @@ const ko: Dictionary = {
     },
     integrations: {
       title: "채널 연동",
-      description: "Discord, Google Chat 등 채널에서 낸와 대화할 수 있습니다.",
+      description: "Discord 등 외부 채널에서 Naia와 대화할 수 있습니다.",
       discord: {
         title: "Discord",
         connected: "연동됨",
         notConnected: "미연동",
-        connectedHint: "디스코드 채널 연결 상태입니다.",
-        inviteBot: "봇 서버에 추가",
-        inviteBotDescription: "이 봇을 서버에 추가하면 @낸 멘션이나 DM으로 대화할 수 있습니다.",
-        howToUse: "서버에서 @봇이름으로 멘션하거나 DM을 보내세요. 크레딧은 이 계정에서 자동 차감됩니다.",
+        connectedHint: "Discord 계정이 연동되어 있으면 DM으로 대화할 수 있습니다.",
+        inviteBot: "DM으로 대화하기",
+        inviteBotDescription: "Discord 로그인 후 Naia 봇에게 DM을 보내면 언제 어디서나 대화할 수 있습니다.",
+        howToUse: "Naia 봇에게 DM을 보내세요. 크레딧은 이 계정에서 자동 차감됩니다.",
       },
       googleChat: {
         title: "Google Chat",
         connected: "연동됨",
         notConnected: "미연동",
-        connectedHint: "Google Chat 채널 연결 상태입니다.",
-        howToUse: "Google Chat에서 Naia OS 앱을 추가한 후 메시지를 보내세요.",
+        connectedHint: "Google Chat 연동은 준비 중입니다.",
+        howToUse: "Google Chat 연동은 곧 지원될 예정입니다.",
       },
       viewGuide: "설정 가이드 보기",
     },
@@ -280,7 +280,7 @@ const ko: Dictionary = {
       diagnostics: "시스템 진단",
       settings: "설정",
       tools: "도구 상세",
-      lab: "Naia OS",
+      lab: "Nextain 계정",
       troubleshooting: "문제 해결",
     },
   },

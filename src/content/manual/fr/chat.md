@@ -1,4 +1,4 @@
-L'écran de conversation principal avec AI 아바타.
+L'ecran de conversation principal avec l'avatar IA.
 
 ## Chat textuel
 
@@ -6,7 +6,7 @@ L'écran de conversation principal avec AI 아바타.
 
 1. Saisissez un message dans le champ de saisie en bas
 2. Appuyez sur **Entrée** ou cliquez sur le **bouton Envoyer**
-3. AI 아바타 génère une réponse (diffusée en temps réel)
+3. L'avatar IA génère une réponse (diffusée en temps réel)
 4. Utilisez Maj+Entrée pour les sauts de ligne
 
 ## Chat vocal
@@ -18,7 +18,7 @@ L'écran de conversation principal avec AI 아바타.
 
 ## Réponse vocale (TTS)
 
-- Les réponses d'AI 아바타 sont automatiquement lues sous forme audio
+- Les réponses de l'avatar IA sont automatiquement lues sous forme audio
 - Peut être désactivé dans les Paramètres
 - L'avatar effectue une synchronisation labiale pendant la lecture
 
@@ -30,7 +30,7 @@ L'écran de conversation principal avec AI 아바타.
 - Cliquez pour ouvrir le tableau de bord détaillé des coûts :
   - Messages par fournisseur
   - Nombre de jetons d'entrée/sortie
-  - Solde du laboratoire (lorsqu'il est connecté)
+  - Solde Nextain (lorsqu'il est connecté)
   - Lien de recharge de crédits
 
 ## Nouvelle conversation
@@ -40,7 +40,7 @@ L'écran de conversation principal avec AI 아바타.
 
 ## Affichage de l'exécution d'outils
 
-Lorsque AI 아바타 utilise des outils, la zone de chat affiche :
+Lorsque l'avatar IA utilise des outils, la zone de chat affiche :
 
 ![Affichage de l'exécution d'outils](chat-tool.png)
 

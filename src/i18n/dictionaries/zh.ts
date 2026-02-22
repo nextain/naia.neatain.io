@@ -4,7 +4,7 @@ const zh: Dictionary = {
   "locale": "zh",
   "meta": {
     "title": "奈亚操作系统",
-    "description": "Naia OS——您的个人人工智能，变得简单。与 3D 化身 AI 아바타 聊天、交谈和工作。"
+    "description": "Naia OS——您的个人人工智能，变得简单。与 3D AI助手 聊天、交谈和工作。"
   },
   "common": {
     "loading": "正在加载...",
@@ -57,7 +57,7 @@ const zh: Dictionary = {
   "home": {
     "hero": {
       "title": "最先进的AI代理，作为完美的操作系统。",
-      "subtitle": "从3大LLM整合到终端控制，以及表达情感的VRM化身。无需成为开发者即可体验的完整AI生态系统，Naia OS。",
+      "subtitle": "从7个AI提供商整合到终端控制，以及表达情感的VRM化身。无需成为开发者即可体验的完整AI生态系统，Naia OS。",
       "cta": "免费开始使用",
       "secondaryCta": "下载"
     },
@@ -66,20 +66,20 @@ const zh: Dictionary = {
       "subtitle": "体验人工智能代理的力量——无需编码",
       "items": {
         "companion": {
-          "title": "AI头像 AI 아바타",
-          "description": "带有情感的 3D 头像就在您的桌面上。 AI 아바타 通过面部表情和眼神交流对对话做出反应。"
+          "title": "AI助手",
+          "description": "带有情感的 3D 头像就在您的桌面上。 AI助手 通过面部表情和眼神交流对对话做出反应。"
         },
         "multiProvider": {
-          "title": "Gemini 免费 · 更多型号即将推出",
-          "description": "目前以免费积分支持 Gemini。对 Grok、Anthropic(Claude)、OpenAI 和zhipu(GLM) 的 API 密钥支持已计划并即将推出。"
+          "title": "7个AI提供商支持",
+          "description": "Gemini、Claude、GPT、Grok、zAI、Ollama、Claude Code CLI — 使用积分或自己的API密钥自由切换。"
         },
         "voice": {
           "title": "语音对话",
-          "description": "通过语音提问，获得口头答复。 AI 아바타 通过口型同步动画自然地回答。"
+          "description": "通过语音提问，获得口头答复。 AI助手 通过口型同步动画自然地回答。"
         },
         "tools": {
           "title": "工具执行",
-          "description": "文件编辑、终端命令、网络搜索。 AI 아바타直接调用工具来完成工作。"
+          "description": "文件编辑、终端命令、网络搜索。 AI助手直接调用工具来完成工作。"
         },
         "desktop": {
           "title": "一键安装和操作系统",
@@ -234,22 +234,22 @@ const zh: Dictionary = {
     },
     "integrations": {
       "title": "集成",
-      "description": "通过 Discord、Google Chat 等与 Naia 聊天。",
+      "description": "通过 Discord 向 Naia 发送私信聊天。",
       "discord": {
-        "title": "不和谐",
+        "title": "Discord",
         "connected": "已连接",
         "notConnected": "未连接",
-        "connectedHint": "如果您使用 Discord 登录，则您已经连接。",
-        "inviteBot": "将机器人添加到服务器",
-        "inviteBotDescription": "将此机器人添加到您的服务器以通过 @Naia 提及或 DM 聊天。",
-        "howToUse": "在您的服务器中提及@botname 或发送 DM。积分将自动记入此帐户。"
+        "connectedHint": "如果您使用 Discord 登录，可以直接向 Naia 发送私信。",
+        "inviteBot": "向 Naia 发送私信",
+        "inviteBotDescription": "在 Discord 上向 Naia 机器人发送私信进行聊天。",
+        "howToUse": "在 Discord 上向 Naia 机器人发送私信。积分将自动从此帐户扣除。"
       },
       "googleChat": {
         "title": "谷歌聊天",
-        "connected": "已连接",
-        "notConnected": "未连接",
-        "connectedHint": "如果您使用 Google 登录，则您已经连接。",
-        "howToUse": "在 Google Chat 中添加 naia 应用程序并开始发送消息。"
+        "connected": "准备中",
+        "notConnected": "准备中",
+        "connectedHint": "Google Chat 集成目前正在准备中。",
+        "howToUse": "准备中 — 即将推出。"
       },
       "viewGuide": "查看设置指南"
     }
@@ -274,7 +274,7 @@ const zh: Dictionary = {
       "diagnostics": "诊断",
       "settings": "设置",
       "tools": "工具详情",
-      "lab": "奈亚操作系统",
+      "lab": "Nextain",
       "troubleshooting": "故障排除"
     }
   },

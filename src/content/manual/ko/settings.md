@@ -4,8 +4,11 @@
 
 ## 언어
 
-- **한국어** / **영어** 전환
-- 즉시 적용됩니다
+14개 언어를 지원합니다:
+
+한국어, English, 日本語, 中文, Français, Deutsch, Русский, Español, العربية, हिन्दी, বাংলা, Português, Bahasa Indonesia, Tiếng Việt
+
+언어를 변경하면 즉시 적용됩니다.
 
 ## 테마
 
@@ -13,14 +16,14 @@
 
 | 테마 | 분위기 |
 |------|--------|
-| Espresso | 따뜻한 브라운 (기본) |
-| Midnight | 다크 네이비 |
-| Ocean | 깊은 블루 |
-| Forest | 자연 그린 |
-| Rose | 로즈 퍼플 |
-| Latte | 밝은 크림 |
-| Sakura | 벚꽃 핑크 |
-| Cloud | 밝은 그레이 |
+| Espresso | 라이트 (기본) |
+| Midnight | 다크 |
+| Ocean | 오션 블루 |
+| Forest | 포레스트 그린 |
+| Rose | 로즈 핑크 |
+| Latte | 라떼 크림 |
+| Sakura | 사쿠라 핑크 |
+| Cloud | 클라우드 그레이 |
 
 색상 견본을 클릭하면 즉시 미리보기됩니다.
 
@@ -41,21 +44,21 @@ AI 아바타의 성격, 말투, 이름을 자유 텍스트로 커스터마이즈
 
 ![페르소나 설정](settings-persona.png)
 
-## Naia OS 계정
+## Nextain 계정
 
-Lab과의 연동을 관리합니다.
+Nextain 계정에 연동하여 AI를 이용 가능하며, Naia 앱의 계정 정보가 자동 백업됩니다.
 
 ### 연결된 상태
 
 - 사용자 ID 표시
 - **크레딧 잔액** 표시 (실시간 조회)
-- **대시보드** 버튼: Lab 대시보드를 브라우저에서 열기
-- **크레딧 충전** 버튼: Lab 결제 페이지로 이동
-- **연결 해제** 버튼: Lab 계정 연결 해제
-- 설정 저장 시 Lab에 자동 동기화
+- **대시보드** 버튼: Nextain 대시보드를 브라우저에서 열기
+- **크레딧 충전** 버튼: Nextain 결제 페이지로 이동
+- **연결 해제** 버튼: Nextain 계정 연결 해제
+- 설정 저장 시 Nextain에 자동 동기화
 
 ### 미연결 상태
-- **Lab 로그인** 버튼: 브라우저로 로그인 후 자동 연결
+- **Nextain 로그인** 버튼: 브라우저로 로그인 후 자동 연결
 
 ## 사용법 매뉴얼
 
@@ -63,20 +66,25 @@ Lab과의 연동을 관리합니다.
 
 ## AI 설정
 
-- **제공업체**: Gemini (기본), OpenAI, Claude, Grok, zAI, Ollama
-  - 현재 Gemini만 사용 가능; 나머지는 추후 지원 예정
-- **모델**: 모델 이름 (예: gemini-2.5-flash)
-- **API 키**: 제공업체 API 키 (Lab 사용 시 불필요)
+- **제공업체**: Claude Code CLI (로컬), Gemini, OpenAI, Anthropic (Claude), xAI (Grok), zAI (GLM), Ollama (로컬)
+- **모델**: 제공업체별 모델 선택 (예: gemini-2.5-flash, claude-sonnet-4.5 등)
+- **API 키**: 제공업체 API 키 (Nextain 계정 사용 시 불필요)
 
 ## 음성 (TTS/STT)
 
 - **음성 응답 (TTS)**: ON/OFF
 - **음성 입력 (STT)**: ON/OFF
-- **Google API 키**: 전용 TTS/STT 키 (비우면 채팅 키 사용)
-- **TTS 음성**: 11가지 한국어 음성 선택
-  - Neural2: 높은 품질 ($16/100만 자)
-  - WaveNet: 자연스러운 ($16/100만 자)
-  - Standard: 기본 ($4/100만 자)
+- **TTS 제공업체**: 5가지 제공업체 중 선택
+
+| 제공업체 | API 키 | 특징 |
+|---------|--------|------|
+| Nextain Cloud TTS | 불필요 (Nextain 로그인만) | Google Cloud TTS 품질, 크레딧 차감 |
+| Edge TTS (Free) | 불필요 | 무료, Microsoft Edge 음성 |
+| Google Cloud TTS | 필요 (`AIza...`) | Neural2/WaveNet/Standard 음성 |
+| OpenAI TTS | 필요 (`sk-...`) | OpenAI 음성 |
+| ElevenLabs | 필요 (`xi-...`) | 고품질 음성 합성 |
+
+- **TTS 음성**: 제공업체별 음성 선택
 - **미리듣기** 버튼으로 선택한 음성을 테스트
 
 ## 도구
@@ -105,8 +113,7 @@ AI 아바타가 사용할 수 있는 시스템 제어 권한을 관리합니다.
 
 **설정 > 연동** 페이지에서 외부 메신저 서비스와의 연동 상태를 확인하고 관리합니다.
 
-- **Discord 연동**: 디스코드 계정으로 로그인하면 자동 연동됩니다. 봇 초대 링크로 서버에 봇을 추가하면 멘션이나 DM으로 AI와 대화할 수 있습니다.
-- **Google Chat 연동**: 구글 계정으로 로그인하면 Google Chat 앱을 통해 대화할 수 있습니다.
+- **Discord 연동**: 디스코드 계정으로 로그인하면 자동 연동됩니다. DM으로 AI 아바타와 대화할 수 있습니다.
 - 연동 상태(연결됨/미연결)가 배지로 표시됩니다.
 
 ## 기기 (Device) 및 호출어

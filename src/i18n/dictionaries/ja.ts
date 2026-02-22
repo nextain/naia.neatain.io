@@ -4,7 +4,7 @@ const ja: Dictionary = {
   "locale": "ja",
   "meta": {
     "title": "ナイアOS",
-    "description": "Naia OS — パーソナル AI を簡単に。 3D アバター AI 아바타 とチャット、会話、作業を行います。"
+    "description": "Naia OS — パーソナル AI を簡単に。 3D AIアバター とチャット、会話、作業を行います。"
   },
   "common": {
     "loading": "読み込み中...",
@@ -57,7 +57,7 @@ const ja: Dictionary = {
   "home": {
     "hero": {
       "title": "最先端のAIエージェントを、完璧なOSとして。",
-      "subtitle": "3大LLMの統合から端末制御、感情を表現するVRMアバターまで。開発者でなくても体験できる完全な AI エコシステム、Naia OS。",
+      "subtitle": "7つのAIプロバイダーの統合から端末制御、感情を表現するVRMアバターまで。開発者でなくても体験できる完全な AI エコシステム、Naia OS。",
       "cta": "無料で始めましょう",
       "secondaryCta": "ダウンロード"
     },
@@ -66,20 +66,20 @@ const ja: Dictionary = {
       "subtitle": "AI エージェントのパワーを体験してください — コーディングは必要ありません",
       "items": {
         "companion": {
-          "title": "AI アバター AI 아바타",
-          "description": "感情を持った 3D アバターがデスクトップ上に表示されます。 AI 아바타 は表情やアイコンタクトで会話に反応します。"
+          "title": "AIアバター",
+          "description": "感情を持った 3D アバターがデスクトップ上に表示されます。 AIアバター は表情やアイコンタクトで会話に反応します。"
         },
         "multiProvider": {
-          "title": "Gemini Free · 他のモデルも近日公開予定",
-          "description": "現在、無料クレジットで Gemini をサポートしています。 Grok、Anthropic(Claude)、OpenAI、および Zhipu(GLM) の API キーのサポートが計画されており、近日中に提供される予定です。"
+          "title": "7つのAIプロバイダー対応",
+          "description": "Gemini、Claude、GPT、Grok、zAI、Ollama、Claude Code CLI — クレジットまたは自分のAPIキーで自由に切り替え。"
         },
         "voice": {
           "title": "音声会話",
-          "description": "音声で質問すると、音声で応答が得られます。 AI 아바타 は口パクアニメーションで自然に答えます。"
+          "description": "音声で質問すると、音声で応答が得られます。 AIアバター は口パクアニメーションで自然に答えます。"
         },
         "tools": {
           "title": "ツールの実行",
-          "description": "ファイル編集、ターミナルコマンド、Web検索。 AI はツールを直接呼び出して作業を完了します。"
+          "description": "ファイル編集、ターミナルコマンド、Web検索。 AIアバター はツールを直接呼び出して作業を完了します。"
         },
         "desktop": {
           "title": "ワンクリックでインストールと OS",
@@ -234,22 +234,22 @@ const ja: Dictionary = {
     },
     "integrations": {
       "title": "統合",
-      "description": "Discord や Google Chat などから Naia とチャットしましょう。",
+      "description": "Discord から Naia に DM でチャットしましょう。",
       "discord": {
-        "title": "不和",
+        "title": "Discord",
         "connected": "接続済み",
         "notConnected": "接続されていません",
-        "connectedHint": "Discordでログインしている場合は、すでに接続されています。",
-        "inviteBot": "ボットをサーバーに追加する",
-        "inviteBotDescription": "このボットをサーバーに追加して、@Naia メンションまたは DM 経由でチャットします。",
-        "howToUse": "サーバーで @botname に言及するか、DM を送信してください。クレジットはこのアカウントに自動的に請求されます。"
+        "connectedHint": "Discordでログインしている場合は、Naia に DM を送れます。",
+        "inviteBot": "Naia に DM を送る",
+        "inviteBotDescription": "Discord で Naia ボットにダイレクトメッセージを送ってチャットします。",
+        "howToUse": "Discord で Naia ボットに DM を送信してください。クレジットはこのアカウントに自動的に請求されます。"
       },
       "googleChat": {
         "title": "Googleチャット",
-        "connected": "接続済み",
-        "notConnected": "接続されていません",
-        "connectedHint": "Google でログインしている場合は、すでに接続されています。",
-        "howToUse": "Google Chat に naia アプリを追加し、メッセージングを開始します。"
+        "connected": "準備中",
+        "notConnected": "準備中",
+        "connectedHint": "Google Chat 連携は現在準備中です。",
+        "howToUse": "準備中 — 近日公開予定です。"
       },
       "viewGuide": "セットアップガイドを見る"
     }
@@ -274,7 +274,7 @@ const ja: Dictionary = {
       "diagnostics": "診断",
       "settings": "設定",
       "tools": "ツールの詳細",
-      "lab": "ナイアOS",
+      "lab": "Nextain",
       "troubleshooting": "トラブルシューティング"
     }
   },

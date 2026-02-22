@@ -25,15 +25,15 @@ You can also enter an API key from providers like Google Gemini.
 
 ## Onboarding Steps
 
-After Lab login or API key entry, complete these steps:
+After Nextain login or API key entry, complete these steps:
 
 ### 1. Name Your AI
-Give AI 아바타 any name you'd like (e.g., "AI 아바타", "Luna", "Cookie").
+Give your AI avatar any name you'd like (e.g., "Naia", "Luna", "Cookie").
 
 ![AI name input](onboarding-agent-name.png)
 
 ### 2. Your Name
-Enter what AI 아바타 should call you.
+Enter what Naia should call you.
 
 ![Your name input](onboarding-user-name.png)
 

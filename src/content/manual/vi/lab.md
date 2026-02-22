@@ -2,7 +2,7 @@ Quản lý tài khoản của bạn tại [naia.nextain.io](https://naia.nextain
 
 ## Bảng điều khiển
 
-![Bảng điều khiển Lab](lab-dashboard.png)
+![Bảng điều khiển Nextain](lab-dashboard.png)
 
 - Số dư tín dụng
 - Tổng số yêu cầu
@@ -54,18 +54,15 @@ Quản lý khóa API cho ứng dụng máy tính và dịch vụ bên ngoài:
 
 ## Tích hợp
 
-Liên kết tài khoản naia.nextain.io của bạn với các ứng dụng nhắn tin bên ngoài để trò chuyện với avatar AI từ mọi nơi.
+Liên kết tài khoản naia.nextain.io của bạn với các ứng dụng nhắn tin bên ngoài để trò chuyện với Naia từ mọi nơi.
 
 ### Discord
 - Tự động liên kết khi bạn đăng nhập bằng Discord
-- Tìm liên kết mời bot tại **Cài đặt > Tích hợp**
-- Trò chuyện qua @mention hoặc tin nhắn trực tiếp (DM) trong máy chủ của bạn
-- Tín dụng được trừ từ tài khoản Lab của bạn
+- Trò chuyện qua tin nhắn trực tiếp với bot Naia
+- Tín dụng được trừ từ tài khoản Nextain của bạn
 
-### Google Chat
-- Có sẵn khi đăng nhập bằng Google
-- Trò chuyện qua Google Chat sau khi đăng ký ứng dụng Workspace
-- Tín dụng được trừ từ tài khoản Lab của bạn
+### Google Chat (Sắp Ra Mắt)
+- Tích hợp Google Chat được lên kế hoạch cho bản cập nhật tương lai
 
 ## Cài đặt
 

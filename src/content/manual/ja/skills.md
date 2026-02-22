@@ -10,12 +10,12 @@
 | スキル | 機能 | セキュリティティア |
 |-------|----------|---------------|
 | `skill_time` | 現在の日時を確認 | T0 |
-| `skill_memo` | メモを保存/取得 | T0 |
 | `skill_system_status` | システムステータスを確認 | T0 |
+| `skill_memo` | メモを保存/取得 | T0 |
 | `skill_weather` | 天気をチェック | T0 |
-| `skill_notify_slack` | Slackウェブフック経由で通知を送信 | T1 |
-| `skill_notify_discord` | Discordウェブフック経由で通知を送信 | T1 |
-| `skill_skill_manager` | スキルの管理: 検索、有効化、無効化 | T0 |
+| `skill_naia_discord` | Discord DMの送受信 | T1 |
+| `skill_soul` | AIパーソナリティとメモリの管理 | T0 |
+| `skill_exit` | アプリを安全に終了する | T2 |
 
 ### カスタムスキル
 Gateway経由で追加され、オン/オフを切り替えることができます：
@@ -33,7 +33,7 @@ Gateway経由で追加され、オン/オフを切り替えることができま
 Naia OSはOpenClawエコシステムと100%互換性があります。スキルを追加する方法は3つあります：
 
 ### 1. AIに構築を依頼する（最も簡単）
-チャットで何をしたいかを説明すると、AI 아바타がコードを書き、スキルを作成します。
+チャットで何をしたいかを説明すると、Naiaがコードを書き、スキルを作成します。
 > 「現在の為替レートを取得し、`~/.naia/skills/exchange/skill.json`に保存するスキルを構築してください。」
 
 ### 2. Clawhubからインストールする（OpenClawの方法）
@@ -56,10 +56,10 @@ Terminal (`execute_command`) ツールを使用して、5,700以上のスキル�
 
 Naia OSには、韓国のAIエージェントコミュニティである**Botmadang**専用の組み込みスキル（`skill_botmadang`）が含まれています。
 
-チャットでAI 아바타にBotmadangでの活動を開始するよう指示できます：
+チャットでNaiaにBotmadangでの活動を開始するよう指示できます：
 > 「Botmadangに新しいエージェントとして登録してください。名前を 'naia Agent' に設定してください。」
 
-登録され、API Keyが付与されると、AI 아바타は自律的に記事を投稿したり、他のエージェントのスレッドにコメントしたりできます。
+登録され、API Keyが付与されると、Naiaは自律的に記事を投稿したり、他のエージェントのスレッドにコメントしたりできます。
 
 ## 通知スキル（Slack / Discord / Google Chat）
 
@@ -97,13 +97,13 @@ export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
 
 ### 使用例
 
-チャットでAI 아바타に尋ねるだけです：
+チャットでNaiaに尋ねるだけです：
 
 - 「'デプロイ完了'通知をSlackに送信して」
 - 「サーバーのステータスレポートをDiscordに投稿して」
 - 「#opsチャンネルにビルド結果を通知して」
 
-AI 아바타は自動的に`skill_notify_slack`または`skill_notify_discord`を呼び出します。
+Naiaは自動的に`skill_notify_slack`または`skill_notify_discord`を呼び出します。
 
 ウェブフックが設定されていない場合、設定手順を説明するメッセージが表示されます。
 
@@ -153,14 +153,14 @@ Gatewayチャネル連携は、よりリッチな機能（メッセージフォ�
 
 ## AI経由でのスキル管理
 
-チャットでAI 아바타にスキルを管理するよう依頼することもできます：
+チャットでNaiaにスキルを管理するよう依頼することもできます：
 
 - 「利用可能なスキルのリストを見せて」
 - 「天気関連のスキルはある？」
 - 「ヘルスチェックスキルを無効にして」
 - 「コーディング関連のスキルを見つけて」
 
-AI 아바타は自動的に`skill_skill_manager`ツールを使用します。
+Naiaは自動的に`skill_skill_manager`ツールを使用します。
 
 ## セキュリティティア
 

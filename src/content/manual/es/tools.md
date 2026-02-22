@@ -1,4 +1,4 @@
-Cuando las herramientas están habilitadas, AI 아바타 puede realizar varias tareas directamente.
+Cuando las herramientas están habilitadas, Naia puede realizar varias tareas directamente.
 
 ## Herramientas Disponibles
 

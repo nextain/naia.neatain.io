@@ -37,25 +37,25 @@ Cliquez sur un échantillon de couleur pour un aperçu instantané.
 
 ## Persona
 
-Personnalisez la personnalité, le style de discours et le nom de l'AI 아바타 en texte libre. Les balises d'émotion sont ajoutées automatiquement.
+Personnalisez la personnalité, le style de discours et le nom de Naia en texte libre. Les balises d'émotion sont ajoutées automatiquement.
 
 ![Paramètres de la Persona](settings-persona.png)
 
-## Compte Naia OS
+## Compte Nextain
 
-Gérez l'intégration du Lab.
+Gérez l'intégration Nextain.
 
 ### Lorsque connecté
 
 - ID utilisateur affiché
 - **Solde de crédits** affiché (requête en temps réel)
-- Bouton **Tableau de bord** : Ouvre le tableau de bord du Lab dans le navigateur
-- Bouton **Recharger les crédits** : Accède à la page de facturation du Lab
-- Bouton **Déconnecter** : Dissocie le compte Lab
-- Les paramètres se synchronisent automatiquement avec le Lab lors de l'enregistrement
+- Bouton **Tableau de bord** : Ouvre le tableau de bord Nextain dans le navigateur
+- Bouton **Recharger les crédits** : Accède à la page de facturation Nextain
+- Bouton **Déconnecter** : Dissocie le compte Nextain
+- Les paramètres se synchronisent automatiquement avec Nextain lors de l'enregistrement
 
 ### Lorsque non connecté
-- Bouton **Connexion Lab** : Connectez-vous via le navigateur, se connecte automatiquement
+- Bouton **Connexion Nextain** : Connectez-vous via le navigateur, se connecte automatiquement
 
 ## Manuel de l'utilisateur
 
@@ -63,10 +63,9 @@ Cliquez sur "Manuel de l'utilisateur" pour ouvrir cette page dans le navigateur.
 
 ## Paramètres de l'IA
 
-- **Fournisseur** : Gemini (par défaut), OpenAI, Claude, Grok, zAI, Ollama
-  - Seul Gemini est actuellement disponible ; d'autres arrivent bientôt
+- **Fournisseur** : Gemini (par défaut), OpenAI, Claude, Grok, xAI, Ollama, Claude Code CLI
 - **Modèle** : Nom du modèle (ex. gemini-2.5-flash)
-- **API Key** : Clé API du fournisseur (non nécessaire si vous utilisez Lab)
+- **API Key** : Clé API du fournisseur (non nécessaire si vous utilisez Nextain)
 
 ## Voix (TTS/STT)
 
@@ -105,8 +104,8 @@ Gérez les permissions de contrôle système disponibles pour l'avatar IA.
 
 Gérez les intégrations de messagerie externes sur la page **Paramètres > Intégrations**.
 
-- **Intégration Discord** : Liée automatiquement lorsque vous vous connectez avec Discord. Ajoutez le bot à votre serveur via le lien d'invitation pour discuter avec l'IA par des mentions ou des messages directs.
-- **Intégration Google Chat** : Discutez avec l'IA via Google Chat lorsque vous êtes connecté avec Google.
+- **Intégration Discord** : Liée automatiquement lorsque vous vous connectez avec Discord. Envoyez un DM au bot pour discuter avec Naia.
+- **Intégration Google Chat** : Prévue pour une future mise à jour.
 - Le statut de connexion (connecté/non connecté) est affiché sous forme de badges.
 
 ## Appareil et mot d'activation
@@ -119,7 +118,7 @@ Gérez les intégrations de messagerie externes sur la page **Paramètres > Int�
 
 ## Mémoire (Faits)
 
-Gérez les faits que l'AI 아바타 a appris des conversations.
+Gérez les faits que Naia a appris des conversations.
 - Chaque fait affiche une **clé** et une **valeur**
 - Bouton **Supprimer** pour retirer les faits inutiles
 - Les faits enregistrés affectent la personnalisation des réponses dans les conversations ultérieures

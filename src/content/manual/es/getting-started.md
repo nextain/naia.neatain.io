@@ -25,15 +25,15 @@ También puedes introducir una API Key de proveedores como Google Gemini.
 
 ## Pasos de Incorporación
 
-Después de iniciar sesión en Lab o introducir la API Key, completa estos pasos:
+Después de iniciar sesión en Nextain o introducir la API Key, completa estos pasos:
 
 ### 1. Nombra a tu IA
-Dale a AI 아바타 el nombre que desees (ej., "AI 아바타", "Luna", "Cookie").
+Dale a Naia el nombre que desees (ej., "Naia", "Luna", "Cookie").
 
 ![Entrada de nombre de IA](onboarding-agent-name.png)
 
 ### 2. Tu Nombre
-Introduce cómo debería llamarte AI 아바타.
+Introduce cómo debería llamarte Naia.
 
 ![Entrada de tu nombre](onboarding-user-name.png)
 

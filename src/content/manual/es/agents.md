@@ -1,10 +1,10 @@
-Esta pestaña gestiona todos los agentes (incluido el AI 아바타 principal) y los subagentes que se ejecutan dentro de Naia OS.
+Esta pestaña gestiona todos los agentes (incluido Naia, el agente principal) y los subagentes que se ejecutan dentro de Naia OS.
 
 ![Pestaña de Agentes](agents-tab.png)
 
 ## Lista de Agentes
 - Puedes ver una lista de todas las tarjetas de agente actualmente activas.
-- Cuando se inicia una tarea compleja, el AI 아바타 puede generar subagentes en segundo plano para procesar tareas en paralelo.
+- Cuando se inicia una tarea compleja, Naia puede generar subagentes en segundo plano para procesar tareas en paralelo.
 
 ## Gestión de Archivos
 Hacer clic en el botón **Files** en la parte inferior de una tarjeta de agente muestra la lista de archivos generados en el espacio de trabajo local de ese agente.

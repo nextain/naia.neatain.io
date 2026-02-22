@@ -57,7 +57,7 @@ const de: Dictionary = {
   "home": {
     "hero": {
       "title": "Der fortschrittlichste KI-Agent als perfektes Betriebssystem.",
-      "subtitle": "Von der Integration dreier wichtiger LLMs über die Terminalsteuerung bis hin zu einem VRM-Avatar, der Emotionen ausdrückt. Ein komplettes KI-Ökosystem, das Sie erleben können, ohne Entwickler zu sein: Naia OS.",
+      "subtitle": "Von der Integration von 7 KI-Anbietern über die Terminalsteuerung bis hin zu einem VRM-Avatar, der Emotionen ausdrückt. Ein komplettes KI-Ökosystem, das Sie erleben können, ohne Entwickler zu sein: Naia OS.",
       "cta": "Starten Sie kostenlos durch",
       "secondaryCta": "Herunterladen"
     },
@@ -66,20 +66,20 @@ const de: Dictionary = {
       "subtitle": "Erleben Sie die Leistungsfähigkeit von KI-Agenten – keine Programmierung erforderlich",
       "items": {
         "companion": {
-          "title": "AI-Avatar AI-Version",
-          "description": "Ein 3D-Avatar mit Emotionen direkt auf Ihrem Desktop. KI reagiert auf Gespräche mit Mimik und Augenkontakt."
+          "title": "KI-Avatar",
+          "description": "Ein 3D-Avatar mit Emotionen direkt auf Ihrem Desktop. Der KI-Avatar reagiert auf Gespräche mit Mimik und Augenkontakt."
         },
         "multiProvider": {
-          "title": "Gemini Free · Weitere Modelle folgen in Kürze",
-          "description": "Unterstützt derzeit Gemini mit kostenlosen Credits. Die Unterstützung von API-Schlüsseln für Grok, Anthropic (Claude), OpenAI und Zhipu (GLM) ist geplant und wird bald verfügbar sein."
+          "title": "7 KI-Anbieter unterstützt",
+          "description": "Gemini, Claude, GPT, Grok, zAI, Ollama, Claude Code CLI — wechseln Sie frei mit Credits oder Ihren eigenen API-Schlüsseln."
         },
         "voice": {
           "title": "Sprachgespräche",
-          "description": "Fragen Sie per Stimme und erhalten Sie gesprochene Antworten. AI Responsive antwortet auf natürliche Weise mit lippensynchroner Animation."
+          "description": "Fragen Sie per Stimme und erhalten Sie gesprochene Antworten. Der KI-Avatar antwortet auf natürliche Weise mit lippensynchroner Animation."
         },
         "tools": {
           "title": "Werkzeugausführung",
-          "description": "Dateibearbeitung, Terminalbefehle, Websuche. AI ruft Tools direkt auf, um die Arbeit zu erledigen."
+          "description": "Dateibearbeitung, Terminalbefehle, Websuche. Der KI-Avatar ruft Tools direkt auf, um die Arbeit zu erledigen."
         },
         "desktop": {
           "title": "Ein-Klick-Installation und Betriebssystem",
@@ -234,22 +234,22 @@ const de: Dictionary = {
     },
     "integrations": {
       "title": "Integrationen",
-      "description": "Chatten Sie mit Naia über Discord, Google Chat und mehr.",
+      "description": "Chatten Sie mit Naia über Discord und mehr.",
       "discord": {
         "title": "Zwietracht",
         "connected": "Verbunden",
         "notConnected": "Nicht verbunden",
         "connectedHint": "Wenn Sie sich bei Discord angemeldet haben, sind Sie bereits verbunden.",
-        "inviteBot": "Bot zum Server hinzufügen",
-        "inviteBotDescription": "Fügen Sie diesen Bot zu Ihrem Server hinzu, um per @Naia-Erwähnung oder DM zu chatten.",
-        "howToUse": "Erwähnen Sie @botname auf Ihrem Server oder senden Sie eine DM. Credits werden diesem Konto automatisch belastet."
+        "inviteBot": "Per DM chatten",
+        "inviteBotDescription": "Senden Sie dem Naia-Bot eine Direktnachricht (DM), um direkt zu chatten.",
+        "howToUse": "Senden Sie dem Naia-Bot eine DM. Credits werden automatisch abgebucht."
       },
       "googleChat": {
         "title": "Google Chat",
         "connected": "Verbunden",
         "notConnected": "Nicht verbunden",
-        "connectedHint": "Wenn Sie sich bei Google angemeldet haben, sind Sie bereits verbunden.",
-        "howToUse": "Fügen Sie die Naia-App in Google Chat hinzu und beginnen Sie mit dem Versenden von Nachrichten."
+        "connectedHint": "Kommt bald.",
+        "howToUse": "Kommt bald."
       },
       "viewGuide": "Setup-Anleitung anzeigen"
     }
@@ -274,7 +274,7 @@ const de: Dictionary = {
       "diagnostics": "Diagnose",
       "settings": "Einstellungen",
       "tools": "Werkzeugdetails",
-      "lab": "Naia OS",
+      "lab": "Nextain",
       "troubleshooting": "Fehlerbehebung"
     }
   },

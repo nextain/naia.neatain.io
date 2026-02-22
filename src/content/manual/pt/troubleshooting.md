@@ -2,9 +2,9 @@ Problemas comuns e soluções.
 
 ## Agente de IA não está respondendo
 
-1. Verifique a API key ou a conexão com o Lab em Configurações > Configurações de IA
+1. Verifique a API key ou a conexão com o Nextain em Configurações > Configurações de IA
 2. Verifique a conexão com a internet
-3. Verifique o saldo de créditos em Configurações > Conta do Lab
+3. Verifique o saldo de créditos em Configurações > Conta do Nextain
 4. Certifique-se de que o modelo esteja configurado corretamente
 
 ## Voz não está funcionando
@@ -16,8 +16,8 @@ Problemas comuns e soluções.
 
 ## Poucos créditos
 
-1. Verifique o saldo em Configurações > Conta do Lab
-2. Revise o uso no Painel do Lab
+1. Verifique o saldo em Configurações > Conta do Nextain
+2. Revise o uso no Painel do Nextain
 3. Créditos gratuitos são recarregados mensalmente
 4. Faça upgrade para BASIC (US$10/mês) para 100 créditos
 
@@ -41,7 +41,7 @@ Problemas comuns e soluções.
 - Seja específico: "Diga-me o tempo em Seul"
 - Tente com nomes de cidades em inglês (ex: "Seoul weather")
 
-## Login no Lab não está funcionando
+## Login no Nextain não está funcionando
 
 1. Verifique a conexão com a internet
 2. Tente acessar naia.nextain.io diretamente no seu navegador

@@ -54,18 +54,15 @@ Kelola API Keys untuk aplikasi desktop dan layanan eksternal:
 
 ## Integrasi
 
-Tautkan akun naia.nextain.io Anda dengan aplikasi pesan eksternal untuk mengobrol dengan avatar AI dari mana saja.
+Tautkan akun naia.nextain.io Anda dengan aplikasi pesan eksternal untuk mengobrol dengan Naia dari mana saja.
 
 ### Discord
 - Secara otomatis tertaut saat Anda masuk dengan Discord
-- Temukan tautan undangan bot di **Pengaturan > Integrasi**
-- Mengobrol melalui @mention atau DM di server Anda
-- Kredit dipotong dari akun Lab Anda
+- Mengobrol melalui DM dengan bot Naia
+- Kredit dipotong dari akun Nextain Anda
 
-### Google Chat
-- Tersedia saat masuk dengan Google
-- Mengobrol melalui Google Chat setelah pendaftaran aplikasi Workspace
-- Kredit dipotong dari akun Lab Anda
+### Google Chat (Segera Hadir)
+- Integrasi Google Chat direncanakan untuk pembaruan mendatang
 
 ## Pengaturan
 

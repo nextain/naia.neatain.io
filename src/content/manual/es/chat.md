@@ -1,4 +1,4 @@
-La pantalla principal de conversación con AI 아바타.
+La pantalla principal de conversación con Naia.
 
 ## Chat de Texto
 
@@ -6,7 +6,7 @@ La pantalla principal de conversación con AI 아바타.
 
 1. Escriba un mensaje en el campo de entrada en la parte inferior
 2. Presione **Enter** o haga clic en el **botón Enviar**
-3. AI 아바타 genera una respuesta (transmite en tiempo real)
+3. Naia genera una respuesta (transmite en tiempo real)
 4. Use Shift+Enter para saltos de línea
 
 ## Chat de Voz
@@ -18,7 +18,7 @@ La pantalla principal de conversación con AI 아바타.
 
 ## Respuesta de Voz (TTS)
 
-- Las respuestas de AI 아바타 se reproducen automáticamente como audio
+- Las respuestas de Naia se reproducen automáticamente como audio
 - Puede desactivarse en Configuración
 - El avatar realiza sincronización labial durante la reproducción
 
@@ -30,7 +30,7 @@ La pantalla principal de conversación con AI 아바타.
 - Haga clic para abrir el panel de control de costos detallado:
   - Mensajes por proveedor
   - Recuentos de tokens de entrada/salida
-  - Saldo del laboratorio (cuando esté conectado)
+  - Saldo de Nextain (cuando esté conectado)
   - Enlace de recarga de crédito
 
 ## Nueva Conversación
@@ -40,7 +40,7 @@ La pantalla principal de conversación con AI 아바타.
 
 ## Visualización de Ejecución de Herramientas
 
-Cuando AI 아바타 utiliza herramientas, el área de chat muestra:
+Cuando Naia utiliza herramientas, el área de chat muestra:
 
 ![Tool execution display](chat-tool.png)
 

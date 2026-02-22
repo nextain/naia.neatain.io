@@ -1,10 +1,10 @@
-Esta aba gerencia todos os agentes (incluindo o AI 아바타 principal) e subagentes em execução no Naia OS.
+Esta aba gerencia todos os agentes (incluindo o Naia principal) e subagentes em execução no Naia OS.
 
 ![Guia Agentes](agents-tab.png)
 
 ## Lista de Agentes
 - Você pode visualizar uma lista de todos os cartões de agente atualmente ativos.
-- Quando uma tarefa complexa é iniciada, o AI 아바타 pode gerar subagentes em segundo plano para processar tarefas em paralelo.
+- Quando uma tarefa complexa é iniciada, o Naia pode gerar subagentes em segundo plano para processar tarefas em paralelo.
 
 ## Gerenciamento de Arquivos
 Ao clicar no botão **Arquivos** na parte inferior de um cartão de agente, é exibida a lista de arquivos gerados no espaço de trabalho local desse agente.

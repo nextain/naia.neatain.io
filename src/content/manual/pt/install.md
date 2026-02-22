@@ -25,7 +25,7 @@ Esta é a forma mais comum e segura de distribuir aplicativos de desktop Linux. 
   ```
 
 ### 2. Imagem Integrada Bazzite / BlueBuild (Avançado)
-Para usuários avançados, o Naia OS fornece uma receita BlueBuild para integrar o aplicativo diretamente em uma imagem Bazzite. Isso integra profundamente a IA ao OS, permitindo que o avatar da IA o cumprimente imediatamente na inicialização.
+Para usuários avançados, o Naia OS fornece uma receita BlueBuild para integrar o aplicativo diretamente em uma imagem Bazzite. Isso integra profundamente a IA ao OS, permitindo que Naia o cumprimente imediatamente na inicialização.
 
 ---
 

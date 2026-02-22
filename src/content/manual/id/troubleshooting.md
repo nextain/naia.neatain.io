@@ -2,9 +2,9 @@ Masalah umum dan solusi.
 
 ## Agen AI tidak merespons
 
-1. Periksa API key atau koneksi Lab di Pengaturan > Pengaturan AI
+1. Periksa API key atau koneksi Nextain di Pengaturan > Pengaturan AI
 2. Verifikasi koneksi internet
-3. Periksa saldo kredit di Pengaturan > Akun Lab
+3. Periksa saldo kredit di Pengaturan > Akun Nextain
 4. Pastikan model dikonfigurasi dengan benar
 
 ## Suara tidak berfungsi
@@ -16,8 +16,8 @@ Masalah umum dan solusi.
 
 ## Kredit rendah
 
-1. Periksa saldo di Pengaturan > Akun Lab
-2. Tinjau penggunaan di Dasbor Lab
+1. Periksa saldo di Pengaturan > Akun Nextain
+2. Tinjau penggunaan di Dasbor Nextain
 3. Kredit gratis diisi ulang setiap bulan
 4. Tingkatkan ke BASIC ($10/bulan) untuk 100 kredit
 
@@ -41,7 +41,7 @@ Masalah umum dan solusi.
 - Bersikaplah spesifik: "Beri tahu saya cuaca di Seoul"
 - Coba dengan nama kota berbahasa Inggris (misalnya, "cuaca Seoul")
 
-## Login Lab tidak berfungsi
+## Login Nextain tidak berfungsi
 
 1. Periksa koneksi internet
 2. Coba akses naia.nextain.io langsung di browser Anda

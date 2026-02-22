@@ -1,10 +1,10 @@
-This tab manages all agents (including the main AI 아바타) and sub-agents running within Naia OS.
+This tab manages all agents (including the main Naia) and sub-agents running within Naia OS.
 
 ![Agents Tab](agents-tab.png)
 
 ## Agent List
 - You can view a list of all currently active agent cards.
-- When a complex task is initiated, AI 아바타 may spawn background sub-agents to process tasks in parallel.
+- When a complex task is initiated, Naia may spawn background sub-agents to process tasks in parallel.
 
 ## File Management
 Clicking the **Files** button at the bottom of an agent card displays the list of files generated in that agent's local workspace.

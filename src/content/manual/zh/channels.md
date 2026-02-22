@@ -14,30 +14,23 @@
 
 ## Discord 机器人集成
 
-在 [naia.nextain.io](https://naia.nextain.io) 使用您的 Discord 账户登录，即可自动关联您的账户。关联后，您可以直接在 Discord 上与 AI 形象聊天。
+在 [naia.nextain.io](https://naia.nextain.io) 使用您的 Discord 账户登录，即可自动关联您的账户。关联后，您可以通过 Discord 私信与 Naia 聊天。
 
 ### 如何使用
 1. 在 naia.nextain.io **使用 Discord 登录**
-2. 在**设置 > 集成**页面点击机器人邀请链接
-3. **选择一个服务器**添加机器人 → 批准权限
-4. 在服务器中**@提及机器人**或**开始私聊**进行对话
-5. 积分将自动从您的 naia.nextain.io 账户中扣除
+2. 您的账户将自动与 Naia 机器人关联
+3. 向机器人**发送私信**开始聊天
+4. 积分将自动从您的 naia.nextain.io 账户中扣除
 
 ### 功能
-- **提及/私聊检测**：当您提及机器人或发送私聊时，AI 会做出响应
+- **仅限私信**：Naia 响应来自已关联用户的私信
 - **积分集成**：您的 naia.nextain.io 账户中的积分将自动使用
 - **未注册用户引导**：未关联账户的用户将收到设置说明
 - **速率限制**：每分钟 10 条消息的限制以保护您的积分
 
-## Google Chat 集成
+## Google Chat 集成（即将推出）
 
-在 naia.nextain.io 使用您的 Google 账户登录，即可通过 Google Chat 与 AI 形象聊天。
-
-### 如何使用
-1. 在 naia.nextain.io **使用 Google 登录**
-2. Google Workspace 管理员**注册 naia Chat 应用**
-3. 在 Google Chat 中添加应用并开始聊天
-4. 积分将自动从您的 naia.nextain.io 账户中扣除
+Google Chat 集成计划在未来更新中推出。敬请关注最新公告。
 
 ## 消息通知（Webhooks）
 Naia OS 继承了 OpenClaw 强大的通道系统。

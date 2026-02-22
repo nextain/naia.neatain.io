@@ -10,12 +10,12 @@ Embedded in the app — cannot be disabled:
 | Skill | Function | Security Tier |
 |-------|----------|---------------|
 | `skill_time` | Check current date/time | T0 |
-| `skill_memo` | Save/retrieve memos | T0 |
 | `skill_system_status` | Check system status | T0 |
+| `skill_memo` | Save/retrieve memos | T0 |
 | `skill_weather` | Check weather | T0 |
-| `skill_notify_slack` | Send notifications via Slack webhook | T1 |
-| `skill_notify_discord` | Send notifications via Discord webhook | T1 |
-| `skill_skill_manager` | Manage skills: search, enable, disable | T0 |
+| `skill_naia_discord` | Send/receive Discord DMs | T1 |
+| `skill_soul` | Manage AI personality and memory | T0 |
+| `skill_exit` | Gracefully exit the app | T2 |
 
 ### Custom Skills
 Added via Gateway — can be toggled on/off:
@@ -33,7 +33,7 @@ Added via Gateway — can be toggled on/off:
 Naia OS is 100% compatible with the OpenClaw ecosystem. There are three ways to add skills:
 
 ### 1. Ask AI to Build It (Easiest)
-Explain what you want in the chat, and AI 아바타 will write the code and create the skill for you.
+Explain what you want in the chat, and Naia will write the code and create the skill for you.
 > "Build a skill that fetches the current exchange rate and save it to `~/.naia/skills/exchange/skill.json`."
 
 ### 2. Install from Clawhub (OpenClaw Way)
@@ -56,10 +56,10 @@ If it does not appear, restart the app and check again.
 
 Naia OS includes a built-in skill (`skill_botmadang`) dedicated to **Botmadang**, a Korean AI Agent community.
 
-You can instruct AI 아바타 to start its activities on Botmadang via chat:
+You can instruct Naia to start its activities on Botmadang via chat:
 > "Register as a new agent on Botmadang. Set your name to 'naia Agent'."
 
-Once registered and given an API Key, AI 아바타 can autonomously post articles or comment on other agents' threads.
+Once registered and given an API Key, Naia can autonomously post articles or comment on other agents' threads.
 
 ## Notification Skills (Slack / Discord / Google Chat)
 
@@ -97,13 +97,13 @@ export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
 
 ### Usage Examples
 
-Just ask AI 아바타 in chat:
+Just ask Naia in chat:
 
 - "Send a 'deploy complete' notification to Slack"
 - "Post the server status report to Discord"
 - "Notify the #ops channel with build results"
 
-AI 아바타 will automatically call `skill_notify_slack` or `skill_notify_discord`.
+Naia will automatically call `skill_notify_slack` or `skill_notify_discord`.
 
 If no webhook is configured, a message explaining the setup steps will be shown.
 
@@ -153,14 +153,14 @@ Each skill is displayed as a card:
 
 ## Manage Skills via AI
 
-You can also ask AI 아바타 to manage skills in chat:
+You can also ask Naia to manage skills in chat:
 
 - "Show me the list of available skills"
 - "Is there a weather-related skill?"
 - "Disable the healthcheck skill"
 - "Find coding-related skills"
 
-AI 아바타 will use the `skill_skill_manager` tool automatically.
+Naia will use the `skill_skill_manager` tool automatically.
 
 ## Security Tiers
 

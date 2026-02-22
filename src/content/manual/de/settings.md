@@ -37,25 +37,25 @@ Klicken Sie auf ein Farbfeld für eine sofortige Vorschau.
 
 ## Persona
 
-Passen Sie die Persönlichkeit, den Sprachstil und den Namen des AI 아바타 im Freitext an. Emotions-Tags werden automatisch hinzugefügt.
+Passen Sie die Persönlichkeit, den Sprachstil und den Namen von Naia im Freitext an. Emotions-Tags werden automatisch hinzugefügt.
 
 ![Persona-Einstellungen](settings-persona.png)
 
-## Naia OS-Konto
+## Nextain-Konto
 
-Verwalten Sie die Lab-Integration.
+Verwalten Sie die Nextain-Integration.
 
 ### Wenn verbunden
 
 - Benutzer-ID wird angezeigt
 - **Guthabenstand** wird angezeigt (Echtzeitabfrage)
-- Schaltfläche **Dashboard**: Öffnen Sie das Lab-Dashboard im Browser
-- Schaltfläche **Guthaben aufladen**: Gehen Sie zur Lab-Abrechnungsseite
-- Schaltfläche **Trennen**: Lab-Konto entknüpfen
-- Einstellungen werden beim Speichern automatisch mit Lab synchronisiert
+- Schaltfläche **Dashboard**: Öffnen Sie das Nextain-Dashboard im Browser
+- Schaltfläche **Guthaben aufladen**: Gehen Sie zur Nextain-Abrechnungsseite
+- Schaltfläche **Trennen**: Nextain-Konto entknüpfen
+- Einstellungen werden beim Speichern automatisch mit Nextain synchronisiert
 
 ### Wenn nicht verbunden
-- Schaltfläche **Lab-Login**: Melden Sie sich über den Browser an, automatische Verbindung
+- Schaltfläche **Nextain-Login**: Melden Sie sich über den Browser an, automatische Verbindung
 
 ## Benutzerhandbuch
 
@@ -63,10 +63,9 @@ Klicken Sie auf „Benutzerhandbuch“, um diese Seite im Browser zu öffnen.
 
 ## KI-Einstellungen
 
-- **Anbieter**: Gemini (Standard), OpenAI, Claude, Grok, zAI, Ollama
-  - Derzeit nur Gemini verfügbar; andere folgen in Kürze
+- **Anbieter**: Gemini (Standard), OpenAI, Claude, Grok, xAI, Ollama, Claude Code CLI
 - **Modell**: Modellname (z.B. gemini-2.5-flash)
-- **API Key**: Anbieter-API-Schlüssel (nicht erforderlich, wenn Lab verwendet wird)
+- **API Key**: Anbieter-API-Schlüssel (nicht erforderlich, wenn Nextain verwendet wird)
 
 ## Stimme (TTS/STT)
 
@@ -105,8 +104,8 @@ Verwalten Sie die Systemsteuerungsberechtigungen, die dem KI-Avatar zur Verfügu
 
 Verwalten Sie externe Messenger-Integrationen auf der Seite **Einstellungen > Integrationen**.
 
-- **Discord Integration**: Automatisch verknüpft, wenn Sie sich mit Discord anmelden. Fügen Sie den Bot über den Einladungslink zu Ihrem Server hinzu, um mit der KI über Erwähnungen oder DMs zu chatten.
-- **Google Chat Integration**: Chatten Sie mit der KI über Google Chat, wenn Sie mit Google angemeldet sind.
+- **Discord Integration**: Automatisch verknüpft, wenn Sie sich mit Discord anmelden. Senden Sie dem Bot eine DM, um mit Naia zu chatten.
+- **Google Chat Integration**: Für ein zukünftiges Update geplant.
 - Der Verbindungsstatus (verbunden/nicht verbunden) wird als Badges angezeigt.
 
 ## Gerät & Aktivierungswort
@@ -119,7 +118,7 @@ Verwalten Sie externe Messenger-Integrationen auf der Seite **Einstellungen > In
 
 ## Speicher (Fakten)
 
-Verwalten Sie Fakten, die der AI 아바타 aus Gesprächen gelernt hat.
+Verwalten Sie Fakten, die Naia aus Gesprächen gelernt hat.
 - Jede Tatsache zeigt einen **Schlüssel** und einen **Wert**
 - Schaltfläche **Löschen**, um unnötige Fakten zu entfernen
 - Gespeicherte Fakten beeinflussen die Personalisierung der Antworten in späteren Chats

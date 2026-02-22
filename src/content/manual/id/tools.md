@@ -1,4 +1,4 @@
-Ketika alat diaktifkan, AI 아바타 dapat melakukan berbagai tugas secara langsung.
+Ketika alat diaktifkan, Naia dapat melakukan berbagai tugas secara langsung.
 
 ## Alat yang Tersedia
 

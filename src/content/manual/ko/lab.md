@@ -2,7 +2,7 @@
 
 ## 대시보드
 
-![Lab 대시보드](lab-dashboard.png)
+![Nextain 대시보드](lab-dashboard.png)
 
 - 크레딧 잔액
 - 총 요청 수
@@ -57,15 +57,12 @@
 naia.nextain.io 계정과 외부 메신저를 연동하여 어디서든 AI 아바타와 대화할 수 있습니다.
 
 ### Discord
-- 디스코드 계정으로 로그인하면 자동 연동
-- **설정 > 연동** 페이지에서 봇 초대 링크 확인
-- 서버에서 @멘션 또는 DM으로 대화
-- 크레딧은 Lab 계정에서 자동 차감
+- Discord 계정으로 로그인하면 자동 연동
+- Naia 봇에게 **DM**으로 대화
+- 크레딧은 Nextain 계정에서 자동 차감
 
 ### Google Chat
-- 구글 계정으로 로그인하면 연동 가능
-- Google Workspace 앱 등록 후 Google Chat에서 대화
-- 크레딧은 Lab 계정에서 자동 차감
+- Google Chat 연동은 준비 중입니다 (곧 지원 예정)
 
 ## 설정
 

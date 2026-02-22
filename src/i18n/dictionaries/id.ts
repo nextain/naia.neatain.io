@@ -4,7 +4,7 @@ const id: Dictionary = {
   "locale": "id",
   "meta": {
     "title": "Naia OS",
-    "description": "Naia OS — AI pribadi Anda, menjadi mudah. Mengobrol, berbicara, dan bekerja dengan avatar AI 3D 아바타."
+    "description": "Naia OS — AI pribadi Anda, menjadi mudah. Mengobrol, berbicara, dan bekerja dengan avatar AI 3D."
   },
   "common": {
     "loading": "Memuat...",
@@ -47,7 +47,7 @@ const id: Dictionary = {
     "loginTitle": "Masuk / Daftar",
     "loginDescription": "Mulailah dengan akun sosial Anda",
     "googleLogin": "Lanjutkan dengan Google",
-    "discordLogin": "Lanjutkan dengan Perselisihan",
+    "discordLogin": "Lanjutkan dengan Discord",
     "logout": "Keluar",
     "callbackRedirecting": "Mengalihkan ke aplikasi desktop...",
     "callbackManualPrefix": "Jika tidak terbuka secara otomatis,",
@@ -57,7 +57,7 @@ const id: Dictionary = {
   "home": {
     "hero": {
       "title": "Agen AI tercanggih, sebagai OS yang sempurna.",
-      "subtitle": "Dari 3 integrasi LLM utama hingga kontrol terminal, dan avatar VRM yang mengekspresikan emosi. Ekosistem AI lengkap yang dapat Anda alami tanpa menjadi pengembang, Naia OS.",
+      "subtitle": "Dari 7 penyedia AI hingga kontrol terminal, dan avatar VRM yang mengekspresikan emosi. Ekosistem AI lengkap yang dapat Anda alami tanpa menjadi pengembang, Naia OS.",
       "cta": "Memulai Gratis",
       "secondaryCta": "Unduh"
     },
@@ -66,20 +66,20 @@ const id: Dictionary = {
       "subtitle": "Rasakan kehebatan agen AI — tidak perlu coding",
       "items": {
         "companion": {
-          "title": "AI Avatar AI 아바타",
-          "description": "Avatar 3D dengan emosi, langsung di desktop Anda. AI 아바타 bereaksi terhadap percakapan dengan ekspresi wajah dan kontak mata."
+          "title": "Avatar AI",
+          "description": "Avatar 3D dengan emosi, langsung di desktop Anda. Avatar AI bereaksi terhadap percakapan dengan ekspresi wajah dan kontak mata."
         },
         "multiProvider": {
-          "title": "Gemini Gratis · Lebih Banyak Model Segera Hadir",
-          "description": "Saat ini mendukung Gemini dengan kredit gratis. Dukungan API Key untuk Grok, Anthropic(Claude), OpenAI, dan Zhipu(GLM) direncanakan dan segera hadir."
+          "title": "7 penyedia AI didukung",
+          "description": "Gemini, Claude, GPT, Grok, zAI, Ollama, Claude Code CLI — beralih dengan bebas menggunakan kredit atau kunci API Anda sendiri."
         },
         "voice": {
           "title": "Percakapan Suara",
-          "description": "Tanyakan melalui suara, dapatkan tanggapan lisan. AI 아바타 menjawab secara alami dengan animasi yang disinkronkan bibir."
+          "description": "Tanyakan melalui suara, dapatkan tanggapan lisan. Avatar AI menjawab secara alami dengan animasi yang disinkronkan bibir."
         },
         "tools": {
           "title": "Eksekusi Alat",
-          "description": "Pengeditan file, perintah terminal, pencarian web. AI 아바타 memanggil alat secara langsung untuk menyelesaikan pekerjaan."
+          "description": "Pengeditan file, perintah terminal, pencarian web. Avatar AI memanggil alat secara langsung untuk menyelesaikan pekerjaan."
         },
         "desktop": {
           "title": "Instal & OS sekali klik",
@@ -217,7 +217,7 @@ const id: Dictionary = {
     "connectedAccounts": {
       "title": "Akun Terhubung",
       "google": "Google",
-      "discord": "Perselisihan"
+      "discord": "Discord"
     },
     "desktopApp": {
       "title": "Koneksi Aplikasi Desktop",
@@ -234,22 +234,22 @@ const id: Dictionary = {
     },
     "integrations": {
       "title": "Integrasi",
-      "description": "Ngobrol dengan Naia dari Discord, Google Chat, dan lainnya.",
+      "description": "Ngobrol dengan Naia dari Discord dan lainnya.",
       "discord": {
-        "title": "Perselisihan",
+        "title": "Discord",
         "connected": "Terhubung",
         "notConnected": "Tidak Terhubung",
-        "connectedHint": "Jika Anda masuk dengan Discord, Anda sudah terhubung.",
-        "inviteBot": "Tambahkan Bot ke Server",
-        "inviteBotDescription": "Tambahkan bot ini ke server Anda untuk mengobrol melalui @Naia mention atau DM.",
-        "howToUse": "Sebutkan @botname di server Anda atau kirim DM. Kredit dibebankan ke akun ini secara otomatis."
+        "connectedHint": "Jika Anda masuk dengan Discord, Anda sudah bisa mengirim DM.",
+        "inviteBot": "Chat via DM",
+        "inviteBotDescription": "Setelah masuk dengan Discord, kirim DM ke bot Naia untuk mengobrol kapan saja, di mana saja.",
+        "howToUse": "Kirim DM ke bot Naia. Kredit dibebankan ke akun ini secara otomatis."
       },
       "googleChat": {
-        "title": "Google Obrolan",
+        "title": "Google Chat",
         "connected": "Terhubung",
         "notConnected": "Tidak Terhubung",
-        "connectedHint": "Jika Anda masuk dengan Google, Anda sudah terhubung.",
-        "howToUse": "Tambahkan aplikasi naia di Google Chat dan mulai mengirim pesan."
+        "connectedHint": "Integrasi Google Chat segera hadir.",
+        "howToUse": "Integrasi Google Chat akan segera didukung."
       },
       "viewGuide": "Lihat Panduan Pengaturan"
     }
@@ -274,7 +274,7 @@ const id: Dictionary = {
       "diagnostics": "Diagnostik",
       "settings": "Pengaturan",
       "tools": "Detail Alat",
-      "lab": "Naia OS",
+      "lab": "Nextain",
       "troubleshooting": "Pemecahan masalah"
     }
   },

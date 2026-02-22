@@ -22,7 +22,7 @@ Das untere Panel hat 8 Registerkarten:
 
 | Registerkarte | Beschreibung |
 |---------------|--------------|
-| Chat | Unterhaltung mit AI 아바타 |
+| Chat | Unterhaltung mit dem KI-Avatar |
 | Verlauf | Vorherige Unterhaltungen |
 | Fortschritt | Überwachung der Tool-Ausführung/Fehler |
 | Fähigkeiten | Liste der verfügbaren Fähigkeiten (Tools) |

@@ -1,4 +1,4 @@
-Khi các công cụ được bật, AI avatar có thể thực hiện nhiều tác vụ khác nhau một cách trực tiếp.
+Khi các công cụ được bật, Naia có thể thực hiện nhiều tác vụ khác nhau một cách trực tiếp.
 
 ## Các Công Cụ Khả Dụng
 

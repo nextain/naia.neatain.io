@@ -54,12 +54,12 @@ Naia OS는 "AI가 OS를 직접 다루는" 독특한 컨셉을 가지고 있어 �
    프로젝트 루트 디렉토리(Naia-OS)에서 실행합니다.
    ```bash
    # build-dir에 컴파일 및 빌드 진행
-   flatpak-builder --user --install --force-clean build-dir flatpak/com.naia.shell.yml
+   flatpak-builder --user --install --force-clean build-dir flatpak/io.nextain.naia.yml
    ```
 
 4. **앱 실행**
    ```bash
-   flatpak run com.naia.shell
+   flatpak run io.nextain.naia
    ```
 
 > **💡 개발 참고:**

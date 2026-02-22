@@ -4,7 +4,7 @@ const fr: Dictionary = {
   "locale": "fr",
   "meta": {
     "title": "NaiaOS",
-    "description": "Naia OS — Votre IA personnelle, en toute simplicité. Discutez, parlez et travaillez avec l'IA de l'avatar 3D 아바타."
+    "description": "Naia OS — Votre IA personnelle, en toute simplicité. Discutez, parlez et travaillez avec votre avatar IA en 3D."
   },
   "common": {
     "loading": "Chargement...",
@@ -57,7 +57,7 @@ const fr: Dictionary = {
   "home": {
     "hero": {
       "title": "L'agent IA le plus avancé, comme système d'exploitation parfait.",
-      "subtitle": "De l'intégration de 3 LLM majeurs au contrôle du terminal, en passant par un avatar VRM qui exprime l'émotion. Un écosystème d'IA complet que vous pouvez expérimenter sans être développeur, Naia OS.",
+      "subtitle": "De l'intégration de 7 fournisseurs d'IA au contrôle du terminal, en passant par un avatar VRM qui exprime l'émotion. Un écosystème d'IA complet que vous pouvez expérimenter sans être développeur, Naia OS.",
       "cta": "Commencez gratuitement",
       "secondaryCta": "Télécharger"
     },
@@ -66,20 +66,20 @@ const fr: Dictionary = {
       "subtitle": "Découvrez la puissance des agents IA – aucun codage requis",
       "items": {
         "companion": {
-          "title": "AI Avatar AI 아바타",
-          "description": "Un avatar 3D plein d'émotions, directement sur votre bureau. AI 아바타 réagit aux conversations avec des expressions faciales et un contact visuel."
+          "title": "Avatar IA",
+          "description": "Un avatar 3D plein d'émotions, directement sur votre bureau. L'avatar IA réagit aux conversations avec des expressions faciales et un contact visuel."
         },
         "multiProvider": {
-          "title": "Gemini gratuit · Plus de modèles à venir",
-          "description": "Supporte actuellement Gemini avec des crédits gratuits. La prise en charge des clés API pour Grok, Anthropic (Claude), OpenAI et Zhipu (GLM) est prévue et sera bientôt disponible."
+          "title": "7 fournisseurs d'IA supportés",
+          "description": "Gemini, Claude, GPT, Grok, zAI, Ollama, Claude Code CLI — basculez librement avec des crédits ou vos propres clés API."
         },
         "voice": {
           "title": "Conversations vocales",
-          "description": "Demandez vocalement, obtenez des réponses orales. AI 아바타 répond naturellement avec une animation synchronisée sur les lèvres."
+          "description": "Demandez vocalement, obtenez des réponses orales. L'avatar IA répond naturellement avec une animation synchronisée sur les lèvres."
         },
         "tools": {
           "title": "Exécution des outils",
-          "description": "Édition de fichiers, commandes de terminal, recherche sur le Web. AI 아바타 appelle directement les outils pour effectuer le travail."
+          "description": "Édition de fichiers, commandes de terminal, recherche sur le Web. L'avatar IA appelle directement les outils pour effectuer le travail."
         },
         "desktop": {
           "title": "Installation et système d'exploitation en un clic",
@@ -234,22 +234,22 @@ const fr: Dictionary = {
     },
     "integrations": {
       "title": "Intégrations",
-      "description": "Discutez avec Naia depuis Discord, Google Chat et plus encore.",
+      "description": "Discutez avec Naia depuis Discord et plus encore.",
       "discord": {
         "title": "Discorde",
         "connected": "Connecté",
         "notConnected": "Non connecté",
         "connectedHint": "Si vous vous êtes connecté avec Discord, vous êtes déjà connecté.",
-        "inviteBot": "Ajouter un robot au serveur",
-        "inviteBotDescription": "Ajoutez ce bot à votre serveur pour discuter via la mention @Naia ou DM.",
-        "howToUse": "Mentionnez @botname sur votre serveur ou envoyez un DM. Les crédits sont automatiquement débités de ce compte."
+        "inviteBot": "Discuter par DM",
+        "inviteBotDescription": "Envoyez un message privé (DM) au bot Naia pour discuter directement.",
+        "howToUse": "Envoyez un DM au bot Naia. Les crédits sont débités automatiquement."
       },
       "googleChat": {
         "title": "Chat Google",
         "connected": "Connecté",
         "notConnected": "Non connecté",
-        "connectedHint": "Si vous vous êtes connecté avec Google, vous êtes déjà connecté.",
-        "howToUse": "Ajoutez l'application naia dans Google Chat et démarrez la messagerie."
+        "connectedHint": "Bientôt disponible.",
+        "howToUse": "Bientôt disponible."
       },
       "viewGuide": "Afficher le guide de configuration"
     }
@@ -274,7 +274,7 @@ const fr: Dictionary = {
       "diagnostics": "Diagnostic",
       "settings": "Paramètres",
       "tools": "Détails de l'outil",
-      "lab": "NaiaOS",
+      "lab": "Nextain",
       "troubleshooting": "Dépannage"
     }
   },

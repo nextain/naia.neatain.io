@@ -1,4 +1,4 @@
-Màn hình trò chuyện chính với AI 아바타.
+Màn hình trò chuyện chính với Naia.
 
 ## Trò chuyện bằng văn bản
 
@@ -6,7 +6,7 @@ Màn hình trò chuyện chính với AI 아바타.
 
 1. Nhập tin nhắn vào trường nhập liệu ở phía dưới
 2. Nhấn **Enter** hoặc nhấp vào **nút Gửi**
-3. AI 아바타 tạo phản hồi (truyền tải theo thời gian thực)
+3. Naia tạo phản hồi (truyền tải theo thời gian thực)
 4. Sử dụng Shift+Enter để xuống dòng
 
 ## Trò chuyện bằng giọng nói
@@ -18,7 +18,7 @@ Màn hình trò chuyện chính với AI 아바타.
 
 ## Phản hồi bằng giọng nói (TTS)
 
-- Phản hồi của AI 아바타 được tự động phát dưới dạng âm thanh
+- Phản hồi của Naia được tự động phát dưới dạng âm thanh
 - Có thể tắt trong Cài đặt
 - Avatar thực hiện đồng bộ môi trong khi phát lại
 
@@ -30,7 +30,7 @@ Màn hình trò chuyện chính với AI 아바타.
 - Nhấp để mở bảng điều khiển chi phí chi tiết:
   - Tin nhắn theo nhà cung cấp
   - Số lượng token đầu vào/đầu ra
-  - Số dư Lab (khi được kết nối)
+  - Số dư Nextain (khi được kết nối)
   - Liên kết nạp tín dụng
 
 ## Cuộc trò chuyện mới
@@ -40,7 +40,7 @@ Màn hình trò chuyện chính với AI 아바타.
 
 ## Hiển thị thực thi công cụ
 
-Khi AI 아바타 sử dụng công cụ, khu vực trò chuyện hiển thị:
+Khi Naia sử dụng công cụ, khu vực trò chuyện hiển thị:
 
 ![Tool execution display](chat-tool.png)
 

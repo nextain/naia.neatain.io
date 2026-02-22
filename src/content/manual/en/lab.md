@@ -54,18 +54,15 @@ Manage API keys for desktop apps and external services:
 
 ## Integrations
 
-Link your naia.nextain.io account with external messengers to chat with the AI avatar from anywhere.
+Link your naia.nextain.io account with external messengers to chat with Naia from anywhere.
 
 ### Discord
 - Automatically linked when you sign in with Discord
-- Find the bot invite link on **Settings > Integrations**
-- Chat via @mention or DM in your server
-- Credits deducted from your Lab account
+- Chat via DM with the Naia bot
+- Credits deducted from your Nextain account
 
-### Google Chat
-- Available when signed in with Google
-- Chat via Google Chat after Workspace app registration
-- Credits deducted from your Lab account
+### Google Chat (Coming Soon)
+- Google Chat integration is planned for a future update
 
 ## Settings
 

@@ -22,7 +22,7 @@ Panel bawah memiliki 8 tab:
 
 | Tab | Deskripsi |
 |-----|-------------|
-| Chat | Percakapan dengan AI 아바타 |
+| Chat | Percakapan dengan Naia |
 | Riwayat | Percakapan sebelumnya |
 | Progres | Pemantauan eksekusi/kesalahan alat |
 | Keterampilan | Daftar keterampilan (alat) yang tersedia |

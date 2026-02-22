@@ -10,12 +10,12 @@ In der App eingebettet — können nicht deaktiviert werden:
 | Skill | Funktion | Sicherheitsstufe |
 |-------|----------|---------------|
 | `skill_time` | Aktuelles Datum/Uhrzeit überprüfen | T0 |
-| `skill_memo` | Memos speichern/abrufen | T0 |
 | `skill_system_status` | Systemstatus überprüfen | T0 |
+| `skill_memo` | Memos speichern/abrufen | T0 |
 | `skill_weather` | Wetter überprüfen | T0 |
-| `skill_notify_slack` | Benachrichtigungen via Slack-Webhook senden | T1 |
-| `skill_notify_discord` | Benachrichtigungen via Discord-Webhook senden | T1 |
-| `skill_skill_manager` | Skills verwalten: suchen, aktivieren, deaktivieren | T0 |
+| `skill_naia_discord` | Discord-DMs senden/empfangen | T1 |
+| `skill_soul` | KI-Persönlichkeit und Speicher verwalten | T0 |
+| `skill_exit` | App sicher beenden | T2 |
 
 ### Benutzerdefinierte Skills
 Über Gateway hinzugefügt — können ein-/ausgeschaltet werden:
@@ -33,7 +33,7 @@ In der App eingebettet — können nicht deaktiviert werden:
 Naia OS ist zu 100 % kompatibel mit dem OpenClaw-Ökosystem. Es gibt drei Möglichkeiten, Skills hinzuzufügen:
 
 ### 1. KI bitten, es zu erstellen (Am einfachsten)
-Erklären Sie im Chat, was Sie möchten, und AI 아바타 schreibt den Code und erstellt den Skill für Sie.
+Erklären Sie im Chat, was Sie möchten, und Naia schreibt den Code und erstellt den Skill für Sie.
 > "Erstelle einen Skill, der den aktuellen Wechselkurs abruft und ihn unter `~/.naia/skills/exchange/skill.json` speichert."
 
 ### 2. Von Clawhub installieren (OpenClaw-Weg)
@@ -56,10 +56,10 @@ Falls er nicht erscheint, starten Sie die App neu und überprüfen Sie es erneut
 
 Naia OS enthält einen integrierten Skill (`skill_botmadang`), der **Botmadang** gewidmet ist, einer koreanischen KI-Agenten-Community.
 
-Sie können AI 아바타 anweisen, seine Aktivitäten auf Botmadang über den Chat zu starten:
+Sie können Naia anweisen, seine Aktivitäten auf Botmadang über den Chat zu starten:
 > "Registriere dich als neuer Agent bei Botmadang. Setze deinen Namen auf 'naia Agent'."
 
-Nach der Registrierung und der Vergabe eines API Key kann AI 아바타 autonom Artikel posten oder Kommentare in Threads anderer Agenten verfassen.
+Nach der Registrierung und der Vergabe eines API Key kann Naia autonom Artikel posten oder Kommentare in Threads anderer Agenten verfassen.
 
 ## Benachrichtigungs-Skills (Slack / Discord / Google Chat)
 
@@ -97,13 +97,13 @@ export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
 
 ### Anwendungsbeispiele
 
-Fragen Sie einfach AI 아바타 im Chat:
+Fragen Sie einfach Naia im Chat:
 
 - "Senden Sie eine 'Bereitstellung abgeschlossen'-Benachrichtigung an Slack"
 - "Veröffentlichen Sie den Server-Statusbericht auf Discord"
 - "Benachrichtigen Sie den #ops-Kanal mit den Buildergebnissen"
 
-AI 아바타 ruft automatisch `skill_notify_slack` oder `skill_notify_discord` auf.
+Naia ruft automatisch `skill_notify_slack` oder `skill_notify_discord` auf.
 
 Ist kein Webhook konfiguriert, wird eine Nachricht mit den Einrichtungsschritten angezeigt.
 
@@ -153,14 +153,14 @@ Jeder Skill wird als Karte angezeigt:
 
 ## Skills über KI verwalten
 
-Sie können AI 아바타 auch bitten, Skills im Chat zu verwalten:
+Sie können Naia auch bitten, Skills im Chat zu verwalten:
 
 - "Zeige mir die Liste der verfügbaren Skills"
 - "Gibt es einen wetterbezogenen Skill?"
 - "Deaktiviere den Healthcheck-Skill"
 - "Finde coding-bezogene Skills"
 
-AI 아바타 verwendet das Tool `skill_skill_manager` automatisch.
+Naia verwendet das Tool `skill_skill_manager` automatisch.
 
 ## Sicherheitsstufen
 

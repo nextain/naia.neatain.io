@@ -25,15 +25,15 @@ Sie können auch einen API Key von Anbietern wie Google Gemini eingeben.
 
 ## Onboarding-Schritte
 
-Nach der Lab-Anmeldung oder API Key-Eingabe schließen Sie diese Schritte ab:
+Nach der Nextain-Anmeldung oder API Key-Eingabe schließen Sie diese Schritte ab:
 
 ### 1. Benennen Sie Ihre KI
-Geben Sie AI 아바타 einen beliebigen Namen (z.B. "AI 아바타", "Luna", "Cookie").
+Geben Sie Ihrem KI-Avatar einen beliebigen Namen (z.B. "Naia", "Luna", "Cookie").
 
 ![KI-Namenseingabe](onboarding-agent-name.png)
 
 ### 2. Ihr Name
-Geben Sie ein, wie AI 아바타 Sie nennen soll.
+Geben Sie ein, wie Naia Sie nennen soll.
 
 ![Ihr Name Eingabe](onboarding-user-name.png)
 

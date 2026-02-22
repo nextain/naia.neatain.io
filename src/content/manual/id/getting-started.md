@@ -25,15 +25,15 @@ Anda juga dapat memasukkan API Key dari penyedia seperti Google Gemini.
 
 ## Langkah-Langkah Orientasi
 
-Setelah masuk Lab atau entri API Key, selesaikan langkah-langkah berikut:
+Setelah masuk Nextain atau entri API Key, selesaikan langkah-langkah berikut:
 
 ### 1. Beri Nama AI Anda
-Beri nama AI 아바타 sesuka Anda (misalnya, "AI 아바타", "Luna", "Cookie").
+Beri nama Naia sesuka Anda (misalnya, "Naia", "Luna", "Cookie").
 
 ![Input nama AI](onboarding-agent-name.png)
 
 ### 2. Nama Anda
-Masukkan nama panggilan Anda oleh AI 아바타.
+Masukkan nama panggilan Anda oleh Naia.
 
 ![Input nama Anda](onboarding-user-name.png)
 

@@ -10,12 +10,12 @@ Duyệt và quản lý các kỹ năng (công cụ) có sẵn.
 | Kỹ năng | Chức năng | Cấp độ Bảo mật |
 |-------|----------|---------------|
 | `skill_time` | Kiểm tra ngày/giờ hiện tại | T0 |
-| `skill_memo` | Lưu/truy xuất ghi nhớ | T0 |
 | `skill_system_status` | Kiểm tra trạng thái hệ thống | T0 |
+| `skill_memo` | Lưu/truy xuất ghi nhớ | T0 |
 | `skill_weather` | Kiểm tra thời tiết | T0 |
-| `skill_notify_slack` | Gửi thông báo qua webhook của Slack | T1 |
-| `skill_notify_discord` | Gửi thông báo qua webhook của Discord | T1 |
-| `skill_skill_manager` | Quản lý kỹ năng: tìm kiếm, bật, tắt | T0 |
+| `skill_naia_discord` | Gửi/nhận tin nhắn trực tiếp Discord | T1 |
+| `skill_soul` | Quản lý tính cách và bộ nhớ AI | T0 |
+| `skill_exit` | Thoát ứng dụng một cách an toàn | T2 |
 
 ### Kỹ năng Tùy chỉnh
 Được thêm qua Gateway — có thể bật/tắt:
@@ -33,7 +33,7 @@ Duyệt và quản lý các kỹ năng (công cụ) có sẵn.
 Naia OS tương thích 100% với hệ sinh thái OpenClaw. Có ba cách để thêm kỹ năng:
 
 ### 1. Yêu cầu AI Xây dựng (Dễ nhất)
-Giải thích những gì bạn muốn trong cuộc trò chuyện, và AI 아바타 sẽ viết mã và tạo kỹ năng cho bạn.
+Giải thích những gì bạn muốn trong cuộc trò chuyện, và Naia sẽ viết mã và tạo kỹ năng cho bạn.
 > "Xây dựng một kỹ năng lấy tỷ giá hối đoái hiện tại và lưu nó vào `~/.naia/skills/exchange/skill.json`."
 
 ### 2. Cài đặt từ Clawhub (Cách của OpenClaw)
@@ -56,10 +56,10 @@ Nếu nó không xuất hiện, hãy khởi động lại ứng dụng và kiể
 
 Naia OS bao gồm một kỹ năng tích hợp sẵn (`skill_botmadang`) dành riêng cho **Botmadang**, một cộng đồng AI Agent của Hàn Quốc.
 
-Bạn có thể hướng dẫn AI 아바타 bắt đầu các hoạt động của mình trên Botmadang qua trò chuyện:
+Bạn có thể hướng dẫn Naia bắt đầu các hoạt động của mình trên Botmadang qua trò chuyện:
 > "Đăng ký làm tác nhân mới trên Botmadang. Đặt tên của bạn là 'naia Agent'."
 
-Sau khi đăng ký và được cấp API Key, AI 아바타 có thể tự động đăng bài viết hoặc bình luận về các chủ đề của các tác nhân khác.
+Sau khi đăng ký và được cấp API Key, Naia có thể tự động đăng bài viết hoặc bình luận về các chủ đề của các tác nhân khác.
 
 ## Kỹ năng Thông báo (Slack / Discord / Google Chat)
 
@@ -97,13 +97,13 @@ export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
 
 ### Ví dụ Sử dụng
 
-Chỉ cần hỏi AI 아바타 trong cuộc trò chuyện:
+Chỉ cần hỏi Naia trong cuộc trò chuyện:
 
 - "Gửi thông báo 'triển khai hoàn tất' tới Slack"
 - "Đăng báo cáo trạng thái máy chủ lên Discord"
 - "Thông báo cho kênh #ops về kết quả xây dựng"
 
-AI 아바타 sẽ tự động gọi `skill_notify_slack` hoặc `skill_notify_discord`.
+Naia sẽ tự động gọi `skill_notify_slack` hoặc `skill_notify_discord`.
 
 Nếu không có webhook nào được cấu hình, một thông báo giải thích các bước thiết lập sẽ được hiển thị.
 
@@ -153,14 +153,14 @@ Mỗi kỹ năng được hiển thị dưới dạng một thẻ:
 
 ## Quản lý Kỹ năng qua AI
 
-Bạn cũng có thể yêu cầu AI 아바타 quản lý các kỹ năng trong cuộc trò chuyện:
+Bạn cũng có thể yêu cầu Naia quản lý các kỹ năng trong cuộc trò chuyện:
 
 - "Cho tôi xem danh sách các kỹ năng có sẵn"
 - "Có kỹ năng nào liên quan đến thời tiết không?"
 - "Tắt kỹ năng healthcheck"
 - "Tìm các kỹ năng liên quan đến lập trình"
 
-AI 아바타 sẽ tự động sử dụng công cụ `skill_skill_manager`.
+Naia sẽ tự động sử dụng công cụ `skill_skill_manager`.
 
 ## Các Cấp độ Bảo mật
 

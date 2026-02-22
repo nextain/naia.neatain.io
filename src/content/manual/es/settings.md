@@ -37,25 +37,25 @@ Haz clic en una muestra de color para una vista previa instantánea.
 
 ## Persona
 
-Personaliza la personalidad, el estilo de habla y el nombre del avatar de IA en texto libre. Las etiquetas de emoción se añaden automáticamente.
+Personaliza la personalidad, el estilo de habla y el nombre de Naia en texto libre. Las etiquetas de emoción se añaden automáticamente.
 
 ![Persona settings](settings-persona.png)
 
-## Cuenta de Naia OS
+## Cuenta de Nextain
 
-Gestionar la integración con Lab.
+Gestionar la integración con Nextain.
 
 ### Cuando está conectado
 
 - ID de usuario mostrado
 - **Saldo de crédito** mostrado (consulta en tiempo real)
-- Botón **Panel de control**: Abre el panel de control de Lab en el navegador
-- Botón **Cargar créditos**: Ir a la página de facturación de Lab
-- Botón **Desconectar**: Desvincular la cuenta de Lab
-- Los ajustes se sincronizan automáticamente con Lab al guardar
+- Botón **Panel de control**: Abre el panel de control de Nextain en el navegador
+- Botón **Cargar créditos**: Ir a la página de facturación de Nextain
+- Botón **Desconectar**: Desvincular la cuenta de Nextain
+- Los ajustes se sincronizan automáticamente con Nextain al guardar
 
 ### Cuando no está conectado
-- Botón **Iniciar sesión en Lab**: Inicia sesión a través del navegador, se conecta automáticamente
+- Botón **Iniciar sesión en Nextain**: Inicia sesión a través del navegador, se conecta automáticamente
 
 ## Manual de usuario
 
@@ -63,10 +63,9 @@ Haz clic en "Manual de usuario" para abrir esta página en el navegador.
 
 ## Ajustes de IA
 
-- **Proveedor**: Gemini (predeterminado), OpenAI, Claude, Grok, zAI, Ollama
-  - Actualmente solo Gemini está disponible; otros próximamente
+- **Proveedor**: Gemini (predeterminado), OpenAI, Claude, Grok, xAI, Ollama, Claude Code CLI
 - **Modelo**: Nombre del modelo (ej., gemini-2.5-flash)
-- **API Key**: Clave API del proveedor (no es necesaria si se usa Lab)
+- **API Key**: Clave API del proveedor (no es necesaria si se usa Nextain)
 
 ## Voz (TTS/STT)
 
@@ -81,7 +80,7 @@ Haz clic en "Manual de usuario" para abrir esta página en el navegador.
 
 ## Herramientas
 
-Gestiona los permisos de control del sistema disponibles para el avatar de IA.
+Gestiona los permisos de control del sistema disponibles para Naia.
 
 - **Habilitar herramientas**: ENCENDIDO/APAGADO maestro para las funciones de herramientas
 - **URL de Gateway / Token de Gateway**: Gestionado automáticamente en entornos de usuario normales, por lo que no se requiere entrada manual
@@ -105,8 +104,8 @@ Gestiona los permisos de control del sistema disponibles para el avatar de IA.
 
 Gestiona las integraciones de mensajería externa en la página **Ajustes > Integraciones**.
 
-- **Integración con Discord**: Vinculada automáticamente cuando inicias sesión con Discord. Añade el bot a tu servidor a través del enlace de invitación para chatear con la IA mediante menciones o MD.
-- **Integración con Google Chat**: Chatea con la IA a través de Google Chat cuando inicias sesión con Google.
+- **Integración con Discord**: Vinculada automáticamente cuando inicias sesión con Discord. Envía un mensaje directo al bot para chatear con Naia.
+- **Integración con Google Chat**: Planeada para una futura actualización.
 - El estado de la conexión (conectado/no conectado) se muestra como insignias.
 
 ## Dispositivo y Palabra de Activación
@@ -119,7 +118,7 @@ Gestiona las integraciones de mensajería externa en la página **Ajustes > Inte
 
 ## Memoria (Hechos)
 
-Gestiona los hechos que el avatar de IA ha aprendido de las conversaciones.
+Gestiona los hechos que Naia ha aprendido de las conversaciones.
 - Cada hecho muestra una **clave** y un **valor**
 - Botón **Eliminar** para remover hechos innecesarios
 - Los hechos guardados afectan la personalización de la respuesta en chats posteriores

@@ -22,7 +22,7 @@ El panel inferior tiene 8 pestañas:
 
 | Pestaña | Descripción |
 |---------|-------------|
-| Chat | Conversación con AI 아바타 |
+| Chat | Conversación con Naia |
 | Historial | Conversaciones anteriores |
 | Progreso | Monitorización de ejecución/errores de herramientas |
 | Habilidades | Lista de habilidades (herramientas) disponibles |

@@ -5,17 +5,26 @@
 ## 스킬 종류
 
 ### 기본 스킬 (Built-in)
-앱에 내장된 스킬로, 비활성화할 수 없습니다:
+앱에 하드코딩된 7개 스킬로, 비활성화할 수 없습니다:
 
 | 스킬 | 기능 | 보안 단계 |
 |------|------|-----------|
 | `skill_time` | 현재 날짜/시간 확인 | T0 |
-| `skill_memo` | 메모 저장/조회 | T0 |
 | `skill_system_status` | 시스템 상태 확인 | T0 |
+| `skill_memo` | 메모 저장/조회 | T0 |
 | `skill_weather` | 날씨 조회 | T0 |
-| `skill_notify_slack` | Slack 웹훅으로 알림 전송 | T1 |
-| `skill_notify_discord` | Discord 웹훅으로 알림 전송 | T1 |
-| `skill_skill_manager` | 스킬 검색/활성화/비활성화 | T0 |
+| `skill_naia_discord` | Discord DM 전송/상태/히스토리 | T1 |
+| `skill_soul` | AI 페르소나 설정 관리 | T0 |
+| `skill_exit` | AI 에이전트 종료 | T0 |
+
+### 커스텀 스킬 (63개 기본 제공)
+`~/.naia/skills/`에서 로드되는 스킬로, 개별적으로 켜고 끌 수 있습니다. Naia 전용 스킬과 OpenClaw 커뮤니티 스킬이 포함됩니다.
+
+**Naia 전용**: Gateway 설정, 승인 규칙, 기기 페어링, 채널 관리, Discord/Google Chat 연동, 세션 관리, 에이전트 관리, 진단, TTS, cron, 호출어, 봇마당 등
+
+**OpenClaw 커뮤니티**: 날씨, GitHub, Slack, Notion, Obsidian, Trello, Spotify, 1Password, 이미지 생성(OpenAI), 음성 인식(Whisper), PDF, 코딩 에이전트, 스마트홈(OpenHue) 등
+
+스킬 탭에서 전체 목록을 확인하고 필요한 것만 활성화할 수 있습니다.
 
 ### 커스텀 스킬 (Custom)
 Gateway를 통해 추가된 스킬로, 켜고 끌 수 있습니다:

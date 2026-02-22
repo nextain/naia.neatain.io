@@ -1,4 +1,4 @@
-The main conversation screen with AI 아바타.
+The main conversation screen with Naia.
 
 ## Text Chat
 
@@ -6,7 +6,7 @@ The main conversation screen with AI 아바타.
 
 1. Type a message in the input field at the bottom
 2. Press **Enter** or click the **Send button**
-3. AI 아바타 generates a response (streams in real-time)
+3. Naia generates a response (streams in real-time)
 4. Use Shift+Enter for line breaks
 
 ## Voice Chat
@@ -18,7 +18,7 @@ The main conversation screen with AI 아바타.
 
 ## Voice Response (TTS)
 
-- AI 아바타's responses are automatically played as audio
+- Naia's responses are automatically played as audio
 - Can be toggled off in Settings
 - Avatar performs lip-sync during playback
 
@@ -30,7 +30,7 @@ The main conversation screen with AI 아바타.
 - Click to open the detailed cost dashboard:
   - Messages per provider
   - Input/output token counts
-  - Lab balance (when connected)
+  - Nextain balance (when connected)
   - Credit charge link
 
 ## New Conversation
@@ -40,7 +40,7 @@ The main conversation screen with AI 아바타.
 
 ## Tool Execution Display
 
-When AI 아바타 uses tools, the chat area shows:
+When Naia uses tools, the chat area shows:
 
 ![Tool execution display](chat-tool.png)
 

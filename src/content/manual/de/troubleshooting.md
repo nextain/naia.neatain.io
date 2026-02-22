@@ -2,9 +2,9 @@ Häufige Probleme und Lösungen.
 
 ## KI-Agent antwortet nicht
 
-1. Überprüfen Sie den API key oder die Lab-Verbindung unter Einstellungen > KI-Einstellungen
+1. Überprüfen Sie den API key oder die Nextain-Verbindung unter Einstellungen > KI-Einstellungen
 2. Überprüfen Sie die Internetverbindung
-3. Überprüfen Sie das Guthaben unter Einstellungen > Lab-Konto
+3. Überprüfen Sie das Guthaben unter Einstellungen > Nextain-Konto
 4. Stellen Sie sicher, dass das Modell korrekt konfiguriert ist
 
 ## Sprachausgabe funktioniert nicht
@@ -16,8 +16,8 @@ Häufige Probleme und Lösungen.
 
 ## Guthaben ist niedrig
 
-1. Überprüfen Sie das Guthaben unter Einstellungen > Lab-Konto
-2. Überprüfen Sie die Nutzung im Lab Dashboard
+1. Überprüfen Sie das Guthaben unter Einstellungen > Nextain-Konto
+2. Überprüfen Sie die Nutzung im Nextain Dashboard
 3. Kostenlose Credits werden monatlich aufgeladen
 4. Führen Sie ein Upgrade auf BASIC (10 $/Monat) für 100 Credits durch
 
@@ -41,7 +41,7 @@ Häufige Probleme und Lösungen.
 - Seien Sie spezifisch: "Sagen Sie mir das Wetter in Seoul"
 - Versuchen Sie es mit englischen Stadtnamen (z.B. "Seoul weather")
 
-## Lab-Login funktioniert nicht
+## Nextain-Login funktioniert nicht
 
 1. Überprüfen Sie die Internetverbindung
 2. Versuchen Sie, naia.nextain.io direkt in Ihrem Browser aufzurufen

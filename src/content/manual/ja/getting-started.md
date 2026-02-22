@@ -25,15 +25,15 @@ Google GeminiのようなプロバイダーからAPI Keyを入力することも
 
 ## オンボーディング手順
 
-ラボログインまたはAPI Key入力後、以下の手順を完了してください。
+NextainログインまたはAPI Key入力後、以下の手順を完了してください。
 
 ### 1. AIに名前を付ける
-AI 아바타に好きな名前を付けてください（例：「AI 아바타」、「Luna」、「Cookie」）。
+AIアバターに好きな名前を付けてください（例：「Naia」、「Luna」、「Cookie」）。
 
 ![AI name input](onboarding-agent-name.png)
 
 ### 2. あなたの名前
-AI 아바타に呼ばれたい名前を入力してください。
+Naiaに呼ばれたい名前を入力してください。
 
 ![Your name input](onboarding-user-name.png)
 

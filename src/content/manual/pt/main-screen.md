@@ -22,7 +22,7 @@ O painel inferior tem 8 abas:
 
 | Aba | Descrição |
 |-----|-------------|
-| Chat | Conversa com AI 아바타 |
+| Chat | Conversa com Naia |
 | Histórico | Conversas anteriores |
 | Progresso | Monitoramento de execução/erros de ferramentas |
 | Habilidades | Lista de habilidades (ferramentas) disponíveis |

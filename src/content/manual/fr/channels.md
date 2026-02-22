@@ -14,30 +14,23 @@ En disant à l'avatar IA dans le chat, « Start Discord web login », il affiche
 
 ## Intégration du bot Discord
 
-Connectez-vous avec votre compte Discord sur [naia.nextain.io](https://naia.nextain.io) pour lier automatiquement votre compte. Une fois lié, vous pouvez discuter directement avec l'avatar IA sur Discord.
+Connectez-vous avec votre compte Discord sur [naia.nextain.io](https://naia.nextain.io) pour lier automatiquement votre compte. Une fois lié, vous pouvez discuter avec Naia via DM Discord.
 
 ### Comment utiliser
 1. **Connectez-vous avec Discord** sur naia.nextain.io
-2. Cliquez sur le lien d'invitation du bot sur la page **Settings > Integrations**
-3. **Sélectionnez un serveur** pour ajouter le bot → approuvez les permissions
-4. **@mentionnez le bot** sur le serveur ou **démarrez un DM** pour discuter
-5. Les crédits sont automatiquement déduits de votre compte naia.nextain.io
+2. Votre compte est automatiquement lié au bot Naia
+3. **Envoyez un DM** au bot pour commencer à discuter
+4. Les crédits sont automatiquement déduits de votre compte naia.nextain.io
 
 ### Fonctionnalités
-- **Détection des mentions/DM** : L'IA répond lorsque vous mentionnez le bot ou envoyez un DM
+- **DM uniquement** : Naia répond aux messages directs des utilisateurs liés
 - **Intégration des crédits** : Les crédits de votre compte naia.nextain.io sont utilisés automatiquement
 - **Guidance des utilisateurs non enregistrés** : Les utilisateurs sans compte lié reçoivent des instructions de configuration
 - **Limitation de débit** : Limite de 10 messages par minute pour protéger vos crédits
 
-## Intégration Google Chat
+## Intégration Google Chat (Bientôt disponible)
 
-Connectez-vous avec votre compte Google sur naia.nextain.io pour discuter avec l'avatar IA via Google Chat.
-
-### Comment utiliser
-1. **Connectez-vous avec Google** sur naia.nextain.io
-2. Un administrateur Google Workspace **enregistre l'application naia Chat**
-3. Ajoutez l'application dans Google Chat et commencez à discuter
-4. Les crédits sont automatiquement déduits de votre compte naia.nextain.io
+L'intégration Google Chat est prévue pour une future mise à jour. Restez à l'écoute des annonces.
 
 ## Notifications de messagerie (Webhooks)
 Naia OS hérite du puissant système de canaux d'OpenClaw.

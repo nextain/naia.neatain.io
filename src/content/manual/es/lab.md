@@ -2,7 +2,7 @@ Gestiona tu cuenta en [naia.nextain.io](https://naia.nextain.io).
 
 ## Panel de control
 
-![Panel de control de laboratorio](lab-dashboard.png)
+![Panel de control de Nextain](lab-dashboard.png)
 
 - Saldo de créditos
 - Solicitudes totales
@@ -54,18 +54,15 @@ Gestiona las API keys para aplicaciones de escritorio y servicios externos:
 
 ## Integraciones
 
-Vincula tu cuenta de naia.nextain.io con mensajeros externos para chatear con el avatar de IA desde cualquier lugar.
+Vincula tu cuenta de naia.nextain.io con mensajeros externos para chatear con Naia desde cualquier lugar.
 
 ### Discord
 - Vinculado automáticamente cuando inicias sesión con Discord
-- Encuentra el enlace de invitación del bot en **Configuración > Integraciones**
-- Chatea mediante @mención o mensaje directo en tu servidor
-- Créditos deducidos de tu cuenta de Lab
+- Chatea por mensaje directo con el bot de Naia
+- Créditos deducidos de tu cuenta de Nextain
 
-### Google Chat
-- Disponible al iniciar sesión con Google
-- Chatea a través de Google Chat después del registro de la aplicación de Workspace
-- Créditos deducidos de tu cuenta de Lab
+### Google Chat (Próximamente)
+- La integración con Google Chat está planeada para una futura actualización
 
 ## Configuración
 

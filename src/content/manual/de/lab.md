@@ -58,14 +58,11 @@ Verknüpfen Sie Ihr naia.nextain.io-Konto mit externen Messengern, um von übera
 
 ### Discord
 - Automatisch verknüpft, wenn Sie sich mit Discord anmelden
-- Den Bot-Einladungslink finden Sie unter **Settings > Integrations**
-- Chatten Sie per @Erwähnung oder DM in Ihrem Server
-- Credits werden von Ihrem Lab-Konto abgezogen
+- Chatten Sie per DM mit dem Naia-Bot
+- Credits werden von Ihrem Nextain-Konto abgezogen
 
-### Google Chat
-- Verfügbar, wenn Sie mit Google angemeldet sind
-- Chatten Sie über Google Chat nach der Registrierung der Workspace-App
-- Credits werden von Ihrem Lab-Konto abgezogen
+### Google Chat (Demnächst verfügbar)
+- Die Google Chat-Integration ist für ein zukünftiges Update geplant
 
 ## Einstellungen
 

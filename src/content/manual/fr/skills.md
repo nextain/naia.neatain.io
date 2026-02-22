@@ -10,12 +10,12 @@ Intégrées à l'application — ne peuvent pas être désactivées :
 | Compétence | Fonction | Niveau de Sécurité |
 |------------|----------|--------------------|
 | `skill_time` | Vérifier la date/heure actuelle | T0 |
-| `skill_memo` | Enregistrer/récupérer des mémos | T0 |
 | `skill_system_status` | Vérifier le statut du système | T0 |
+| `skill_memo` | Enregistrer/récupérer des mémos | T0 |
 | `skill_weather` | Vérifier la météo | T0 |
-| `skill_notify_slack` | Envoyer des notifications via un webhook Slack | T1 |
-| `skill_notify_discord` | Envoyer des notifications via un webhook Discord | T1 |
-| `skill_skill_manager` | Gérer les compétences : rechercher, activer, désactiver | T0 |
+| `skill_naia_discord` | Envoyer/recevoir des DMs Discord | T1 |
+| `skill_soul` | Gérer la personnalité et la mémoire de l'IA | T0 |
+| `skill_exit` | Quitter l'application proprement | T2 |
 
 ### Compétences Personnalisées
 Ajoutées via Gateway — peuvent être activées/désactivées :
@@ -33,7 +33,7 @@ Ajoutées via Gateway — peuvent être activées/désactivées :
 Naia OS est 100 % compatible avec l'écosystème OpenClaw. Il existe trois façons d'ajouter des compétences :
 
 ### 1. Demander à l'IA de la Construire (Le Plus Simple)
-Expliquez ce que vous voulez dans le chat, et AI 아바타 écrira le code et créera la compétence pour vous.
+Expliquez ce que vous voulez dans le chat, et Naia écrira le code et créera la compétence pour vous.
 > "Construire une compétence qui récupère le taux de change actuel et l'enregistre dans `~/.naia/skills/exchange/skill.json`."
 
 ### 2. Installer depuis Clawhub (Méthode OpenClaw)
@@ -56,10 +56,10 @@ Si elle n'apparaît pas, redémarrez l'application et vérifiez à nouveau.
 
 Naia OS inclut une compétence intégrée (`skill_botmadang`) dédiée à **Botmadang**, une communauté coréenne d'agents IA.
 
-Vous pouvez demander à AI 아바타 de commencer ses activités sur Botmadang via le chat :
+Vous pouvez demander à Naia de commencer ses activités sur Botmadang via le chat :
 > "S'inscrire en tant que nouvel agent sur Botmadang. Définir votre nom comme 'naia Agent'."
 
-Une fois enregistré et muni d'une API Key, AI 아바타 peut publier des articles ou commenter les fils d'autres agents de manière autonome.
+Une fois enregistré et muni d'une API Key, Naia peut publier des articles ou commenter les fils d'autres agents de manière autonome.
 
 ## Compétences de Notification (Slack / Discord / Google Chat)
 
@@ -97,13 +97,13 @@ export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
 
 ### Exemples d'Utilisation
 
-Demandez simplement à AI 아바타 dans le chat :
+Demandez simplement à Naia dans le chat :
 
 - "Envoyer une notification 'déploiement terminé' à Slack"
 - "Publier le rapport de statut du serveur sur Discord"
 - "Notifier le canal #ops des résultats de la compilation"
 
-AI 아바타 appellera automatiquement `skill_notify_slack` ou `skill_notify_discord`.
+Naia appellera automatiquement `skill_notify_slack` ou `skill_notify_discord`.
 
 Si aucun webhook n'est configuré, un message expliquant les étapes de configuration sera affiché.
 
@@ -153,14 +153,14 @@ Chaque compétence est affichée sous forme de carte :
 
 ## Gérer les Compétences via l'IA
 
-Vous pouvez également demander à AI 아바타 de gérer les compétences dans le chat :
+Vous pouvez également demander à Naia de gérer les compétences dans le chat :
 
 - "Montrez-moi la liste des compétences disponibles"
 - "Existe-t-il une compétence liée à la météo ?"
 - "Désactiver la compétence healthcheck"
 - "Trouver des compétences liées au codage"
 
-AI 아바타 utilisera l'outil `skill_skill_manager` automatiquement.
+Naia utilisera l'outil `skill_skill_manager` automatiquement.
 
 ## Niveaux de Sécurité
 

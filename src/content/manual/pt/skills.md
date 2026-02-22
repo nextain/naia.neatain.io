@@ -10,12 +10,12 @@ Incorporadas no aplicativo — não podem ser desativadas:
 | Habilidade | Função | Nível de Segurança |
 |------------|----------|-------------------|
 | `skill_time` | Verificar data/hora atual | T0 |
-| `skill_memo` | Salvar/recuperar memorandos | T0 |
 | `skill_system_status` | Verificar status do sistema | T0 |
+| `skill_memo` | Salvar/recuperar memorandos | T0 |
 | `skill_weather` | Verificar clima | T0 |
-| `skill_notify_slack` | Enviar notificações via webhook do Slack | T1 |
-| `skill_notify_discord` | Enviar notificações via webhook do Discord | T1 |
-| `skill_skill_manager` | Gerenciar habilidades: pesquisar, habilitar, desabilitar | T0 |
+| `skill_naia_discord` | Enviar/receber mensagens diretas do Discord | T1 |
+| `skill_soul` | Gerenciar personalidade e memória da IA | T0 |
+| `skill_exit` | Encerrar o aplicativo de forma elegante | T2 |
 
 ### Habilidades Personalizadas
 Adicionadas via Gateway — podem ser ativadas/desativadas:
@@ -33,7 +33,7 @@ Adicionadas via Gateway — podem ser ativadas/desativadas:
 Naia OS é 100% compatível com o ecossistema OpenClaw. Existem três maneiras de adicionar habilidades:
 
 ### 1. Peça à IA para Criar (Mais Fácil)
-Explique o que você quer no chat, e o AI 아바타 escreverá o código e criará a habilidade para você.
+Explique o que você quer no chat, e o Naia escreverá o código e criará a habilidade para você.
 > "Crie uma habilidade que busque a taxa de câmbio atual e a salve em `~/.naia/skills/exchange/skill.json`."
 
 ### 2. Instalar do Clawhub (Método OpenClaw)
@@ -56,10 +56,10 @@ Se não aparecer, reinicie o aplicativo e verifique novamente.
 
 Naia OS inclui uma habilidade integrada (`skill_botmadang`) dedicada ao **Botmadang**, uma comunidade coreana de Agentes de IA.
 
-Você pode instruir o AI 아바타 a iniciar suas atividades no Botmadang via chat:
+Você pode instruir o Naia a iniciar suas atividades no Botmadang via chat:
 > "Registre-se como um novo agente no Botmadang. Defina seu nome para 'naia Agent'."
 
-Uma vez registrado e com uma API Key, o AI 아바터 pode postar artigos ou comentar em tópicos de outros agentes de forma autônoma.
+Uma vez registrado e com uma API Key, Naia pode postar artigos ou comentar em tópicos de outros agentes de forma autônoma.
 
 ## Habilidades de Notificação (Slack / Discord / Google Chat)
 
@@ -97,13 +97,13 @@ export DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/123/abc"
 
 ### Exemplos de Uso
 
-Basta perguntar ao AI 아바타 no chat:
+Basta perguntar ao Naia no chat:
 
 - "Envie uma notificação de 'deploy completo' para o Slack"
 - "Publique o relatório de status do servidor no Discord"
 - "Notifique o canal #ops com os resultados da compilação"
 
-O AI 아바타 chamará automaticamente `skill_notify_slack` ou `skill_notify_discord`.
+O Naia chamará automaticamente `skill_notify_slack` ou `skill_notify_discord`.
 
 Se nenhum webhook for configurado, uma mensagem explicando as etapas de configuração será exibida.
 
@@ -153,14 +153,14 @@ Cada habilidade é exibida como um cartão:
 
 ## Gerenciar Habilidades via IA
 
-Você também pode pedir ao AI 아바타 para gerenciar habilidades no chat:
+Você também pode pedir ao Naia para gerenciar habilidades no chat:
 
 - "Mostre-me a lista de habilidades disponíveis"
 - "Existe uma habilidade relacionada ao clima?"
 - "Desabilite a habilidade de verificação de saúde"
 - "Encontre habilidades relacionadas à codificação"
 
-O AI 아바타 usará a ferramenta `skill_skill_manager` automaticamente.
+O Naia usará a ferramenta `skill_skill_manager` automaticamente.
 
 ## Níveis de Segurança
 

@@ -1,10 +1,10 @@
-Cet onglet gère tous les agents (y compris l'IA 아바타 principale) et les sous-agents exécutés au sein de Naia OS.
+Cet onglet gère tous les agents (y compris l'avatar IA principal) et les sous-agents exécutés au sein de Naia OS.
 
 ![Agents Tab](agents-tab.png)
 
 ## Liste des agents
 - Vous pouvez consulter la liste de toutes les cartes d'agent actuellement actives.
-- Lorsqu'une tâche complexe est initiée, l'IA 아바타 peut générer des sous-agents en arrière-plan pour traiter les tâches en parallèle.
+- Lorsqu'une tâche complexe est initiée, l'avatar IA peut générer des sous-agents en arrière-plan pour traiter les tâches en parallèle.
 
 ## Gestion des fichiers
 Cliquer sur le bouton **Fichiers** au bas d'une carte d'agent affiche la liste des fichiers générés dans l'espace de travail local de cet agent.
