@@ -314,7 +314,7 @@ const en: Dictionary = {
       diagnostics: "Diagnostics",
       settings: "Settings",
       tools: "Tool Details",
-      lab: "Naia Account",
+      naiaAccount: "Naia Account",
       troubleshooting: "Troubleshooting",
     },
   },

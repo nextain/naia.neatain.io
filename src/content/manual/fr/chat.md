@@ -24,8 +24,6 @@ L'ecran de conversation principal avec l'avatar IA.
 
 ## Affichage des coûts
 
-![Tableau de bord des coûts](chat-cost.png)
-
 - Le **coût total de l'API** pour la session en cours est affiché en haut à droite
 - Cliquez pour ouvrir le tableau de bord détaillé des coûts :
   - Messages par fournisseur
@@ -41,8 +39,6 @@ L'ecran de conversation principal avec l'avatar IA.
 ## Affichage de l'exécution d'outils
 
 Lorsque l'avatar IA utilise des outils, la zone de chat affiche :
-
-![Affichage de l'exécution d'outils](chat-tool.png)
 
 - Nom de l'outil (par exemple, "Lire Fichier", "Exécuter Commande")
 - Statut d'exécution (en cours / succès / erreur)

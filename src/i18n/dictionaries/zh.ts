@@ -303,7 +303,7 @@ const zh: Dictionary = {
       "diagnostics": "诊断",
       "settings": "设置",
       "tools": "工具详情",
-      "lab": "Naia",
+      "naiaAccount": "Naia 账号",
       "troubleshooting": "故障排除"
     }
   },

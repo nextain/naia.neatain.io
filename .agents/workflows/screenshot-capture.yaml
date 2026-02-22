@@ -1,0 +1,65 @@
+# Screenshot Capture Workflow
+# Manual images for naia.nextain.io documentation
+
+overview: |
+  Two capture scripts produce all screenshots for the site.
+  Both use Playwright (headless Chromium) at 400x768 viewport, 2x scale.
+
+prerequisites:
+  app_dev_server: "cd ~/dev/naia-os/shell && pnpm run tauri dev  # Vite at localhost:1420"
+  site_dev_server: "cd ~/dev/naia.nextain.io && npm run dev       # Next.js at localhost:3001"
+
+scripts:
+  capture_app:
+    path: scripts/capture-app.ts
+    command: "npx tsx scripts/capture-app.ts"
+    description: |
+      Captures Naia OS desktop app UI screenshots.
+      - Mocks window.__TAURI_INTERNALS__ (Tauri invoke handler)
+      - Uses page.route() to intercept Gateway/Discord API calls
+      - Injects Zustand store mock data for realistic content
+      - Each tab opens in a separate browser page (avoids blocking)
+    source: http://localhost:1420 (Naia OS shell Vite dev server)
+    output:
+      - public/manual/ko/*.png
+      - public/manual/en/*.png
+    images:
+      onboarding: [onboarding-provider, onboarding-apikey, onboarding-agent-name, onboarding-user-name, onboarding-character, onboarding-personality, onboarding-complete]
+      main: [main-screen, tabs-layout, chat-text]
+      chat_features: [chat-cost, chat-tool, chat-approval]
+      tabs: [history-tab, progress-tab, skills-tab, skills-card, channels-tab, agents-tab, diagnostics-tab]
+      settings: [settings-overview, settings-ai, settings-voice, settings-persona, settings-memory, settings-avatar, settings-device, settings-tools, settings-channels, settings-lab]
+
+  capture_site:
+    path: scripts/capture-screenshots.ts
+    command: "npx tsx scripts/capture-screenshots.ts"
+    description: |
+      Captures naia.nextain.io website page screenshots.
+      - Full-page screenshots of all public pages
+      - Manual documentation pages (14 slugs)
+      - Both ko and en locales
+    source: http://localhost:3001 (naia.nextain.io Next.js dev server)
+    output: public/screenshots/{ko,en}/*.png
+    pages:
+      public: [home, download, login, terms, privacy, refund, contact]
+      manual: [install, getting-started, main-screen, chat, history, progress, skills, channels, agents, diagnostics, settings, tools, naia-account, troubleshooting]
+
+mock_data_strategy:
+  tauri_invoke: "window.__TAURI_INTERNALS__ mock — handles list_skills, get_audit_log, etc."
+  gateway_api: "page.route('**/127.0.0.1:18789/**') — mocks skill_sessions, skill_agents, skill_diagnostics"
+  discord_api: "page.route('**/discord.com/api/**') — mocks DM messages and bot user"
+  zustand_stores: |
+    After page load, inject via page.evaluate():
+    - useChatStore.setState() — messages, cost, toolCalls, pendingApproval
+    - useProgressStore.setState() — events, stats
+    - useLogsStore.setState() — log entries
+  config_variants:
+    standard: "localStorage naia-config with provider, apiKey, onboardingComplete"
+    with_lab: "Adds labKey, labUserId for Nextain connected state"
+    with_discord: "Adds discordDmChannelId, discordDefaultUserId for Discord connected state"
+
+notes:
+  - VRM avatar needs ~6 seconds to load in headless browser
+  - WorkProgressPanel blocks page event loop when Tauri invoke returns synchronously
+  - Each tab must be captured in a separate browser page to avoid blocking
+  - settings-theme divider does not exist as a separate section (integrated into other settings)

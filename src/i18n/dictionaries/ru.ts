@@ -303,7 +303,7 @@ const ru: Dictionary = {
       "diagnostics": "Диагностика",
       "settings": "Настройки",
       "tools": "Детали инструмента",
-      "lab": "Naia",
+      "naiaAccount": "Аккаунт Naia",
       "troubleshooting": "Устранение неполадок"
     }
   },

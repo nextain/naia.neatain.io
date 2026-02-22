@@ -24,8 +24,6 @@ Màn hình trò chuyện chính với Naia.
 
 ## Hiển thị chi phí
 
-![Cost dashboard](chat-cost.png)
-
 - **Tổng chi phí API** cho phiên hiện tại hiển thị ở góc trên bên phải
 - Nhấp để mở bảng điều khiển chi phí chi tiết:
   - Tin nhắn theo nhà cung cấp
@@ -41,8 +39,6 @@ Màn hình trò chuyện chính với Naia.
 ## Hiển thị thực thi công cụ
 
 Khi Naia sử dụng công cụ, khu vực trò chuyện hiển thị:
-
-![Tool execution display](chat-tool.png)
 
 - Tên công cụ (ví dụ: "Đọc tệp", "Thực thi lệnh")
 - Trạng thái thực thi (đang chạy / thành công / lỗi)

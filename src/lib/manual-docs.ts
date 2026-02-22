@@ -16,7 +16,7 @@ export const MANUAL_SLUGS = [
   "diagnostics",
   "settings",
   "tools",
-  "lab",
+  "naia-account",
   "troubleshooting",
 ] as const;
 
@@ -68,6 +68,6 @@ export const SLUG_TO_SECTION_KEY: Record<ManualSlug, string> = {
   diagnostics: "diagnostics",
   settings: "settings",
   tools: "tools",
-  lab: "lab",
+  "naia-account": "naiaAccount",
   troubleshooting: "troubleshooting",
 };

@@ -5,7 +5,7 @@ project:
   name: naia.nextain.io
   type: web-app
   owner: luke
-  org: cafelua
+  org: nextain
 
 # 컨텍스트 파일 인덱스
 contexts:
@@ -27,6 +27,10 @@ workflows:
     mirror: .users/workflows/translation.md
     description: "Manual translation workflow using gemini-2.5-flash via Node script"
     load: when requested to translate docs
+  screenshot-capture:
+    path: .agents/workflows/screenshot-capture.yaml
+    description: "Playwright screenshot capture for app UI and site pages"
+    load: when capturing screenshots or updating manual images
 
 # 관련 프로젝트 (참조용, 수정 금지)
 related_projects:
@@ -34,9 +38,9 @@ related_projects:
     relation: backend-gateway
     path: ../project-any-llm
     note: "Reference only. Do NOT modify."
-  cafelua-os:
+  naia-os:
     relation: desktop-client
-    path: ../cafelua-os
+    path: ../naia-os
     note: "Desktop app that consumes naia.nextain.io auth flow"
 
 # 미러링 규칙

@@ -50,7 +50,7 @@ The homepage and portal (this site) provides:
 - `/{locale}` — Homepage (features, comparison, pricing, FAQ)
 - `/{locale}/download` — Download desktop app
 - `/{locale}/manual` — User manual
-- `/{locale}/manual/{slug}` — Manual details (`install`, `tools`, `settings`, ...)
+- `/{locale}/manual/{slug}` — Manual details (`install`, `getting-started`, `main-screen`, `chat`, `history`, `progress`, `skills`, `channels`, `agents`, `diagnostics`, `settings`, `tools`, `naia-account`, `troubleshooting`)
 - `/{locale}/terms` — Terms of Service
 - `/{locale}/privacy` — Privacy Policy
 - `/{locale}/refund` — Refund Policy

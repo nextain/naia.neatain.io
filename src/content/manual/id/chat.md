@@ -24,8 +24,6 @@ Layar percakapan utama dengan Naia.
 
 ## Tampilan Biaya
 
-![Dasbor biaya](chat-cost.png)
-
 - **Total biaya API** untuk sesi saat ini ditampilkan di kanan atas
 - Klik untuk membuka dasbor biaya terperinci:
   - Pesan per penyedia
@@ -41,8 +39,6 @@ Layar percakapan utama dengan Naia.
 ## Tampilan Eksekusi Alat
 
 Ketika Naia menggunakan alat, area obrolan menampilkan:
-
-![Tampilan eksekusi alat](chat-tool.png)
 
 - Nama alat (misalnya, "Baca File", "Jalankan Perintah")
 - Status eksekusi (berjalan / berhasil / galat)

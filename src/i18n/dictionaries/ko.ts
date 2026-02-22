@@ -312,7 +312,7 @@ const ko: Dictionary = {
       diagnostics: "시스템 진단",
       settings: "설정",
       tools: "도구 상세",
-      lab: "Naia 계정",
+      naiaAccount: "Naia 계정",
       troubleshooting: "문제 해결",
     },
   },

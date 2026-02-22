@@ -267,7 +267,7 @@ export interface Dictionary {
       diagnostics: string;
       settings: string;
       tools: string;
-      lab: string;
+      naiaAccount: string;
       troubleshooting: string;
     };
   };

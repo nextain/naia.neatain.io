@@ -303,7 +303,7 @@ const bn: Dictionary = {
       "diagnostics": "ডায়াগনস্টিকস",
       "settings": "সেটিংস",
       "tools": "টুলের বিবরণ",
-      "lab": "Naia",
+      "naiaAccount": "Naia অ্যাকাউন্ট",
       "troubleshooting": "সমস্যা সমাধান"
     }
   },

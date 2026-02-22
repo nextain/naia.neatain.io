@@ -24,8 +24,6 @@ Der Haupt-Konversationsbildschirm mit dem KI-Avatar.
 
 ## Kostenanzeige
 
-![Kosten-Dashboard](chat-cost.png)
-
 - **Gesamte API-Kosten** für die aktuelle Sitzung werden oben rechts angezeigt
 - Klicken Sie, um das detaillierte Kosten-Dashboard zu öffnen:
   - Nachrichten pro Anbieter
@@ -41,8 +39,6 @@ Der Haupt-Konversationsbildschirm mit dem KI-Avatar.
 ## Anzeige der Tool-Ausführung
 
 Wenn der KI-Avatar Tools verwendet, zeigt der Chatbereich an:
-
-![Anzeige der Tool-Ausführung](chat-tool.png)
 
 - Tool-Name (z.B. "Datei lesen", "Befehl ausführen")
 - Ausführungsstatus (wird ausgeführt / erfolgreich / Fehler)

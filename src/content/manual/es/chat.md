@@ -24,8 +24,6 @@ La pantalla principal de conversación con Naia.
 
 ## Visualización de Costos
 
-![Cost dashboard](chat-cost.png)
-
 - **Costo total de API** para la sesión actual mostrado en la esquina superior derecha
 - Haga clic para abrir el panel de control de costos detallado:
   - Mensajes por proveedor
@@ -41,8 +39,6 @@ La pantalla principal de conversación con Naia.
 ## Visualización de Ejecución de Herramientas
 
 Cuando Naia utiliza herramientas, el área de chat muestra:
-
-![Tool execution display](chat-tool.png)
 
 - Nombre de la herramienta (p. ej., "Leer Archivo", "Ejecutar Comando")
 - Estado de ejecución (ejecutándose / éxito / error)

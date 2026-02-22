@@ -303,7 +303,7 @@ const vi: Dictionary = {
       "diagnostics": "Chẩn đoán",
       "settings": "Cài đặt",
       "tools": "Chi tiết công cụ",
-      "lab": "Naia",
+      "naiaAccount": "Tài khoản Naia",
       "troubleshooting": "Khắc phục sự cố"
     }
   },

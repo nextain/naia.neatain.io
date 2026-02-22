@@ -24,8 +24,6 @@ The main conversation screen with Naia.
 
 ## Cost Display
 
-![Cost dashboard](chat-cost.png)
-
 - **Total API cost** for the current session shown in the top right
 - Click to open the detailed cost dashboard:
   - Messages per provider
@@ -42,8 +40,6 @@ The main conversation screen with Naia.
 
 When Naia uses tools, the chat area shows:
 
-![Tool execution display](chat-tool.png)
-
 - Tool name (e.g., "Read File", "Execute Command")
 - Execution status (running / success / error)
 - Results (expandable)
@@ -51,6 +47,8 @@ When Naia uses tools, the chat area shows:
 ## Approval Modal
 
 For high-security tool executions:
+
+![Approval modal](chat-approval.png)
 
 | Button | Description |
 |--------|-------------|

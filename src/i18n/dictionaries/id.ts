@@ -303,7 +303,7 @@ const id: Dictionary = {
       "diagnostics": "Diagnostik",
       "settings": "Pengaturan",
       "tools": "Detail Alat",
-      "lab": "Naia",
+      "naiaAccount": "Akun Naia",
       "troubleshooting": "Pemecahan masalah"
     }
   },

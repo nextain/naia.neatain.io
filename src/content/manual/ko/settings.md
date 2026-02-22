@@ -48,6 +48,8 @@ AI 아바타의 성격, 말투, 이름을 자유 텍스트로 커스터마이즈
 
 Naia 계정에 연동하여 AI를 이용 가능하며, Naia 앱의 계정 정보가 자동 백업됩니다.
 
+![Naia 계정 설정](settings-lab.png)
+
 ### 연결된 상태
 
 - 사용자 ID 표시
@@ -66,11 +68,15 @@ Naia 계정에 연동하여 AI를 이용 가능하며, Naia 앱의 계정 정보
 
 ## AI 설정
 
+![AI 설정](settings-ai.png)
+
 - **제공업체**: Claude Code CLI (로컬), Gemini, OpenAI, Anthropic (Claude), xAI (Grok), zAI (GLM), Ollama (로컬)
 - **모델**: 제공업체별 모델 선택 (예: gemini-2.5-flash, claude-sonnet-4.5 등)
 - **API 키**: 제공업체 API 키 (Naia 계정 사용 시 불필요)
 
 ## 음성 (TTS/STT)
+
+![음성 설정](settings-voice.png)
 
 - **음성 응답 (TTS)**: ON/OFF
 - **음성 입력 (STT)**: ON/OFF

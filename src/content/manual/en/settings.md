@@ -45,6 +45,8 @@ Customize Naia's personality, speech style, and name in free text. Emotion tags 
 
 Manage Naia integration.
 
+![Naia Account settings](settings-lab.png)
+
 ### When Connected
 
 - User ID displayed
@@ -63,11 +65,15 @@ Click "User Manual" to open this page in the browser.
 
 ## AI Settings
 
+![AI Settings](settings-ai.png)
+
 - **Provider**: Gemini (default), OpenAI, Claude, Grok, xAI, Ollama, Claude Code CLI
 - **Model**: Model name (e.g., gemini-2.5-flash)
 - **API Key**: Provider API key (not needed if using Naia)
 
 ## Voice (TTS/STT)
+
+![Voice settings](settings-voice.png)
 
 - **Voice Response (TTS)**: ON/OFF
 - **Voice Input (STT)**: ON/OFF
