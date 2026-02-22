@@ -173,6 +173,16 @@ export async function getUser(userId: string): Promise<GatewayUser | null> {
   return res.json() as Promise<GatewayUser>;
 }
 
+export async function updateUser(
+  userId: string,
+  payload: Record<string, unknown>,
+): Promise<GatewayUser> {
+  return gwJson<GatewayUser>(`/v1/users/${encodeURIComponent(userId)}`, {
+    method: "PATCH",
+    body: JSON.stringify(payload),
+  });
+}
+
 // --- Keys ---
 
 export async function createVirtualKey(
