@@ -10,7 +10,6 @@ import {
   ExternalLink,
   Github,
   CheckCircle,
-  Clock,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -19,6 +18,13 @@ import Link from "next/link";
 
 const GITHUB_REPO = "nextain/naia-os";
 const RELEASE_BASE = `https://github.com/${GITHUB_REPO}/releases`;
+
+const DOWNLOAD_URLS: Record<string, string> = {
+  flatpak: `${RELEASE_BASE}/latest/download/Naia-Shell-x86_64.flatpak`,
+  appimage: `${RELEASE_BASE}/latest/download/Naia.Shell_0.1.0_amd64.AppImage`,
+  deb: `${RELEASE_BASE}/latest/download/Naia.Shell_0.1.0_amd64.deb`,
+  rpm: `${RELEASE_BASE}/latest/download/Naia.Shell-0.1.0-1.x86_64.rpm`,
+};
 
 const FORMAT_ICONS = {
   flatpak: Shield,
@@ -91,10 +97,12 @@ export default async function DownloadPage({
                 <Button
                   className="w-full"
                   variant={isFlatpak ? "default" : "outline"}
-                  disabled
+                  asChild
                 >
-                  <Clock className="mr-2 h-4 w-4" />
-                  {dict.common.comingSoon}
+                  <Link href={DOWNLOAD_URLS[key]} target="_blank" rel="noreferrer">
+                    <Download className="mr-2 h-4 w-4" />
+                    {fmt.name} {d.version}
+                  </Link>
                 </Button>
               </CardContent>
             </Card>

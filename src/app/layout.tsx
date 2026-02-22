@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://naia.nextain.io"),
   openGraph: {
-    title: "Naia OS",
+    title: "Naia OS | The Next Generation AI OS",
     description: "Your Personal AI Desktop OS. Experience a complete AI ecosystem with a 3D avatar.",
     url: "https://naia.nextain.io",
     siteName: "Naia OS",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naia OS",
+    title: "Naia OS | The Next Generation AI OS",
     description: "Your Personal AI Desktop OS. Experience a complete AI ecosystem with a 3D avatar.",
   },
 };
