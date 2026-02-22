@@ -63,7 +63,7 @@ Setelah terdaftar dan diberi API Key, Naia dapat secara mandiri memposting artik
 
 ## Skill Notifikasi (Slack / Discord / Google Chat)
 
-`skill_notify_slack` dan `skill_notify_discord` adalah skill notifikasi bawaan yang mengirim pesan melalui webhook.
+`skill_notify_slack` dan `skill_notify_discord` adalah skill notifikasi kustom yang mengirim pesan melalui webhook.
 
 ### Pengaturan Webhook
 

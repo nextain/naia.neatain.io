@@ -63,7 +63,7 @@ Sau khi đăng ký và được cấp API Key, Naia có thể tự động đăn
 
 ## Kỹ năng Thông báo (Slack / Discord / Google Chat)
 
-`skill_notify_slack` và `skill_notify_discord` là các kỹ năng thông báo tích hợp sẵn, gửi tin nhắn qua webhook.
+`skill_notify_slack` và `skill_notify_discord` là các kỹ năng thông báo tùy chỉnh, gửi tin nhắn qua webhook.
 
 ### Thiết lập Webhook
 

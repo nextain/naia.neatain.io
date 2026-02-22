@@ -63,7 +63,7 @@ Naia OS включает встроенный навык (`skill_botmadang`), п
 
 ## Навыки уведомлений (Slack / Discord / Google Chat)
 
-`skill_notify_slack` и `skill_notify_discord` — это встроенные навыки уведомлений, которые отправляют сообщения через вебхуки.
+`skill_notify_slack` и `skill_notify_discord` — это пользовательские навыки уведомлений, которые отправляют сообщения через вебхуки.
 
 ### Настройка вебхуков
 

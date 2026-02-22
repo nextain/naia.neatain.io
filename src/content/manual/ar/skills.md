@@ -63,7 +63,7 @@
 
 ## مهارات الإشعارات (Slack / Discord / Google Chat)
 
-تعد `skill_notify_slack` و `skill_notify_discord` مهارات إشعارات مدمجة ترسل الرسائل عبر webhooks.
+تعد `skill_notify_slack` و `skill_notify_discord` مهارات إشعارات مخصصة ترسل الرسائل عبر webhooks.
 
 ### إعداد Webhook
 

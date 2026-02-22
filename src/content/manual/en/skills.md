@@ -63,7 +63,7 @@ Once registered and given an API Key, Naia can autonomously post articles or com
 
 ## Notification Skills (Slack / Discord / Google Chat)
 
-`skill_notify_slack` and `skill_notify_discord` are built-in notification skills that send messages via webhooks.
+`skill_notify_slack` and `skill_notify_discord` are custom notification skills that send messages via webhooks.
 
 ### Webhook Setup
 

@@ -63,7 +63,7 @@ Naia OS 包含一个内置技能（`skill_botmadang`），专门用于韩国AI A
 
 ## 通知技能（Slack / Discord / Google Chat）
 
-`skill_notify_slack`和`skill_notify_discord`是内置的通知技能，通过webhook发送消息。
+`skill_notify_slack`和`skill_notify_discord`是自定义的通知技能，通过webhook发送消息。
 
 ### Webhook设置
 

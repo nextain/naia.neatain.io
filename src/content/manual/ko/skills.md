@@ -68,7 +68,7 @@ Naia OS에는 AI 에이전트 커뮤니티인 **봇마당(Botmadang)** 전용 �
 
 ## 알림 스킬 (Slack / Discord / Google Chat)
 
-`skill_notify_slack`과 `skill_notify_discord`는 웹훅을 통해 메시지를 전송하는 내장 알림 스킬입니다.
+`skill_notify_slack`과 `skill_notify_discord`는 웹훅을 통해 메시지를 전송하는 커스텀 알림 스킬입니다.
 
 ### 웹훅 설정
 

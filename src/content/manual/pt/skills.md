@@ -63,7 +63,7 @@ Uma vez registrado e com uma API Key, Naia pode postar artigos ou comentar em t�
 
 ## Habilidades de Notificação (Slack / Discord / Google Chat)
 
-`skill_notify_slack` e `skill_notify_discord` são habilidades de notificação integradas que enviam mensagens via webhooks.
+`skill_notify_slack` e `skill_notify_discord` são habilidades de notificação personalizadas que enviam mensagens via webhooks.
 
 ### Configuração de Webhook
 

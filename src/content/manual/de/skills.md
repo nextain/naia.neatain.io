@@ -63,7 +63,7 @@ Nach der Registrierung und der Vergabe eines API Key kann Naia autonom Artikel p
 
 ## Benachrichtigungs-Skills (Slack / Discord / Google Chat)
 
-`skill_notify_slack` und `skill_notify_discord` sind integrierte Benachrichtigungs-Skills, die Nachrichten über Webhooks senden.
+`skill_notify_slack` und `skill_notify_discord` sind benutzerdefinierte Benachrichtigungs-Skills, die Nachrichten über Webhooks senden.
 
 ### Webhook-Einrichtung
 

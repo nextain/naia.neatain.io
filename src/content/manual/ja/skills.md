@@ -63,7 +63,7 @@ Naia OSには、韓国のAIエージェントコミュニティである**Botmad
 
 ## 通知スキル（Slack / Discord / Google Chat）
 
-`skill_notify_slack`と`skill_notify_discord`は、ウェブフックを介してメッセージを送信する組み込みの通知スキルです。
+`skill_notify_slack`と`skill_notify_discord`は、ウェブフックを介してメッセージを送信するカスタムの通知スキルです。
 
 ### ウェブフックの設定
 
