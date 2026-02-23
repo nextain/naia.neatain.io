@@ -38,19 +38,45 @@ const TAURI_MOCK = `
     });
   }
 
-  // i18n lookup for mock data
+  // i18n lookup for mock data — 14 languages
   const _locale = window.__MOCK_LOCALE || "ko";
-  const _t = (ko, en) => _locale === "ko" ? ko : en;
+  const _i18n = {
+    sessionWeather:  {ko:"날씨와 메모",en:"Weather & Memo",ja:"天気とメモ",zh:"天气与备忘",fr:"Météo & Mémo",de:"Wetter & Memo",ru:"Погода и заметки",es:"Clima y Memo",ar:"الطقس والملاحظات",hi:"मौसम और मेमो",bn:"আবহাওয়া ও মেমো",pt:"Clima e Memo",id:"Cuaca & Memo",vi:"Thời tiết & Ghi chú"},
+    sessionCode:     {ko:"코드 리뷰",en:"Code Review",ja:"コードレビュー",zh:"代码审查",fr:"Revue de code",de:"Code-Review",ru:"Обзор кода",es:"Revisión de código",ar:"مراجعة الكود",hi:"कोड समीक्षा",bn:"কোড রিভিউ",pt:"Revisão de código",id:"Tinjauan Kode",vi:"Đánh giá mã"},
+    sessionSchedule: {ko:"일정 관리",en:"Schedule",ja:"スケジュール",zh:"日程管理",fr:"Agenda",de:"Terminplan",ru:"Расписание",es:"Agenda",ar:"الجدول",hi:"शेड्यूल",bn:"সূচি",pt:"Agenda",id:"Jadwal",vi:"Lịch trình"},
+    agentDefault:    {ko:"기본 AI 컴패니언",en:"Default AI Companion",ja:"デフォルトAIコンパニオン",zh:"默认AI伙伴",fr:"Compagnon IA par défaut",de:"Standard-KI-Begleiter",ru:"Компаньон ИИ по умолчанию",es:"Compañero IA predeterminado",ar:"رفيق الذكاء الاصطناعي الافتراضي",hi:"डिफ़ॉल्ट AI साथी",bn:"ডিফল্ট AI সঙ্গী",pt:"Companheiro IA padrão",id:"Pendamping AI Default",vi:"Trợ lý AI mặc định"},
+    agentCoder:      {ko:"코딩 에이전트",en:"Coding Agent",ja:"コーディングエージェント",zh:"编程代理",fr:"Agent de code",de:"Coding-Agent",ru:"Агент кодирования",es:"Agente de código",ar:"وكيل البرمجة",hi:"कोडिंग एजेंट",bn:"কোডিং এজেন্ট",pt:"Agente de código",id:"Agen Coding",vi:"Trợ lý lập trình"},
+    agentCoderDesc:  {ko:"코드 작성 및 리뷰 전문",en:"Code writing & review specialist",ja:"コード作成とレビューの専門家",zh:"代码编写与审查专家",fr:"Spécialiste écriture et revue de code",de:"Spezialist für Code-Erstellung und -Review",ru:"Специалист по написанию и обзору кода",es:"Especialista en escritura y revisión de código",ar:"متخصص في كتابة ومراجعة الكود",hi:"कोड लेखन और समीक्षा विशेषज्ञ",bn:"কোড লেখা ও রিভিউ বিশেষজ্ঞ",pt:"Especialista em escrita e revisão de código",id:"Spesialis penulisan & review kode",vi:"Chuyên gia viết và đánh giá mã"},
+    discordQ1:       {ko:"나이아, 내일 회의 시간 알려줘",en:"Naia, when is tomorrow's meeting?",ja:"ナイア、明日の会議はいつ？",zh:"Naia，明天的会议是什么时候？",fr:"Naia, c'est quand la réunion demain ?",de:"Naia, wann ist das Meeting morgen?",ru:"Найя, когда завтра встреча?",es:"Naia, ¿cuándo es la reunión mañana?",ar:"نايا، متى اجتماع الغد؟",hi:"नाइया, कल की मीटिंग कब है?",bn:"নাইয়া, আগামীকাল মিটিং কখন?",pt:"Naia, quando é a reunião amanhã?",id:"Naia, kapan rapat besok?",vi:"Naia, cuộc họp ngày mai lúc mấy giờ?"},
+    discordA1:       {ko:"내일 오후 3시에 팀 미팅이 있어요! 📋",en:"You have a team meeting at 3 PM tomorrow! 📋",ja:"明日午後3時にチームミーティングがあります！📋",zh:"明天下午3点有团队会议！📋",fr:"Vous avez une réunion d'équipe demain à 15h ! 📋",de:"Morgen um 15 Uhr ist ein Team-Meeting! 📋",ru:"Завтра в 15:00 командная встреча! 📋",es:"¡Tienes una reunión de equipo mañana a las 3 PM! 📋",ar:"لديك اجتماع فريق غداً الساعة 3 مساءً! 📋",hi:"कल दोपहर 3 बजे टीम मीटिंग है! 📋",bn:"আগামীকাল বিকেল ৩টায় টিম মিটিং আছে! 📋",pt:"Você tem reunião de equipe amanhã às 15h! 📋",id:"Besok ada rapat tim jam 3 sore! 📋",vi:"Bạn có họp nhóm lúc 3 giờ chiều mai! 📋"},
+    discordQ2:       {ko:"고마워. 오늘 날씨는?",en:"Thanks. What's the weather today?",ja:"ありがとう。今日の天気は？",zh:"谢谢。今天天气怎么样？",fr:"Merci. Quel temps fait-il ?",de:"Danke. Wie ist das Wetter heute?",ru:"Спасибо. Какая сегодня погода?",es:"Gracias. ¿Qué tiempo hace hoy?",ar:"شكراً. كيف الطقس اليوم؟",hi:"धन्यवाद। आज मौसम कैसा है?",bn:"ধন্যবাদ। আজকের আবহাওয়া কেমন?",pt:"Obrigado. Como está o tempo hoje?",id:"Terima kasih. Bagaimana cuaca hari ini?",vi:"Cảm ơn. Thời tiết hôm nay thế nào?"},
+    discordA2:       {ko:"오늘 서울은 맑고 12°C예요. 가벼운 겉옷 추천해요! 🌤️",en:"It's clear and 12°C in Seoul today. A light jacket is recommended! 🌤️",ja:"今日のソウルは晴れで12°Cです。軽い上着がおすすめです！🌤️",zh:"今天首尔晴朗12°C，建议带薄外套！🌤️",fr:"Il fait beau et 12°C à Séoul. Une veste légère est conseillée ! 🌤️",de:"Heute klar und 12°C in Seoul. Leichte Jacke empfohlen! 🌤️",ru:"Сегодня в Сеуле ясно, 12°C. Рекомендую лёгкую куртку! 🌤️",es:"Hoy en Seúl está despejado y 12°C. ¡Se recomienda chaqueta ligera! 🌤️",ar:"اليوم صافٍ 12°C في سيول. أنصح بسترة خفيفة! 🌤️",hi:"आज सियोल में साफ़ और 12°C है। हल्की जैकेट लें! 🌤️",bn:"আজ সিউলে পরিষ্কার ১২°C। হালকা জ্যাকেট নিন! 🌤️",pt:"Hoje está claro e 12°C em Seul. Recomendo jaqueta leve! 🌤️",id:"Hari ini cerah 12°C di Seoul. Bawa jaket tipis! 🌤️",vi:"Hôm nay Seoul quang đãng 12°C. Nên mang áo khoác nhẹ! 🌤️"},
+    discordQ3:       {ko:"알겠어, 감사!",en:"Got it, thanks!",ja:"了解、ありがとう！",zh:"好的，谢谢！",fr:"Compris, merci !",de:"Verstanden, danke!",ru:"Понял, спасибо!",es:"Entendido, ¡gracias!",ar:"فهمت، شكراً!",hi:"समझ गया, धन्यवाद!",bn:"বুঝেছি, ধন্যবাদ!",pt:"Entendi, obrigado!",id:"Mengerti, terima kasih!",vi:"Hiểu rồi, cảm ơn!"},
+    skillTime:       {ko:"현재 날짜/시간 확인",en:"Check current date/time",ja:"現在の日時を確認",zh:"查看当前日期/时间",fr:"Vérifier la date/heure",de:"Datum/Uhrzeit prüfen",ru:"Проверить дату/время",es:"Ver fecha/hora actual",ar:"التحقق من التاريخ/الوقت",hi:"वर्तमान तिथि/समय जांचें",bn:"বর্তমান তারিখ/সময় দেখুন",pt:"Verificar data/hora",id:"Cek tanggal/waktu",vi:"Kiểm tra ngày/giờ"},
+    skillStatus:     {ko:"시스템 상태 확인",en:"Check system status",ja:"システム状態を確認",zh:"检查系统状态",fr:"Vérifier l'état du système",de:"Systemstatus prüfen",ru:"Проверить статус системы",es:"Verificar estado del sistema",ar:"التحقق من حالة النظام",hi:"सिस्टम स्थिति जांचें",bn:"সিস্টেম স্ট্যাটাস দেখুন",pt:"Verificar status do sistema",id:"Cek status sistem",vi:"Kiểm tra trạng thái hệ thống"},
+    skillMemo:       {ko:"메모 저장/조회",en:"Save/read memos",ja:"メモの保存/閲覧",zh:"保存/查看备忘录",fr:"Sauvegarder/lire mémos",de:"Memos speichern/lesen",ru:"Сохранить/прочитать заметки",es:"Guardar/leer memos",ar:"حفظ/قراءة الملاحظات",hi:"मेमो सेव/पढ़ें",bn:"মেমো সেভ/পড়ুন",pt:"Salvar/ler memos",id:"Simpan/baca memo",vi:"Lưu/đọc ghi chú"},
+    skillWeather:    {ko:"날씨 조회",en:"Check weather",ja:"天気を確認",zh:"查看天气",fr:"Consulter la météo",de:"Wetter prüfen",ru:"Проверить погоду",es:"Consultar el clima",ar:"التحقق من الطقس",hi:"मौसम जांचें",bn:"আবহাওয়া দেখুন",pt:"Verificar clima",id:"Cek cuaca",vi:"Kiểm tra thời tiết"},
+    skillDiscord:    {ko:"Discord DM 전송",en:"Send Discord DM",ja:"Discord DMを送信",zh:"发送Discord私信",fr:"Envoyer un DM Discord",de:"Discord-DM senden",ru:"Отправить DM в Discord",es:"Enviar DM de Discord",ar:"إرسال رسالة Discord",hi:"Discord DM भेजें",bn:"Discord DM পাঠান",pt:"Enviar DM no Discord",id:"Kirim DM Discord",vi:"Gửi DM Discord"},
+    skillSoul:       {ko:"AI 페르소나 관리",en:"Manage AI persona",ja:"AIペルソナ管理",zh:"管理AI人格",fr:"Gérer le persona IA",de:"KI-Persona verwalten",ru:"Управление персоной ИИ",es:"Gestionar persona IA",ar:"إدارة شخصية الذكاء الاصطناعي",hi:"AI व्यक्तित्व प्रबंधन",bn:"AI পারসোনা ম্যানেজ",pt:"Gerenciar persona IA",id:"Kelola persona AI",vi:"Quản lý nhân cách AI"},
+    skillExit:       {ko:"앱 종료",en:"Exit app",ja:"アプリ終了",zh:"退出应用",fr:"Quitter l'appli",de:"App beenden",ru:"Выйти из приложения",es:"Salir de la app",ar:"إغلاق التطبيق",hi:"ऐप बंद करें",bn:"অ্যাপ বন্ধ করুন",pt:"Sair do app",id:"Keluar aplikasi",vi:"Thoát ứng dụng"},
+    skillReadFile:   {ko:"파일 읽기",en:"Read file",ja:"ファイル読み取り",zh:"读取文件",fr:"Lire un fichier",de:"Datei lesen",ru:"Прочитать файл",es:"Leer archivo",ar:"قراءة ملف",hi:"फ़ाइल पढ़ें",bn:"ফাইল পড়ুন",pt:"Ler arquivo",id:"Baca file",vi:"Đọc tệp"},
+    skillWriteFile:  {ko:"파일 쓰기",en:"Write file",ja:"ファイル書き込み",zh:"写入文件",fr:"Écrire un fichier",de:"Datei schreiben",ru:"Записать файл",es:"Escribir archivo",ar:"كتابة ملف",hi:"फ़ाइल लिखें",bn:"ফাইল লিখুন",pt:"Escrever arquivo",id:"Tulis file",vi:"Ghi tệp"},
+    skillExecCmd:    {ko:"명령 실행",en:"Execute command",ja:"コマンド実行",zh:"执行命令",fr:"Exécuter commande",de:"Befehl ausführen",ru:"Выполнить команду",es:"Ejecutar comando",ar:"تنفيذ أمر",hi:"कमांड चलाएं",bn:"কমান্ড চালান",pt:"Executar comando",id:"Jalankan perintah",vi:"Thực thi lệnh"},
+    skillWebSearch:  {ko:"웹 검색",en:"Web search",ja:"ウェブ検索",zh:"网页搜索",fr:"Recherche web",de:"Websuche",ru:"Поиск в интернете",es:"Búsqueda web",ar:"بحث على الويب",hi:"वेब खोज",bn:"ওয়েব সার্চ",pt:"Pesquisa web",id:"Pencarian web",vi:"Tìm kiếm web"},
+    skillSlack:      {ko:"Slack 알림",en:"Slack notification",ja:"Slack通知",zh:"Slack通知",fr:"Notification Slack",de:"Slack-Benachrichtigung",ru:"Уведомление Slack",es:"Notificación Slack",ar:"إشعار Slack",hi:"Slack सूचना",bn:"Slack নোটিফিকেশন",pt:"Notificação Slack",id:"Notifikasi Slack",vi:"Thông báo Slack"},
+    skillDiscordNotif:{ko:"Discord 알림",en:"Discord notification",ja:"Discord通知",zh:"Discord通知",fr:"Notification Discord",de:"Discord-Benachrichtigung",ru:"Уведомление Discord",es:"Notificación Discord",ar:"إشعار Discord",hi:"Discord सूचना",bn:"Discord নোটিফিকেশন",pt:"Notificação Discord",id:"Notifikasi Discord",vi:"Thông báo Discord"},
+    weatherClear:    {ko:"맑음 12°C",en:"Clear 12°C",ja:"晴れ 12°C",zh:"晴 12°C",fr:"Clair 12°C",de:"Klar 12°C",ru:"Ясно 12°C",es:"Despejado 12°C",ar:"صافٍ 12°C",hi:"साफ़ 12°C",bn:"পরিষ্কার ১২°C",pt:"Limpo 12°C",id:"Cerah 12°C",vi:"Quang 12°C"},
+  };
+  const _t = (key) => _i18n[key]?.[_locale] || _i18n[key]?.["en"] || key;
 
   // Gateway mock responses for directToolCall pattern
-  // directToolCall: invoke("send_to_agent_command") → listen("agent_response") for tool_result + finish
   const GATEWAY_RESPONSES = {
     skill_sessions: (args) => {
       if (args.action === "list") return JSON.stringify({
         sessions: [
-          { key: "session-001", label: _t("날씨와 메모", "Weather & Memo"), messageCount: 6, createdAt: Date.now()-3600000, updatedAt: Date.now()-300000 },
-          { key: "session-002", label: _t("코드 리뷰", "Code Review"), messageCount: 12, createdAt: Date.now()-86400000, updatedAt: Date.now()-7200000 },
-          { key: "session-003", label: _t("일정 관리", "Schedule"), messageCount: 4, createdAt: Date.now()-172800000, updatedAt: Date.now()-86400000 },
+          { key: "session-001", label: _t("sessionWeather"), messageCount: 6, createdAt: Date.now()-3600000, updatedAt: Date.now()-300000 },
+          { key: "session-002", label: _t("sessionCode"), messageCount: 12, createdAt: Date.now()-86400000, updatedAt: Date.now()-7200000 },
+          { key: "session-003", label: _t("sessionSchedule"), messageCount: 4, createdAt: Date.now()-172800000, updatedAt: Date.now()-86400000 },
           { key: "discord:dm:123456", label: "Discord DM", messageCount: 8, createdAt: Date.now()-86400000, updatedAt: Date.now()-3600000 },
         ]
       });
@@ -59,8 +85,8 @@ const TAURI_MOCK = `
     skill_agents: (args) => {
       if (args.action === "list") return JSON.stringify({
         agents: [
-          { id: "naia-default", name: "Naia", description: _t("기본 AI 컴패니언", "Default AI Companion"), model: "gemini-2.0-flash" },
-          { id: "coder-agent", name: _t("코딩 에이전트", "Coding Agent"), description: _t("코드 작성 및 리뷰 전문", "Code writing & review specialist"), model: "claude-sonnet-4-6" },
+          { id: "naia-default", name: "Naia", description: _t("agentDefault"), model: "gemini-2.0-flash" },
+          { id: "coder-agent", name: _t("agentCoder"), description: _t("agentCoderDesc"), model: "claude-sonnet-4-6" },
         ]
       });
       return "{}";
@@ -94,30 +120,30 @@ const TAURI_MOCK = `
 
   // Discord mock messages
   const DISCORD_MESSAGES = [
-    { id:"d1", content:_t("나이아, 내일 회의 시간 알려줘","Naia, when is tomorrow's meeting?"), author:{ id:"user-456", username:"Luke", bot:false }, timestamp:"2026-02-23T09:30:00Z" },
-    { id:"d2", content:_t("내일 오후 3시에 팀 미팅이 있어요! 📋","You have a team meeting at 3 PM tomorrow! 📋"), author:{ id:"bot-999", username:"Naia", bot:true }, timestamp:"2026-02-23T09:30:05Z" },
-    { id:"d3", content:_t("고마워. 오늘 날씨는?","Thanks. What's the weather today?"), author:{ id:"user-456", username:"Luke", bot:false }, timestamp:"2026-02-23T10:00:00Z" },
-    { id:"d4", content:_t("오늘 서울은 맑고 12°C예요. 가벼운 겉옷 추천해요! 🌤️","It's clear and 12°C in Seoul today. A light jacket is recommended! 🌤️"), author:{ id:"bot-999", username:"Naia", bot:true }, timestamp:"2026-02-23T10:00:05Z" },
-    { id:"d5", content:_t("알겠어, 감사!","Got it, thanks!"), author:{ id:"user-456", username:"Luke", bot:false }, timestamp:"2026-02-23T10:01:00Z" },
+    { id:"d1", content:_t("discordQ1"), author:{ id:"user-456", username:"Luke", bot:false }, timestamp:"2026-02-23T09:30:00Z" },
+    { id:"d2", content:_t("discordA1"), author:{ id:"bot-999", username:"Naia", bot:true }, timestamp:"2026-02-23T09:30:05Z" },
+    { id:"d3", content:_t("discordQ2"), author:{ id:"user-456", username:"Luke", bot:false }, timestamp:"2026-02-23T10:00:00Z" },
+    { id:"d4", content:_t("discordA2"), author:{ id:"bot-999", username:"Naia", bot:true }, timestamp:"2026-02-23T10:00:05Z" },
+    { id:"d5", content:_t("discordQ3"), author:{ id:"user-456", username:"Luke", bot:false }, timestamp:"2026-02-23T10:01:00Z" },
   ];
 
   window.__TAURI_INTERNALS__ = {
     invoke: (cmd, args) => {
       // Skills
       if (cmd === "list_skills") return Promise.resolve([
-        {name:"skill_time",description:_t("현재 날짜/시간 확인","Check current date/time"),type_:"builtin",tier:"T0",enabled:true,source:"built-in"},
-        {name:"skill_system_status",description:_t("시스템 상태 확인","Check system status"),type_:"builtin",tier:"T0",enabled:true,source:"built-in"},
-        {name:"skill_memo",description:_t("메모 저장/조회","Save/read memos"),type_:"builtin",tier:"T0",enabled:true,source:"built-in"},
-        {name:"skill_weather",description:_t("날씨 조회","Check weather"),type_:"builtin",tier:"T0",enabled:true,source:"built-in"},
-        {name:"skill_naia_discord",description:_t("Discord DM 전송","Send Discord DM"),type_:"builtin",tier:"T1",enabled:true,source:"built-in"},
-        {name:"skill_soul",description:_t("AI 페르소나 관리","Manage AI persona"),type_:"builtin",tier:"T0",enabled:true,source:"built-in"},
-        {name:"skill_exit",description:_t("앱 종료","Exit app"),type_:"builtin",tier:"T2",enabled:true,source:"built-in"},
-        {name:"skill_read_file",description:_t("파일 읽기","Read file"),type_:"gateway",tier:"T1",enabled:true,source:"custom"},
-        {name:"skill_write_file",description:_t("파일 쓰기","Write file"),type_:"gateway",tier:"T2",enabled:true,source:"custom"},
-        {name:"skill_execute_command",description:_t("명령 실행","Execute command"),type_:"command",tier:"T3",enabled:true,source:"custom"},
-        {name:"skill_web_search",description:_t("웹 검색","Web search"),type_:"gateway",tier:"T1",enabled:true,source:"custom"},
-        {name:"skill_notify_slack",description:_t("Slack 알림","Slack notification"),type_:"gateway",tier:"T1",enabled:true,source:"custom"},
-        {name:"skill_notify_discord",description:_t("Discord 알림","Discord notification"),type_:"gateway",tier:"T1",enabled:true,source:"custom"},
+        {name:"skill_time",description:_t("skillTime"),type_:"builtin",tier:"T0",enabled:true,source:"built-in"},
+        {name:"skill_system_status",description:_t("skillStatus"),type_:"builtin",tier:"T0",enabled:true,source:"built-in"},
+        {name:"skill_memo",description:_t("skillMemo"),type_:"builtin",tier:"T0",enabled:true,source:"built-in"},
+        {name:"skill_weather",description:_t("skillWeather"),type_:"builtin",tier:"T0",enabled:true,source:"built-in"},
+        {name:"skill_naia_discord",description:_t("skillDiscord"),type_:"builtin",tier:"T1",enabled:true,source:"built-in"},
+        {name:"skill_soul",description:_t("skillSoul"),type_:"builtin",tier:"T0",enabled:true,source:"built-in"},
+        {name:"skill_exit",description:_t("skillExit"),type_:"builtin",tier:"T2",enabled:true,source:"built-in"},
+        {name:"skill_read_file",description:_t("skillReadFile"),type_:"gateway",tier:"T1",enabled:true,source:"custom"},
+        {name:"skill_write_file",description:_t("skillWriteFile"),type_:"gateway",tier:"T2",enabled:true,source:"custom"},
+        {name:"skill_execute_command",description:_t("skillExecCmd"),type_:"command",tier:"T3",enabled:true,source:"custom"},
+        {name:"skill_web_search",description:_t("skillWebSearch"),type_:"gateway",tier:"T1",enabled:true,source:"custom"},
+        {name:"skill_notify_slack",description:_t("skillSlack"),type_:"gateway",tier:"T1",enabled:true,source:"custom"},
+        {name:"skill_notify_discord",description:_t("skillDiscordNotif"),type_:"gateway",tier:"T1",enabled:true,source:"custom"},
       ]);
       if (cmd === "list_vrm_files") return Promise.resolve([
         "/avatars/01-Sendagaya-Shino-uniform.vrm",
@@ -132,7 +158,7 @@ const TAURI_MOCK = `
         {id:2,timestamp:"2026-02-23T10:05:13Z",request_id:"r1",event_type:"tool_result",tool_name:"skill_time",tool_call_id:"tc1",tier:0,success:true,payload:'{"time":"2026-02-23 10:05"}'},
         {id:3,timestamp:"2026-02-23T10:06:00Z",request_id:"r2",event_type:"usage",tool_name:null,tool_call_id:null,tier:null,success:true,payload:'{"cost":0.0012}'},
         {id:4,timestamp:"2026-02-23T10:07:30Z",request_id:"r3",event_type:"tool_use",tool_name:"skill_weather",tool_call_id:"tc2",tier:0,success:true,payload:null},
-        {id:5,timestamp:"2026-02-23T10:07:31Z",request_id:"r3",event_type:"tool_result",tool_name:"skill_weather",tool_call_id:"tc2",tier:0,success:true,payload:JSON.stringify({weather:_t("맑음 12°C","Clear 12°C")})},
+        {id:5,timestamp:"2026-02-23T10:07:31Z",request_id:"r3",event_type:"tool_result",tool_name:"skill_weather",tool_call_id:"tc2",tier:0,success:true,payload:JSON.stringify({weather:_t("weatherClear")})},
         {id:6,timestamp:"2026-02-23T10:08:00Z",request_id:"r4",event_type:"tool_use",tool_name:"skill_memo",tool_call_id:"tc3",tier:0,success:true,payload:null},
         {id:7,timestamp:"2026-02-23T10:08:01Z",request_id:"r4",event_type:"tool_result",tool_name:"skill_memo",tool_call_id:"tc3",tier:0,success:true,payload:'{"saved":true}'},
         {id:8,timestamp:"2026-02-23T10:10:00Z",request_id:"r5",event_type:"error",tool_name:"skill_web_search",tool_call_id:"tc4",tier:1,success:false,payload:'{"error":"timeout"}'},
@@ -260,9 +286,34 @@ function configStr(locale: string, opts?: { labKey?: boolean; discord?: boolean 
 
 // ─── Mock data injection (via window-exposed Zustand stores) ─
 
+// Chat mock i18n — 14 languages
+const CHAT_I18N: Record<string, Record<string, string>> = {
+  weatherQ:     { ko:"오늘 날씨 알려줘", en:"What's the weather today?", ja:"今日の天気を教えて", zh:"今天天气怎么样？", fr:"Quel temps fait-il aujourd'hui ?", de:"Wie ist das Wetter heute?", ru:"Какая сегодня погода?", es:"¿Qué tiempo hace hoy?", ar:"كيف الطقس اليوم؟", hi:"आज मौसम कैसा है?", bn:"আজকের আবহাওয়া কেমন?", pt:"Como está o tempo hoje?", id:"Bagaimana cuaca hari ini?", vi:"Thời tiết hôm nay thế nào?" },
+  weatherA:     { ko:"오늘 서울 날씨는 맑음이고, 현재 기온은 12°C입니다. 오후에는 최고 16°C까지 올라갈 예정이에요. 외출 시 가벼운 겉옷을 챙기시면 좋을 것 같아요!", en:"Today's weather in Seoul is clear with a current temperature of 12°C. The high will reach 16°C this afternoon. I'd recommend a light jacket if you're heading out!", ja:"今日のソウルの天気は晴れで、現在の気温は12°Cです。午後は最高16°Cまで上がる予定です。お出かけの際は軽い上着をお持ちください！", zh:"今天首尔天气晴朗，当前气温12°C。下午最高可达16°C。外出时建议带一件薄外套！", fr:"Aujourd'hui à Séoul, il fait beau avec 12°C actuellement. Le maximum sera de 16°C cet après-midi. Je vous conseille une veste légère !", de:"Heute ist es in Seoul klar bei 12°C. Am Nachmittag werden bis zu 16°C erwartet. Ich empfehle eine leichte Jacke!", ru:"Сегодня в Сеуле ясно, температура 12°C. Днём ожидается до 16°C. Рекомендую лёгкую куртку!", es:"Hoy en Seúl está despejado con 12°C. La máxima será de 16°C esta tarde. ¡Te recomiendo una chaqueta ligera!", ar:"الطقس في سيول اليوم صافٍ، درجة الحرارة 12°C. ستصل إلى 16°C بعد الظهر. أنصحك بارتداء سترة خفيفة!", hi:"आज सियोल में मौसम साफ़ है, तापमान 12°C। दोपहर में 16°C तक जाएगा। हल्की जैकेट ले जाना अच्छा रहेगा!", bn:"আজ সিউলে আবহাওয়া পরিষ্কার, তাপমাত্রা ১২°C। বিকেলে ১৬°C পর্যন্ত উঠবে। হালকা জ্যাকেট নিয়ে যাওয়া ভালো!", pt:"Hoje em Seul está claro com 12°C. A máxima será de 16°C à tarde. Recomendo levar uma jaqueta leve!", id:"Cuaca Seoul hari ini cerah, suhu 12°C. Sore ini akan mencapai 16°C. Saya sarankan bawa jaket tipis!", vi:"Hôm nay Seoul trời quang, nhiệt độ 12°C. Chiều nay lên đến 16°C. Bạn nên mang theo áo khoác nhẹ!" },
+  memoQ:        { ko:"메모 저장해줘: 내일 오후 3시 미팅", en:"Save a memo: Meeting tomorrow at 3 PM", ja:"メモを保存して：明日午後3時にミーティング", zh:"保存备忘录：明天下午3点开会", fr:"Enregistre un mémo : Réunion demain à 15h", de:"Speichere ein Memo: Meeting morgen um 15 Uhr", ru:"Сохрани заметку: завтра встреча в 15:00", es:"Guarda un memo: Reunión mañana a las 3 PM", ar:"احفظ ملاحظة: اجتماع غداً الساعة 3 مساءً", hi:"मेमो सेव करो: कल दोपहर 3 बजे मीटिंग", bn:"মেমো সেভ করো: আগামীকাল বিকেল ৩টায় মিটিং", pt:"Salve um memo: Reunião amanhã às 15h", id:"Simpan memo: Rapat besok jam 3 sore", vi:"Lưu ghi chú: Họp ngày mai lúc 3 giờ chiều" },
+  memoA:        { ko:"메모를 저장했어요!\n\n**내일 오후 3시 미팅** — 잊지 않도록 알려드릴게요.", en:"Memo saved!\n\n**Meeting tomorrow at 3 PM** — I'll make sure to remind you.", ja:"メモを保存しました！\n\n**明日午後3時にミーティング** — リマインドしますね。", zh:"备忘录已保存！\n\n**明天下午3点开会** — 我会提醒您的。", fr:"Mémo enregistré !\n\n**Réunion demain à 15h** — Je vous le rappellerai.", de:"Memo gespeichert!\n\n**Meeting morgen um 15 Uhr** — Ich erinnere Sie daran.", ru:"Заметка сохранена!\n\n**Встреча завтра в 15:00** — Напомню вам.", es:"¡Memo guardado!\n\n**Reunión mañana a las 3 PM** — Te lo recordaré.", ar:"تم حفظ الملاحظة!\n\n**اجتماع غداً الساعة 3 مساءً** — سأذكرك بذلك.", hi:"मेमो सेव हो गया!\n\n**कल दोपहर 3 बजे मीटिंग** — मैं आपको याद दिलाऊंगा।", bn:"মেমো সেভ হয়েছে!\n\n**আগামীকাল বিকেল ৩টায় মিটিং** — আমি মনে করিয়ে দেব।", pt:"Memo salvo!\n\n**Reunião amanhã às 15h** — Vou te lembrar.", id:"Memo tersimpan!\n\n**Rapat besok jam 3 sore** — Saya akan mengingatkan Anda.", vi:"Đã lưu ghi chú!\n\n**Họp ngày mai lúc 3 giờ chiều** — Tôi sẽ nhắc bạn." },
+  memoContent:  { ko:"내일 오후 3시 미팅", en:"Meeting tomorrow at 3 PM", ja:"明日午後3時にミーティング", zh:"明天下午3点开会", fr:"Réunion demain à 15h", de:"Meeting morgen um 15 Uhr", ru:"Встреча завтра в 15:00", es:"Reunión mañana a las 3 PM", ar:"اجتماع غداً الساعة 3 مساءً", hi:"कल दोपहर 3 बजे मीटिंग", bn:"আগামীকাল বিকেল ৩টায় মিটিং", pt:"Reunião amanhã às 15h", id:"Rapat besok jam 3 sore", vi:"Họp ngày mai lúc 3 giờ chiều" },
+  timeQ:        { ko:"지금 몇 시야?", en:"What time is it now?", ja:"今何時？", zh:"现在几点了？", fr:"Quelle heure est-il ?", de:"Wie spät ist es?", ru:"Который час?", es:"¿Qué hora es?", ar:"كم الساعة الآن؟", hi:"अभी क्या समय हुआ है?", bn:"এখন কটা বাজে?", pt:"Que horas são?", id:"Jam berapa sekarang?", vi:"Bây giờ mấy giờ rồi?" },
+  timeA:        { ko:"지금은 오후 2시 35분이에요. 오늘 하루 잘 보내고 계신가요?", en:"It's 2:35 PM right now. How's your day going?", ja:"今は午後2時35分です。今日はいかがお過ごしですか？", zh:"现在是下午2点35分。今天过得怎么样？", fr:"Il est 14h35. Comment se passe votre journée ?", de:"Es ist 14:35 Uhr. Wie läuft Ihr Tag?", ru:"Сейчас 14:35. Как проходит ваш день?", es:"Son las 2:35 PM. ¿Cómo va tu día?", ar:"الساعة الآن 2:35 مساءً. كيف يومك؟", hi:"अभी दोपहर 2:35 बजे हैं। आपका दिन कैसा चल रहा है?", bn:"এখন দুপুর ২:৩৫। আপনার দিন কেমন যাচ্ছে?", pt:"São 14h35. Como está sendo seu dia?", id:"Sekarang jam 14.35. Bagaimana hari Anda?", vi:"Bây giờ là 2:35 chiều. Ngày hôm nay của bạn thế nào?" },
+  approvalDesc: { ko:"시스템 명령어를 실행합니다", en:"Execute a system command", ja:"システムコマンドを実行します", zh:"执行系统命令", fr:"Exécuter une commande système", de:"Systembefehl ausführen", ru:"Выполнить системную команду", es:"Ejecutar un comando del sistema", ar:"تنفيذ أمر النظام", hi:"सिस्टम कमांड निष्पादित करें", bn:"সিস্টেম কমান্ড চালান", pt:"Executar um comando do sistema", id:"Jalankan perintah sistem", vi:"Thực thi lệnh hệ thống" },
+  weatherClear: { ko:"맑음 12°C", en:"Clear 12°C", ja:"晴れ 12°C", zh:"晴 12°C", fr:"Clair 12°C", de:"Klar 12°C", ru:"Ясно 12°C", es:"Despejado 12°C", ar:"صافٍ 12°C", hi:"साफ़ 12°C", bn:"পরিষ্কার ১২°C", pt:"Limpo 12°C", id:"Cerah 12°C", vi:"Quang 12°C" },
+};
+
+function chatT(key: string, locale: string): string {
+  return CHAT_I18N[key]?.[locale] ?? CHAT_I18N[key]?.["en"] ?? key;
+}
+
 async function injectChatMessages(page: Page, locale: string) {
-  const isKo = locale === "ko";
-  await page.evaluate((ko) => {
+  const msgs = {
+    weatherQ: chatT("weatherQ", locale),
+    weatherA: chatT("weatherA", locale),
+    memoQ: chatT("memoQ", locale),
+    memoA: chatT("memoA", locale),
+    memoContent: chatT("memoContent", locale),
+    timeQ: chatT("timeQ", locale),
+    timeA: chatT("timeA", locale),
+  };
+  await page.evaluate((m) => {
     const store = (window as any).useChatStore;
     if (!store) { console.warn("[mock] useChatStore not found on window"); return; }
     const now = Date.now();
@@ -270,14 +321,12 @@ async function injectChatMessages(page: Page, locale: string) {
       messages: [
         {
           id: "m1", role: "user",
-          content: ko ? "오늘 날씨 알려줘" : "What's the weather today?",
+          content: m.weatherQ,
           timestamp: now - 300000,
         },
         {
           id: "m2", role: "assistant",
-          content: ko
-            ? "오늘 서울 날씨는 맑음이고, 현재 기온은 12°C입니다. 오후에는 최고 16°C까지 올라갈 예정이에요. 외출 시 가벼운 겉옷을 챙기시면 좋을 것 같아요!"
-            : "Today's weather in Seoul is clear with a current temperature of 12°C. The high will reach 16°C this afternoon. I'd recommend a light jacket if you're heading out!",
+          content: m.weatherA,
           timestamp: now - 295000,
           cost: { inputTokens: 156, outputTokens: 89, cost: 0.00082, provider: "gemini", model: "gemini-2.0-flash" },
           toolCalls: [
@@ -286,30 +335,26 @@ async function injectChatMessages(page: Page, locale: string) {
         },
         {
           id: "m3", role: "user",
-          content: ko ? "메모 저장해줘: 내일 오후 3시 미팅" : "Save a memo: Meeting tomorrow at 3 PM",
+          content: m.memoQ,
           timestamp: now - 200000,
         },
         {
           id: "m4", role: "assistant",
-          content: ko
-            ? "메모를 저장했어요!\n\n**내일 오후 3시 미팅** — 잊지 않도록 알려드릴게요."
-            : "Memo saved!\n\n**Meeting tomorrow at 3 PM** — I'll make sure to remind you.",
+          content: m.memoA,
           timestamp: now - 198000,
           cost: { inputTokens: 210, outputTokens: 65, cost: 0.00095, provider: "gemini", model: "gemini-2.0-flash" },
           toolCalls: [
-            { toolCallId: "tc2", toolName: "skill_memo", args: { action: "save", content: ko ? "내일 오후 3시 미팅" : "Meeting tomorrow at 3 PM" }, status: "success" as const, output: '{"saved":true}' },
+            { toolCallId: "tc2", toolName: "skill_memo", args: { action: "save", content: m.memoContent }, status: "success" as const, output: '{"saved":true}' },
           ],
         },
         {
           id: "m5", role: "user",
-          content: ko ? "지금 몇 시야?" : "What time is it now?",
+          content: m.timeQ,
           timestamp: now - 100000,
         },
         {
           id: "m6", role: "assistant",
-          content: ko
-            ? "지금은 오후 2시 35분이에요. 오늘 하루 잘 보내고 계신가요?"
-            : "It's 2:35 PM right now. How's your day going?",
+          content: m.timeA,
           timestamp: now - 98000,
           cost: { inputTokens: 120, outputTokens: 42, cost: 0.00055, provider: "gemini", model: "gemini-2.0-flash" },
           toolCalls: [
@@ -321,11 +366,12 @@ async function injectChatMessages(page: Page, locale: string) {
       provider: "gemini",
       sessionId: "session-demo-001",
     });
-  }, isKo);
+  }, msgs);
 }
 
 async function injectPendingApproval(page: Page, locale: string) {
-  await page.evaluate((loc) => {
+  const desc = chatT("approvalDesc", locale);
+  await page.evaluate((d) => {
     const store = (window as any).useChatStore;
     if (!store) return;
     store.setState({
@@ -335,17 +381,18 @@ async function injectPendingApproval(page: Page, locale: string) {
         toolName: "skill_execute_command",
         args: { command: "ls -la ~/Documents" },
         tier: 3,
-        description: loc === "ko" ? "시스템 명령어를 실행합니다" : "Execute a system command",
+        description: d,
       },
     });
-  }, locale);
+  }, desc);
 }
 
 async function injectProgressData(page: Page, locale: string) {
-  await page.evaluate((loc) => {
+  const weatherStr = chatT("weatherClear", locale);
+  await page.evaluate((ws) => {
     const store = (window as any).useProgressStore;
     if (!store) { console.warn("[mock] useProgressStore not found"); return; }
-    const weatherStr = loc === "ko" ? "맑음 12°C" : "Clear 12°C";
+    const weatherStr = ws;
     store.setState({
       events: [
         {id:1,timestamp:"2026-02-23T10:05:12Z",request_id:"r1",event_type:"tool_use",tool_name:"skill_time",tool_call_id:"tc1",tier:0,success:true,payload:null},
@@ -680,10 +727,10 @@ async function captureOnboarding(browser: Browser, outDir: string) {
     await next().click({ timeout: 3000 }); await page.waitForTimeout(600);
 
     await shot("onboarding-character");
-    await next().click({ timeout: 3000 }); await page.waitForTimeout(600);
+    await next().click({ timeout: 10000 }); await page.waitForTimeout(600);
 
     await shot("onboarding-personality");
-    await next().click({ timeout: 3000 }); await page.waitForTimeout(600);
+    await next().click({ timeout: 10000 }); await page.waitForTimeout(600);
 
     await page.waitForTimeout(500);
     const vis = await next().isVisible({ timeout: 1000 }).catch(() => false);
