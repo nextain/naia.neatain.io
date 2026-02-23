@@ -339,17 +339,17 @@ const en: Dictionary = {
       appimage: {
         name: "AppImage",
         description: "Single executable file. Run directly without installation.",
-        command: "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
+        command: "chmod +x Naia_0.1.0_amd64.AppImage && ./Naia_0.1.0_amd64.AppImage",
       },
       deb: {
         name: "DEB",
         description: "For Debian, Ubuntu, and other apt-based distributions.",
-        command: "sudo dpkg -i naia-shell_*.deb",
+        command: "sudo dpkg -i naia_*.deb",
       },
       rpm: {
         name: "RPM",
         description: "For Fedora, RHEL, and other rpm-based distributions.",
-        command: "sudo rpm -i naia-shell-*.rpm",
+        command: "sudo rpm -i naia-*.rpm",
       },
     },
     checksum: "Verify Checksums",

@@ -328,17 +328,17 @@ const bn: Dictionary = {
       "appimage": {
         "name": "AppImage",
         "description": "একক এক্সিকিউটেবল ফাইল। ইনস্টলেশন ছাড়াই সরাসরি চালান।",
-        "command": "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
+        "command": "chmod +x Naia_0.1.0_amd64.AppImage && ./Naia_0.1.0_amd64.AppImage",
       },
       "deb": {
         "name": "DEB",
         "description": "Debian, Ubuntu এবং অন্যান্য apt-ভিত্তিক ডিস্ট্রিবিউশনের জন্য।",
-        "command": "sudo dpkg -i naia-shell_*.deb",
+        "command": "sudo dpkg -i naia_*.deb",
       },
       "rpm": {
         "name": "RPM",
         "description": "Fedora, RHEL এবং অন্যান্য rpm-ভিত্তিক ডিস্ট্রিবিউশনের জন্য।",
-        "command": "sudo rpm -i naia-shell-*.rpm",
+        "command": "sudo rpm -i naia-*.rpm",
       },
     },
     "checksum": "চেকসাম যাচাই",

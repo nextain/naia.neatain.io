@@ -328,17 +328,17 @@ const zh: Dictionary = {
       "appimage": {
         "name": "AppImage",
         "description": "单个可执行文件。无需安装，直接运行。",
-        "command": "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
+        "command": "chmod +x Naia_0.1.0_amd64.AppImage && ./Naia_0.1.0_amd64.AppImage",
       },
       "deb": {
         "name": "DEB",
         "description": "适用于 Debian、Ubuntu 及其他基于 apt 的发行版。",
-        "command": "sudo dpkg -i naia-shell_*.deb",
+        "command": "sudo dpkg -i naia_*.deb",
       },
       "rpm": {
         "name": "RPM",
         "description": "适用于 Fedora、RHEL 及其他基于 rpm 的发行版。",
-        "command": "sudo rpm -i naia-shell-*.rpm",
+        "command": "sudo rpm -i naia-*.rpm",
       },
     },
     "checksum": "校验和验证",

@@ -328,17 +328,17 @@ const ar: Dictionary = {
       "appimage": {
         "name": "AppImage",
         "description": "ملف تنفيذي واحد. قم بتشغيله مباشرة دون تثبيت.",
-        "command": "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
+        "command": "chmod +x Naia_0.1.0_amd64.AppImage && ./Naia_0.1.0_amd64.AppImage",
       },
       "deb": {
         "name": "DEB",
         "description": "لـ Debian و Ubuntu والتوزيعات الأخرى المبنية على apt.",
-        "command": "sudo dpkg -i naia-shell_*.deb",
+        "command": "sudo dpkg -i naia_*.deb",
       },
       "rpm": {
         "name": "RPM",
         "description": "لـ Fedora و RHEL والتوزيعات الأخرى المبنية على rpm.",
-        "command": "sudo rpm -i naia-shell-*.rpm",
+        "command": "sudo rpm -i naia-*.rpm",
       },
     },
     "checksum": "التحقق من المجاميع الاختبارية",

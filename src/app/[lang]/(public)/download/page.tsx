@@ -21,9 +21,9 @@ const RELEASE_BASE = `https://github.com/${GITHUB_REPO}/releases`;
 
 const DOWNLOAD_URLS: Record<string, string> = {
   flatpak: `${RELEASE_BASE}/latest/download/Naia-Shell-x86_64.flatpak`,
-  appimage: `${RELEASE_BASE}/latest/download/Naia.Shell_0.1.0_amd64.AppImage`,
-  deb: `${RELEASE_BASE}/latest/download/Naia.Shell_0.1.0_amd64.deb`,
-  rpm: `${RELEASE_BASE}/latest/download/Naia.Shell-0.1.0-1.x86_64.rpm`,
+  appimage: `${RELEASE_BASE}/latest/download/Naia_0.1.0_amd64.AppImage`,
+  deb: `${RELEASE_BASE}/latest/download/Naia_0.1.0_amd64.deb`,
+  rpm: `${RELEASE_BASE}/latest/download/Naia-0.1.0-1.x86_64.rpm`,
 };
 
 const FORMAT_ICONS = {

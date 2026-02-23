@@ -328,17 +328,17 @@ const id: Dictionary = {
       "appimage": {
         "name": "AppImage",
         "description": "File eksekusi tunggal. Jalankan langsung tanpa instalasi.",
-        "command": "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
+        "command": "chmod +x Naia_0.1.0_amd64.AppImage && ./Naia_0.1.0_amd64.AppImage",
       },
       "deb": {
         "name": "DEB",
         "description": "Untuk Debian, Ubuntu, dan distribusi berbasis apt lainnya.",
-        "command": "sudo dpkg -i naia-shell_*.deb",
+        "command": "sudo dpkg -i naia_*.deb",
       },
       "rpm": {
         "name": "RPM",
         "description": "Untuk Fedora, RHEL, dan distribusi berbasis rpm lainnya.",
-        "command": "sudo rpm -i naia-shell-*.rpm",
+        "command": "sudo rpm -i naia-*.rpm",
       },
     },
     "checksum": "Verifikasi Checksum",

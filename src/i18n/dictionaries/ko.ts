@@ -337,17 +337,17 @@ const ko: Dictionary = {
       appimage: {
         name: "AppImage",
         description: "단일 실행 파일입니다. 설치 없이 바로 실행할 수 있습니다.",
-        command: "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
+        command: "chmod +x Naia_0.1.0_amd64.AppImage && ./Naia_0.1.0_amd64.AppImage",
       },
       deb: {
         name: "DEB",
         description: "Debian, Ubuntu 등 apt 기반 배포판용입니다.",
-        command: "sudo dpkg -i naia-shell_*.deb",
+        command: "sudo dpkg -i naia_*.deb",
       },
       rpm: {
         name: "RPM",
         description: "Fedora, RHEL 등 rpm 기반 배포판용입니다.",
-        command: "sudo rpm -i naia-shell-*.rpm",
+        command: "sudo rpm -i naia-*.rpm",
       },
     },
     checksum: "체크섬 검증",

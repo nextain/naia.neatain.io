@@ -328,17 +328,17 @@ const fr: Dictionary = {
       "appimage": {
         "name": "AppImage",
         "description": "Fichier exécutable unique. Lancez directement sans installation.",
-        "command": "chmod +x Naia-Shell-x86_64.AppImage && ./Naia-Shell-x86_64.AppImage",
+        "command": "chmod +x Naia_0.1.0_amd64.AppImage && ./Naia_0.1.0_amd64.AppImage",
       },
       "deb": {
         "name": "DEB",
         "description": "Pour Debian, Ubuntu et autres distributions basées sur apt.",
-        "command": "sudo dpkg -i naia-shell_*.deb",
+        "command": "sudo dpkg -i naia_*.deb",
       },
       "rpm": {
         "name": "RPM",
         "description": "Pour Fedora, RHEL et autres distributions basées sur rpm.",
-        "command": "sudo rpm -i naia-shell-*.rpm",
+        "command": "sudo rpm -i naia-*.rpm",
       },
     },
     "checksum": "Vérifier les sommes de contrôle",
