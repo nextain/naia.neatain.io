@@ -40,6 +40,7 @@ const en: Dictionary = {
       terms: "Terms of Service",
       refund: "Refund Policy",
       contact: "Contact",
+      about: "About Nextain",
     },
     copyright: "© 2026 Nextain (Next AI Networks). All rights reserved.",
   },

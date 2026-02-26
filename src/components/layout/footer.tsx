@@ -65,6 +65,14 @@ export function Footer() {
             >
               {dict.footer.links.contact}
             </Link>
+            <a
+              href="https://about.nextain.io"
+              target="_blank"
+              rel="noreferrer"
+              className="transition-colors hover:text-foreground"
+            >
+              {dict.footer.links.about}
+            </a>
           </div>
         </div>
 

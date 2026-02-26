@@ -40,6 +40,7 @@ const ko: Dictionary = {
       terms: "이용약관",
       refund: "환불 정책",
       contact: "문의",
+      about: "회사 소개",
     },
     copyright: "© 2026 Nextain (Next AI Networks). All rights reserved.",
   },

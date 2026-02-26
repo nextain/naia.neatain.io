@@ -39,7 +39,8 @@ const bn: Dictionary = {
       "privacy": "গোপনীয়তা নীতি",
       "terms": "পরিষেবার শর্তাবলী",
       "refund": "ফেরত নীতি",
-      "contact": "যোগাযোগ"
+      "contact": "যোগাযোগ",
+      "about": "Nextain সম্পর্কে"
     },
     "copyright": "© 2026 Nextain. সর্বস্বত্ব সংরক্ষিত"
   },

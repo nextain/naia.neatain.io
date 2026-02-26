@@ -39,7 +39,8 @@ const de: Dictionary = {
       "privacy": "Datenschutzrichtlinie",
       "terms": "Nutzungsbedingungen",
       "refund": "Rückerstattungsrichtlinie",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "about": "Über Nextain"
     },
     "copyright": "© 2026 Nextain. Alle Rechte vorbehalten."
   },

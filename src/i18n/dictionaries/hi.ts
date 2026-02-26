@@ -39,7 +39,8 @@ const hi: Dictionary = {
       "privacy": "गोपनीयता नीति",
       "terms": "सेवा की शर्तें",
       "refund": "धनवापसी नीति",
-      "contact": "संपर्क करें"
+      "contact": "संपर्क करें",
+      "about": "Nextain के बारे में"
     },
     "copyright": "© 2026 नेक्स्टैन। सर्वाधिकार सुरक्षित।"
   },

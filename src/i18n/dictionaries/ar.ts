@@ -39,7 +39,8 @@ const ar: Dictionary = {
       "privacy": "سياسة الخصوصية",
       "terms": "شروط الخدمة",
       "refund": "سياسة استرداد الأموال",
-      "contact": "الاتصال"
+      "contact": "الاتصال",
+      "about": "عن Nextain"
     },
     "copyright": "© 2026 نكستين. جميع الحقوق محفوظة."
   },

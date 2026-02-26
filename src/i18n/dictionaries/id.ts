@@ -39,7 +39,8 @@ const id: Dictionary = {
       "privacy": "Kebijakan Privasi",
       "terms": "Ketentuan Layanan",
       "refund": "Kebijakan Pengembalian Dana",
-      "contact": "Kontak"
+      "contact": "Kontak",
+      "about": "Tentang Nextain"
     },
     "copyright": "© 2026 Selanjutnya. Semua hak dilindungi undang-undang."
   },

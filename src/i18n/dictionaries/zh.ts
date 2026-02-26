@@ -39,7 +39,8 @@ const zh: Dictionary = {
       "privacy": "隐私政策",
       "terms": "服务条款",
       "refund": "退款政策",
-      "contact": "联系方式"
+      "contact": "联系方式",
+      "about": "关于 Nextain"
     },
     "copyright": "© 2026 Nextain。版权所有。"
   },

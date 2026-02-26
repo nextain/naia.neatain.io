@@ -39,7 +39,8 @@ const ja: Dictionary = {
       "privacy": "プライバシーポリシー",
       "terms": "利用規約",
       "refund": "返金ポリシー",
-      "contact": "お問い合わせ"
+      "contact": "お問い合わせ",
+      "about": "会社概要"
     },
     "copyright": "© 2026 ネクストイン.無断転載を禁じます。"
   },

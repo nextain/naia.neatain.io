@@ -40,6 +40,7 @@ export interface Dictionary {
       terms: string;
       refund: string;
       contact: string;
+      about: string;
     };
     copyright: string;
   };

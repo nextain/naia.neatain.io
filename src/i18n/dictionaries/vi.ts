@@ -39,7 +39,8 @@ const vi: Dictionary = {
       "privacy": "Chính sách bảo mật",
       "terms": "Điều khoản dịch vụ",
       "refund": "Chính sách hoàn tiền",
-      "contact": "Liên hệ"
+      "contact": "Liên hệ",
+      "about": "Về Nextain"
     },
     "copyright": "© 2026 Nextain. Mọi quyền được bảo lưu."
   },
