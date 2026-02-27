@@ -53,7 +53,7 @@ export default async function DownloadPage({
   const formats = ["flatpak", "appimage", "deb", "rpm"] as const;
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-16">
+    <div className="mx-auto max-w-4xl overflow-x-hidden px-4 py-16">
       {/* Header */}
       <div className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-bold tracking-tight">{d.title}</h1>
@@ -107,7 +107,7 @@ export default async function DownloadPage({
           const Icon = FORMAT_ICONS[key];
 
           return (
-            <Card key={key}>
+            <Card key={key} className="min-w-0">
               <CardHeader className="pb-3">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted">
@@ -124,8 +124,8 @@ export default async function DownloadPage({
                   <Info className="mt-0.5 h-3.5 w-3.5 shrink-0" />
                   {fmt.note}
                 </p>
-                <div className="relative mb-4 rounded-md bg-muted/50 p-3">
-                  <div className="overflow-x-auto pr-8">
+                <div className="relative mb-4 overflow-hidden rounded-md bg-muted/50 py-3 pl-3 pr-10">
+                  <div className="overflow-x-auto">
                     <pre className="text-xs leading-relaxed">
                       <code>{fmt.command}</code>
                     </pre>
@@ -205,8 +205,8 @@ export default async function DownloadPage({
         <p className="mb-3 text-sm text-muted-foreground">
           {d.checksumDescription}
         </p>
-        <div className="relative rounded-md bg-muted/50 p-3">
-          <div className="overflow-x-auto pr-8">
+        <div className="relative rounded-md bg-muted/50 py-3 pl-3 pr-10">
+          <div className="overflow-x-auto">
             <code className="text-xs">sha256sum -c SHA256SUMS</code>
           </div>
           <CopyButton text="sha256sum -c SHA256SUMS" />
